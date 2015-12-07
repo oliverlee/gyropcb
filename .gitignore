@@ -1,0 +1,8 @@
+# eagle backup schematic files
+*.s#[0-9]
+
+# eagle schematic lock file
+*.sch.lck
+
+# OSX Desktop Services Store
+*.DS_store
