@@ -6,3 +6,4 @@
 
 # OSX Desktop Services Store
 *.DS_store
+*/*.DS_store
