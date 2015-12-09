@@ -16524,6 +16524,52 @@ Source: MBRS340T3-D.pdf</description>
 <rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
 <rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
 </package>
+<package name="SJ_2W">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="3.175" y1="-1.524" x2="-3.175" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.524" x2="3.429" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="1.27" x2="-3.175" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.175" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.175" y1="-1.524" x2="3.429" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="3.429" y1="-1.27" x2="3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.429" y1="-1.27" x2="-3.429" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.524" x2="3.175" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="0" x2="3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="0" x2="-3.302" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="0.127" x2="2.032" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-2.032" y1="-0.127" x2="-2.032" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="3" x="2.54" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-3.429" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
+<package name="SJ_2">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="2.159" y1="-1.016" x2="-2.159" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="1.016" x2="2.413" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="0.762" x2="-2.159" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.159" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.016" x2="2.413" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.413" y1="-0.762" x2="2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.413" y1="-0.762" x2="-2.413" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="1.016" x2="2.159" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.778" y1="0" x2="-2.286" y2="0" width="0.1524" layer="51"/>
+<wire x1="0" y1="0.762" x2="0" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.016" y1="0.127" x2="1.016" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="-1.016" y1="-0.127" x2="-1.016" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="3" x="1.524" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<text x="-2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SJ">
@@ -16535,6 +16581,22 @@ Source: MBRS340T3-D.pdf</description>
 <text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SJ_2">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-1.905" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16557,6 +16619,34 @@ Source: MBRS340T3-D.pdf</description>
 <connects>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SJ2W" prefix="SJ" uservalue="yes">
+<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SJ_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="W" package="SJ_2W">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SJ_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18575,6 +18665,8 @@ grid 5.08 mm</description>
 <part name="R51" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
 <part name="R52" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
 <part name="VDDA6" library="supply1" deviceset="VDD" device="" value="VDDA"/>
+<part name="SJ4" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ5" library="jumper" deviceset="SJ2W" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18592,6 +18684,7 @@ fc = 400 Hz</text>
 <text x="417.322" y="-21.336" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
 <text x="527.05" y="-151.13" size="1.778" layer="94">4th order Butterworth
 fc = 400 Hz</text>
+<text x="370.84" y="-139.7" size="1.778" layer="94">ANALOG INPUT SELECT JUMPERS</text>
 </plain>
 <instances>
 <instance part="STM32-H405-EXT1" gate="A" x="40.64" y="73.66"/>
@@ -18809,14 +18902,14 @@ fc = 400 Hz</text>
 <instance part="P+2" gate="1" x="279.4" y="-73.66" rot="R90"/>
 <instance part="SJ2" gate="1" x="271.78" y="-60.96"/>
 <instance part="R32" gate="G$1" x="271.78" y="-66.04" rot="R180"/>
-<instance part="X3" gate="P" x="391.16" y="-68.58"/>
-<instance part="GND48" gate="1" x="386.08" y="-83.82"/>
-<instance part="P+3" gate="1" x="381" y="-73.66" rot="R90"/>
-<instance part="SJ3" gate="1" x="373.38" y="-60.96"/>
-<instance part="R33" gate="G$1" x="373.38" y="-66.04" rot="R180"/>
-<instance part="XPC_RS-485" gate="A" x="353.06" y="-63.5"/>
-<instance part="+3V9" gate="G$1" x="335.28" y="-45.72"/>
-<instance part="GND49" gate="1" x="335.28" y="-86.36"/>
+<instance part="X3" gate="P" x="289.56" y="-119.38"/>
+<instance part="GND48" gate="1" x="284.48" y="-134.62"/>
+<instance part="P+3" gate="1" x="279.4" y="-124.46" rot="R90"/>
+<instance part="SJ3" gate="1" x="271.78" y="-111.76"/>
+<instance part="R33" gate="G$1" x="271.78" y="-116.84" rot="R180"/>
+<instance part="XPC_RS-485" gate="A" x="251.46" y="-114.3"/>
+<instance part="+3V9" gate="G$1" x="233.68" y="-96.52"/>
+<instance part="GND49" gate="1" x="233.68" y="-137.16"/>
 <instance part="U4" gate="A" x="535.94" y="-170.18"/>
 <instance part="GND52" gate="1" x="515.62" y="-195.58"/>
 <instance part="R37" gate="G$1" x="434.34" y="-137.16"/>
@@ -18840,6 +18933,8 @@ fc = 400 Hz</text>
 <instance part="R51" gate="G$1" x="472.44" y="-149.86"/>
 <instance part="R52" gate="G$1" x="487.68" y="-149.86"/>
 <instance part="VDDA6" gate="G$1" x="510.54" y="-180.34"/>
+<instance part="SJ4" gate="G$1" x="403.86" y="-149.86"/>
+<instance part="SJ5" gate="G$1" x="403.86" y="-170.18"/>
 </instances>
 <busses>
 </busses>
@@ -19161,12 +19256,12 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="GND48" gate="1" pin="GND"/>
 <pinref part="X3" gate="P" pin="8"/>
-<wire x1="386.08" y1="-81.28" x2="386.08" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="-76.2" x2="388.62" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-132.08" x2="284.48" y2="-127" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-127" x2="287.02" y2="-127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="XPC_RS-485" gate="A" pin="GND"/>
-<wire x1="335.28" y1="-78.74" x2="335.28" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-129.54" x2="233.68" y2="-134.62" width="0.1524" layer="91"/>
 <pinref part="GND49" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -20108,7 +20203,7 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <pinref part="X3" gate="P" pin="7"/>
-<wire x1="383.54" y1="-73.66" x2="388.62" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-124.46" x2="287.02" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -20185,7 +20280,7 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <pinref part="XPC_RS-485" gate="A" pin="VCC"/>
-<wire x1="335.28" y1="-48.26" x2="335.28" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-99.06" x2="233.68" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR1_WIND1" class="0">
@@ -20446,12 +20541,22 @@ fc = 400 Hz</text>
 <wire x1="358.14" y1="53.34" x2="375.92" y2="53.34" width="0.1524" layer="91"/>
 <label x="363.22" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SJ4" gate="G$1" pin="1"/>
+<wire x1="403.86" y1="-144.78" x2="375.92" y2="-144.78" width="0.1524" layer="91"/>
+<label x="375.92" y="-144.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ENC2_CHB" class="0">
 <segment>
 <pinref part="BACKUP_ENC_RECV" gate="A" pin="4Y"/>
 <wire x1="358.14" y1="50.8" x2="375.92" y2="50.8" width="0.1524" layer="91"/>
 <label x="363.22" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ5" gate="G$1" pin="1"/>
+<wire x1="403.86" y1="-165.1" x2="375.92" y2="-165.1" width="0.1524" layer="91"/>
+<label x="375.92" y="-165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5_VDC_DRIVE2" class="0">
@@ -21264,60 +21369,60 @@ fc = 400 Hz</text>
 <net name="XPC_RS-485_A" class="0">
 <segment>
 <pinref part="X3" gate="P" pin="5"/>
-<wire x1="388.62" y1="-68.58" x2="386.08" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="386.08" y1="-68.58" x2="386.08" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="-119.38" x2="284.48" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="-119.38" x2="284.48" y2="-111.76" width="0.1524" layer="91"/>
 <pinref part="SJ3" gate="1" pin="2"/>
-<wire x1="386.08" y1="-60.96" x2="386.08" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="378.46" y1="-60.96" x2="386.08" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="386.08" y="-60.96"/>
+<wire x1="284.48" y1="-111.76" x2="284.48" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="276.86" y1="-111.76" x2="284.48" y2="-111.76" width="0.1524" layer="91"/>
+<junction x="284.48" y="-111.76"/>
 <pinref part="XPC_RS-485" gate="A" pin="A"/>
-<wire x1="370.84" y1="-53.34" x2="386.08" y2="-53.34" width="0.1524" layer="91"/>
-<label x="373.38" y="-53.34" size="1.778" layer="95"/>
+<wire x1="269.24" y1="-104.14" x2="284.48" y2="-104.14" width="0.1524" layer="91"/>
+<label x="271.78" y="-104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XPC_RS-485_B" class="0">
 <segment>
 <pinref part="X3" gate="P" pin="4"/>
-<wire x1="388.62" y1="-66.04" x2="383.54" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="-66.04" x2="383.54" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="-116.84" x2="281.94" y2="-116.84" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="-116.84" x2="281.94" y2="-106.68" width="0.1524" layer="91"/>
 <pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="378.46" y1="-66.04" x2="383.54" y2="-66.04" width="0.1524" layer="91"/>
-<junction x="383.54" y="-66.04"/>
+<wire x1="276.86" y1="-116.84" x2="281.94" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="281.94" y="-116.84"/>
 <pinref part="XPC_RS-485" gate="A" pin="B"/>
-<wire x1="370.84" y1="-55.88" x2="383.54" y2="-55.88" width="0.1524" layer="91"/>
-<label x="373.38" y="-55.88" size="1.778" layer="95"/>
+<wire x1="269.24" y1="-106.68" x2="281.94" y2="-106.68" width="0.1524" layer="91"/>
+<label x="271.78" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="SJ3" gate="1" pin="1"/>
 <pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="368.3" y1="-60.96" x2="368.3" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="-111.76" x2="266.7" y2="-116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="XPC_RS-485_R" class="0">
 <segment>
 <pinref part="XPC_RS-485" gate="A" pin="R"/>
-<wire x1="335.28" y1="-58.42" x2="314.96" y2="-58.42" width="0.1524" layer="91"/>
-<label x="304.8" y="-58.42" size="1.778" layer="95"/>
+<wire x1="233.68" y1="-109.22" x2="213.36" y2="-109.22" width="0.1524" layer="91"/>
+<label x="203.2" y="-109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XPC_RS-485_D" class="0">
 <segment>
 <pinref part="XPC_RS-485" gate="A" pin="D"/>
-<wire x1="335.28" y1="-63.5" x2="314.96" y2="-63.5" width="0.1524" layer="91"/>
-<label x="304.8" y="-63.5" size="1.778" layer="95"/>
+<wire x1="233.68" y1="-114.3" x2="213.36" y2="-114.3" width="0.1524" layer="91"/>
+<label x="203.2" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XPC_RS-485_DE" class="0">
 <segment>
 <pinref part="XPC_RS-485" gate="A" pin="DE"/>
 <pinref part="XPC_RS-485" gate="A" pin="~RE"/>
-<wire x1="335.28" y1="-68.58" x2="335.28" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="-71.12" x2="335.28" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="-71.12" x2="314.96" y2="-71.12" width="0.1524" layer="91"/>
-<junction x="335.28" y="-71.12"/>
-<label x="304.8" y="-71.12" size="1.778" layer="95"/>
+<wire x1="233.68" y1="-119.38" x2="233.68" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-121.92" x2="233.68" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-121.92" x2="213.36" y2="-121.92" width="0.1524" layer="91"/>
+<junction x="233.68" y="-121.92"/>
+<label x="203.2" y="-121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -21483,6 +21588,11 @@ fc = 400 Hz</text>
 <junction x="561.34" y="-175.26"/>
 <label x="563.88" y="-175.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SJ5" gate="G$1" pin="3"/>
+<wire x1="403.86" y1="-175.26" x2="375.92" y2="-175.26" width="0.1524" layer="91"/>
+<label x="375.92" y="-175.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="FRONT_WHEEL_SPEED" class="0">
 <segment>
@@ -21499,6 +21609,25 @@ fc = 400 Hz</text>
 <wire x1="515.62" y1="-165.1" x2="510.54" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="510.54" y1="-165.1" x2="510.54" y2="-142.24" width="0.1524" layer="91"/>
 <junction x="510.54" y="-142.24"/>
+</segment>
+<segment>
+<pinref part="SJ4" gate="G$1" pin="3"/>
+<wire x1="403.86" y1="-154.94" x2="375.92" y2="-154.94" width="0.1524" layer="91"/>
+<label x="375.92" y="-154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="SJ5" gate="G$1" pin="2"/>
+<wire x1="398.78" y1="-170.18" x2="375.92" y2="-170.18" width="0.1524" layer="91"/>
+<label x="375.92" y="-170.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="SJ4" gate="G$1" pin="2"/>
+<wire x1="398.78" y1="-149.86" x2="375.92" y2="-149.86" width="0.1524" layer="91"/>
+<label x="375.92" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
