@@ -18767,6 +18767,8 @@ grid 5.08 mm</description>
 <part name="U5" library="Texas Instruments_By_element14_Batch_1" deviceset="SN74AUP1T04DCKR" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND66" library="supply1" deviceset="GND" device=""/>
+<part name="SJ7" library="jumper" deviceset="SJ2W" device=""/>
+<part name="GND67" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19037,23 +19039,25 @@ fc = 400 Hz</text>
 <instance part="SJ4" gate="G$1" x="513.08" y="109.22"/>
 <instance part="SJ5" gate="G$1" x="513.08" y="88.9"/>
 <instance part="X4" gate="G$1" x="383.54" y="-71.12" rot="R180"/>
-<instance part="GND62" gate="1" x="383.54" y="-76.2"/>
+<instance part="GND62" gate="1" x="383.54" y="-86.36"/>
 <instance part="P+4" gate="1" x="383.54" y="-43.18"/>
 <instance part="SJ6" gate="G$1" x="368.3" y="-68.58" rot="R180"/>
 <instance part="P+8" gate="1" x="368.3" y="-43.18"/>
-<instance part="Q4" gate="G$1" x="353.06" y="-58.42"/>
-<instance part="R53" gate="G$1" x="345.44" y="-63.5" rot="R90"/>
-<instance part="R54" gate="G$1" x="345.44" y="-50.8" rot="R90"/>
-<instance part="Q5" gate="G$1" x="342.9" y="-73.66"/>
-<instance part="R55" gate="G$1" x="330.2" y="-73.66"/>
-<instance part="R56" gate="G$1" x="335.28" y="-78.74" rot="R90"/>
-<instance part="GND64" gate="1" x="335.28" y="-86.36"/>
-<instance part="GND65" gate="1" x="345.44" y="-81.28"/>
-<instance part="P+11" gate="1" x="355.6" y="-43.18"/>
-<instance part="GND63" gate="1" x="368.3" y="-81.28"/>
+<instance part="Q4" gate="G$1" x="342.9" y="-58.42"/>
+<instance part="R53" gate="G$1" x="335.28" y="-63.5" rot="R90"/>
+<instance part="R54" gate="G$1" x="335.28" y="-50.8" rot="R90"/>
+<instance part="Q5" gate="G$1" x="332.74" y="-73.66"/>
+<instance part="R55" gate="G$1" x="320.04" y="-73.66"/>
+<instance part="R56" gate="G$1" x="325.12" y="-78.74" rot="R90"/>
+<instance part="GND64" gate="1" x="325.12" y="-86.36"/>
+<instance part="GND65" gate="1" x="335.28" y="-86.36"/>
+<instance part="P+11" gate="1" x="345.44" y="-43.18"/>
+<instance part="GND63" gate="1" x="368.3" y="-86.36"/>
 <instance part="U5" gate="A" x="350.52" y="-106.68"/>
 <instance part="+3V11" gate="G$1" x="332.74" y="-96.52"/>
 <instance part="GND66" gate="1" x="332.74" y="-124.46"/>
+<instance part="SJ7" gate="G$1" x="345.44" y="-73.66" rot="R180"/>
+<instance part="GND67" gate="1" x="345.44" y="-86.36"/>
 </instances>
 <busses>
 </busses>
@@ -19388,20 +19392,24 @@ fc = 400 Hz</text>
 <pinref part="GND64" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="Q5" gate="G$1" pin="E"/>
-<pinref part="GND65" gate="1" pin="GND"/>
-<junction x="345.44" y="-68.58"/>
-<junction x="345.44" y="-78.74"/>
-</segment>
-<segment>
 <pinref part="SJ6" gate="G$1" pin="1"/>
-<wire x1="368.3" y1="-73.66" x2="368.3" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="-73.66" x2="368.3" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="GND63" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND66" gate="1" pin="GND"/>
 <pinref part="U5" gate="A" pin="GND"/>
 <wire x1="332.74" y1="-121.92" x2="332.74" y2="-116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SJ7" gate="G$1" pin="1"/>
+<pinref part="GND67" gate="1" pin="GND"/>
+<wire x1="345.44" y1="-78.74" x2="345.44" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G$1" pin="C"/>
+<pinref part="GND65" gate="1" pin="GND"/>
+<wire x1="335.28" y1="-78.74" x2="335.28" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB6" class="0">
@@ -19785,7 +19793,7 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="X4" gate="G$1" pin="P$1"/>
 <pinref part="GND62" gate="1" pin="GNDA"/>
-<wire x1="383.54" y1="-71.12" x2="383.54" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="383.54" y1="-71.12" x2="383.54" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PA2" class="0">
@@ -21793,12 +21801,12 @@ fc = 400 Hz</text>
 </segment>
 <segment>
 <pinref part="Q4" gate="G$1" pin="E"/>
-<wire x1="355.6" y1="-53.34" x2="355.6" y2="-45.72" width="0.1524" layer="91"/>
-<label x="353.06" y="-45.72" size="1.778" layer="95"/>
+<wire x1="345.44" y1="-53.34" x2="345.44" y2="-45.72" width="0.1524" layer="91"/>
+<label x="342.9" y="-45.72" size="1.778" layer="95"/>
 <pinref part="R54" gate="G$1" pin="2"/>
-<wire x1="355.6" y1="-45.72" x2="345.44" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="345.44" y1="-45.72" x2="335.28" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="+24V"/>
-<junction x="355.6" y="-45.72"/>
+<junction x="345.44" y="-45.72"/>
 </segment>
 </net>
 <net name="N$49" class="0">
@@ -21812,18 +21820,16 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="R53" gate="G$1" pin="2"/>
 <pinref part="R54" gate="G$1" pin="1"/>
-<wire x1="345.44" y1="-58.42" x2="345.44" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="-58.42" x2="335.28" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="B"/>
-<wire x1="350.52" y1="-58.42" x2="345.44" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="345.44" y="-58.42"/>
+<wire x1="340.36" y1="-58.42" x2="335.28" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="335.28" y="-58.42"/>
 </segment>
 </net>
 <net name="N$53" class="0">
 <segment>
 <pinref part="R53" gate="G$1" pin="1"/>
-<pinref part="Q5" gate="G$1" pin="C"/>
-<junction x="345.44" y="-68.58"/>
-<junction x="345.44" y="-78.74"/>
+<junction x="335.28" y="-68.58"/>
 </segment>
 </net>
 <net name="N$54" class="0">
@@ -21831,17 +21837,19 @@ fc = 400 Hz</text>
 <pinref part="R56" gate="G$1" pin="2"/>
 <pinref part="R55" gate="G$1" pin="2"/>
 <pinref part="Q5" gate="G$1" pin="B"/>
-<wire x1="335.28" y1="-73.66" x2="340.36" y2="-73.66" width="0.1524" layer="91"/>
-<junction x="335.28" y="-73.66"/>
+<wire x1="325.12" y1="-73.66" x2="330.2" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="325.12" y="-73.66"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
-<pinref part="Q4" gate="G$1" pin="C"/>
-<wire x1="355.6" y1="-63.5" x2="360.68" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="-63.5" x2="360.68" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="X4" gate="G$1" pin="P$3"/>
-<wire x1="360.68" y1="-66.04" x2="383.54" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-66.04" x2="383.54" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="-58.42" x2="373.38" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="SJ7" gate="G$1" pin="2"/>
+<wire x1="350.52" y1="-73.66" x2="360.68" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="-73.66" x2="360.68" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="-58.42" x2="373.38" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TORQUE_SENSOR_EN" class="0">
@@ -21854,11 +21862,24 @@ fc = 400 Hz</text>
 <net name="N$56" class="0">
 <segment>
 <pinref part="R55" gate="G$1" pin="1"/>
-<wire x1="325.12" y1="-73.66" x2="320.04" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="320.04" y1="-73.66" x2="320.04" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="-73.66" x2="312.42" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="-73.66" x2="312.42" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="Y"/>
-<wire x1="320.04" y1="-91.44" x2="368.3" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="312.42" y1="-91.44" x2="368.3" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="-91.44" x2="368.3" y2="-104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="Q4" gate="G$1" pin="C"/>
+<pinref part="SJ7" gate="G$1" pin="3"/>
+<wire x1="345.44" y1="-63.5" x2="345.44" y2="-68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="E"/>
+<junction x="335.28" y="-68.58"/>
 </segment>
 </net>
 </nets>
