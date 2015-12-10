@@ -21917,11 +21917,12 @@ fc = 400 Hz</text>
 <junction x="345.44" y="-45.72"/>
 </segment>
 </net>
-<net name="N$49" class="0">
+<net name="TORQUE_SENSOR_RANGE" class="0">
 <segment>
 <pinref part="SJ6" gate="G$1" pin="2"/>
 <pinref part="X4" gate="G$1" pin="P$2"/>
 <wire x1="383.54" y1="-68.58" x2="373.38" y2="-68.58" width="0.1524" layer="91"/>
+<label x="373.38" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$52" class="0">
@@ -21949,7 +21950,7 @@ fc = 400 Hz</text>
 <junction x="325.12" y="-73.66"/>
 </segment>
 </net>
-<net name="N$51" class="0">
+<net name="TORQUE_SENSOR_MEAS" class="0">
 <segment>
 <pinref part="X4" gate="G$1" pin="P$3"/>
 <wire x1="373.38" y1="-66.04" x2="383.54" y2="-66.04" width="0.1524" layer="91"/>
@@ -21958,6 +21959,7 @@ fc = 400 Hz</text>
 <wire x1="350.52" y1="-73.66" x2="360.68" y2="-73.66" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="-73.66" x2="360.68" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="-58.42" x2="373.38" y2="-58.42" width="0.1524" layer="91"/>
+<label x="350.52" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TORQUE_SENSOR_EN" class="0">
