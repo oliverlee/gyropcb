@@ -19183,12 +19183,6 @@ fc = 400 Hz</text>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G$1" pin="E"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<junction x="109.22" y="0"/>
-<junction x="109.22" y="-10.16"/>
-</segment>
-<segment>
 <pinref part="COMPLIANCE_ENC1" gate="A" pin="6"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="177.8" y1="-12.7" x2="177.8" y2="-10.16" width="0.1524" layer="91"/>
@@ -19410,6 +19404,10 @@ fc = 400 Hz</text>
 <pinref part="Q5" gate="G$1" pin="C"/>
 <pinref part="GND65" gate="1" pin="GND"/>
 <wire x1="335.28" y1="-78.74" x2="335.28" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="C"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PB6" class="0">
@@ -20138,14 +20136,6 @@ fc = 400 Hz</text>
 <pinref part="Q2" gate="G$1" pin="B"/>
 <wire x1="114.3" y1="10.16" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
 <junction x="109.22" y="10.16"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="Q3" gate="G$1" pin="C"/>
-<junction x="109.22" y="0"/>
-<junction x="109.22" y="-10.16"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -21880,6 +21870,12 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="Q5" gate="G$1" pin="E"/>
 <junction x="335.28" y="-68.58"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Q3" gate="G$1" pin="E"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
