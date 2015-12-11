@@ -19446,11 +19446,11 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
 <part name="SJ6" library="jumper" deviceset="SJ2W" device=""/>
 <part name="Q4" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16"/>
-<part name="R53" library="rcl" deviceset="R-EU_" device="R1210" value="270"/>
-<part name="R54" library="rcl" deviceset="R-EU_" device="R1210" value="2.7k"/>
+<part name="R53" library="rcl" deviceset="R-EU_" device="R1210" value="120k"/>
+<part name="R54" library="rcl" deviceset="R-EU_" device="R1210" value="1.2M"/>
 <part name="Q5" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC858A"/>
-<part name="R55" library="rcl" deviceset="R-EU_" device="R0603" value="18k"/>
-<part name="R56" library="rcl" deviceset="R-EU_" device="R0603" value="180k"/>
+<part name="R55" library="rcl" deviceset="R-EU_" device="R0603" value="200k"/>
+<part name="R56" library="rcl" deviceset="R-EU_" device="R0603" value="2M"/>
 <part name="GND64" library="supply1" deviceset="GND" device=""/>
 <part name="GND65" library="supply1" deviceset="GND" device=""/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
@@ -19848,7 +19848,10 @@ fc = 400 Hz</text>
 <instance part="GND79" gate="1" x="589.28" y="-58.42"/>
 <instance part="P+14" gate="1" x="594.36" y="-33.02"/>
 <instance part="P+15" gate="1" x="589.28" y="-33.02"/>
-<instance part="IC5" gate="G$1" x="325.12" y="-45.72"/>
+<instance part="IC5" gate="G$1" x="325.12" y="-45.72" smashed="yes">
+<attribute name="NAME" x="319.024" y="-39.624" size="1.778" layer="95"/>
+<attribute name="VALUE" x="319.278" y="-42.164" size="1.778" layer="96"/>
+</instance>
 <instance part="GND80" gate="1" x="325.12" y="-60.96"/>
 <instance part="C32" gate="G$1" x="314.96" y="-50.8"/>
 <instance part="C33" gate="G$1" x="335.28" y="-50.8"/>
