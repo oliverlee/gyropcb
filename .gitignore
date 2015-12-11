@@ -1,9 +1,11 @@
 # eagle backup schematic files
 *.s#[0-9]
 *.b#[0-9]
+*.l#[0-9]
 
-# eagle schematic lock file
+# eagle lock files
 *.sch.lck
+*.brd.lck
 
 # OSX Desktop Services Store
 *.DS_store
