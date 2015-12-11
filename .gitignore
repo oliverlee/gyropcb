@@ -1,6 +1,7 @@
 # eagle backup schematic files
 *.s#[0-9]
 *.b#[0-9]
+*.b##
 *.l#[0-9]
 
 # eagle lock files
