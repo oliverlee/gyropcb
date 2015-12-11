@@ -17210,28 +17210,6 @@ Based on the following sources:
 </package>
 </packages>
 <symbols>
-<symbol name="74153">
-<wire x1="-7.62" y1="-20.32" x2="7.62" y2="-20.32" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-20.32" x2="7.62" y2="17.78" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="17.78" x2="-7.62" y2="-20.32" width="0.4064" layer="94"/>
-<text x="-7.62" y="18.415" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1G" x="-12.7" y="-15.24" length="middle" direction="in" function="dot"/>
-<pin name="B" x="-12.7" y="-12.7" length="middle" direction="in"/>
-<pin name="1C3" x="-12.7" y="7.62" length="middle" direction="in"/>
-<pin name="1C2" x="-12.7" y="10.16" length="middle" direction="in"/>
-<pin name="1C1" x="-12.7" y="12.7" length="middle" direction="in"/>
-<pin name="1C0" x="-12.7" y="15.24" length="middle" direction="in"/>
-<pin name="1Y" x="12.7" y="15.24" length="middle" direction="out" rot="R180"/>
-<pin name="2Y" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
-<pin name="2C0" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="2C1" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="2C2" x="-12.7" y="-2.54" length="middle" direction="in"/>
-<pin name="2C3" x="-12.7" y="-5.08" length="middle" direction="in"/>
-<pin name="A" x="-12.7" y="-10.16" length="middle" direction="in"/>
-<pin name="2G" x="-12.7" y="-17.78" length="middle" direction="in" function="dot"/>
-</symbol>
 <symbol name="PWRN">
 <text x="-0.635" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
 <text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">GND</text>
@@ -17263,99 +17241,6 @@ Based on the following sources:
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="74*153" prefix="IC">
-<description>Dual 4-line to 1-line data &lt;b&gt;SELECTOR/MULTIPLEXER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="74153" x="20.32" y="0"/>
-<gate name="P" symbol="PWRN" x="-5.08" y="0" addlevel="request"/>
-</gates>
-<devices>
-<device name="N" package="DIL16">
-<connects>
-<connect gate="A" pin="1C0" pad="6"/>
-<connect gate="A" pin="1C1" pad="5"/>
-<connect gate="A" pin="1C2" pad="4"/>
-<connect gate="A" pin="1C3" pad="3"/>
-<connect gate="A" pin="1G" pad="1"/>
-<connect gate="A" pin="1Y" pad="7"/>
-<connect gate="A" pin="2C0" pad="10"/>
-<connect gate="A" pin="2C1" pad="11"/>
-<connect gate="A" pin="2C2" pad="12"/>
-<connect gate="A" pin="2C3" pad="13"/>
-<connect gate="A" pin="2G" pad="15"/>
-<connect gate="A" pin="2Y" pad="9"/>
-<connect gate="A" pin="A" pad="14"/>
-<connect gate="A" pin="B" pad="2"/>
-<connect gate="P" pin="GND" pad="8"/>
-<connect gate="P" pin="VCC" pad="16"/>
-</connects>
-<technologies>
-<technology name="AC"/>
-<technology name="ACT"/>
-<technology name="HC"/>
-<technology name="HCT"/>
-<technology name="LS"/>
-<technology name="S"/>
-</technologies>
-</device>
-<device name="D" package="SO16">
-<connects>
-<connect gate="A" pin="1C0" pad="6"/>
-<connect gate="A" pin="1C1" pad="5"/>
-<connect gate="A" pin="1C2" pad="4"/>
-<connect gate="A" pin="1C3" pad="3"/>
-<connect gate="A" pin="1G" pad="1"/>
-<connect gate="A" pin="1Y" pad="7"/>
-<connect gate="A" pin="2C0" pad="10"/>
-<connect gate="A" pin="2C1" pad="11"/>
-<connect gate="A" pin="2C2" pad="12"/>
-<connect gate="A" pin="2C3" pad="13"/>
-<connect gate="A" pin="2G" pad="15"/>
-<connect gate="A" pin="2Y" pad="9"/>
-<connect gate="A" pin="A" pad="14"/>
-<connect gate="A" pin="B" pad="2"/>
-<connect gate="P" pin="GND" pad="8"/>
-<connect gate="P" pin="VCC" pad="16"/>
-</connects>
-<technologies>
-<technology name="AC"/>
-<technology name="ACT"/>
-<technology name="HC"/>
-<technology name="HCT"/>
-<technology name="LS"/>
-<technology name="S"/>
-</technologies>
-</device>
-<device name="FK" package="LCC20">
-<connects>
-<connect gate="A" pin="1C0" pad="8"/>
-<connect gate="A" pin="1C1" pad="7"/>
-<connect gate="A" pin="1C2" pad="5"/>
-<connect gate="A" pin="1C3" pad="4"/>
-<connect gate="A" pin="1G" pad="2"/>
-<connect gate="A" pin="1Y" pad="9"/>
-<connect gate="A" pin="2C0" pad="13"/>
-<connect gate="A" pin="2C1" pad="14"/>
-<connect gate="A" pin="2C2" pad="15"/>
-<connect gate="A" pin="2C3" pad="17"/>
-<connect gate="A" pin="2G" pad="19"/>
-<connect gate="A" pin="2Y" pad="12"/>
-<connect gate="A" pin="A" pad="18"/>
-<connect gate="A" pin="B" pad="3"/>
-<connect gate="P" pin="GND" pad="10"/>
-<connect gate="P" pin="VCC" pad="20"/>
-</connects>
-<technologies>
-<technology name="AC"/>
-<technology name="ACT"/>
-<technology name="HC"/>
-<technology name="HCT"/>
-<technology name="LS"/>
-<technology name="S"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="74*157" prefix="IC">
 <description>Quadruple 2-line to 1-line data &lt;b&gt;SELECTOR/MULTIPLEXER&lt;/b&gt;</description>
 <gates>
@@ -19746,17 +19631,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND45" library="supply1" deviceset="GND" device=""/>
 <part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
-<part name="ENCODER_SELECT" library="74xx-eu" deviceset="74*153" device="D" technology="HC"/>
-<part name="R26" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="R27" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="R28" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="R29" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
-<part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="U1" library="Microchip_By_element14_Batch_1" deviceset="MCP6004-E/SL" device=""/>
 <part name="GND11" library="supply1" deviceset="GNDA" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="11k/0.1%"/>
@@ -20075,18 +19949,6 @@ fc = 400 Hz</text>
 <instance part="GND45" gate="1" x="63.5" y="-86.36"/>
 <instance part="+3V13" gate="G$1" x="63.5" y="-58.42"/>
 <instance part="SJ1" gate="1" x="63.5" y="-15.24" rot="R90"/>
-<instance part="ENCODER_SELECT" gate="A" x="149.86" y="88.9"/>
-<instance part="R26" gate="G$1" x="134.62" y="111.76" rot="R90"/>
-<instance part="R27" gate="G$1" x="127" y="111.76" rot="R90"/>
-<instance part="R28" gate="G$1" x="119.38" y="111.76" rot="R90"/>
-<instance part="R29" gate="G$1" x="111.76" y="111.76" rot="R90"/>
-<instance part="+3V10" gate="G$1" x="111.76" y="124.46"/>
-<instance part="+3V14" gate="G$1" x="119.38" y="124.46"/>
-<instance part="+3V17" gate="G$1" x="127" y="124.46"/>
-<instance part="+3V18" gate="G$1" x="134.62" y="124.46"/>
-<instance part="ENCODER_SELECT" gate="P" x="165.1" y="83.82"/>
-<instance part="+3V19" gate="G$1" x="165.1" y="96.52"/>
-<instance part="GND34" gate="1" x="165.1" y="71.12"/>
 <instance part="U1" gate="A" x="548.64" y="-93.98"/>
 <instance part="GND11" gate="1" x="528.32" y="-119.38"/>
 <instance part="R7" gate="G$1" x="447.04" y="-60.96"/>
@@ -20503,11 +20365,6 @@ fc = 400 Hz</text>
 <pinref part="U3" gate="A" pin="GND"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 <wire x1="63.5" y1="-78.74" x2="63.5" y2="-83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="P" pin="GND"/>
-<pinref part="GND34" gate="1" pin="GND"/>
-<wire x1="165.1" y1="76.2" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R30" gate="G$1" pin="2"/>
@@ -21311,26 +21168,12 @@ fc = 400 Hz</text>
 <wire x1="142.24" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
 <label x="129.54" y="45.72" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="1C0"/>
-<wire x1="93.98" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="93.98" y="104.14" size="1.778" layer="95"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="106.68" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<junction x="111.76" y="104.14"/>
-</segment>
 </net>
 <net name="ENC1_STATUS" class="0">
 <segment>
 <pinref part="GIMBAL_ENC1" gate="A" pin="2"/>
 <wire x1="177.8" y1="50.8" x2="190.5" y2="50.8" width="0.1524" layer="91"/>
 <label x="180.34" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="2C0"/>
-<wire x1="111.76" y1="91.44" x2="137.16" y2="91.44" width="0.1524" layer="91"/>
-<label x="111.76" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC2_NSS" class="0">
@@ -21339,26 +21182,12 @@ fc = 400 Hz</text>
 <wire x1="142.24" y1="17.78" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
 <label x="129.54" y="17.78" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="1C1"/>
-<wire x1="137.16" y1="101.6" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<label x="93.98" y="101.6" size="1.778" layer="95"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="106.68" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
-<junction x="119.38" y="101.6"/>
-</segment>
 </net>
 <net name="ENC2_STATUS" class="0">
 <segment>
 <pinref part="GIMBAL_ENC2" gate="A" pin="2"/>
 <wire x1="177.8" y1="22.86" x2="185.42" y2="22.86" width="0.1524" layer="91"/>
 <label x="180.34" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="2C1"/>
-<wire x1="137.16" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="111.76" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -21461,22 +21290,12 @@ fc = 400 Hz</text>
 <wire x1="177.8" y1="-5.08" x2="190.5" y2="-5.08" width="0.1524" layer="91"/>
 <label x="180.34" y="-5.08" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="2C2"/>
-<wire x1="111.76" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
-<label x="111.76" y="86.36" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="ENC4_STATUS" class="0">
 <segment>
 <pinref part="COMPLIANCE_ENC2" gate="A" pin="2"/>
 <wire x1="177.8" y1="-33.02" x2="185.42" y2="-33.02" width="0.1524" layer="91"/>
 <label x="180.34" y="-33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="2C3"/>
-<wire x1="137.16" y1="83.82" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
-<label x="111.76" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC3_NSS" class="0">
@@ -21485,30 +21304,12 @@ fc = 400 Hz</text>
 <wire x1="142.24" y1="-10.16" x2="129.54" y2="-10.16" width="0.1524" layer="91"/>
 <label x="129.54" y="-10.16" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="1C2"/>
-<wire x1="93.98" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
-<label x="93.98" y="99.06" size="1.778" layer="95"/>
-<pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="127" y1="99.06" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="127" y1="106.68" x2="127" y2="99.06" width="0.1524" layer="91"/>
-<junction x="127" y="99.06"/>
-</segment>
 </net>
 <net name="ENC4_NSS" class="0">
 <segment>
 <pinref part="COMPLIANCE_ENC2" gate="A" pin="5"/>
 <wire x1="142.24" y1="-38.1" x2="129.54" y2="-38.1" width="0.1524" layer="91"/>
 <label x="129.54" y="-38.1" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="1C3"/>
-<wire x1="137.16" y1="96.52" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
-<label x="93.98" y="96.52" size="1.778" layer="95"/>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="106.68" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="134.62" y="96.52"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -21643,11 +21444,6 @@ fc = 400 Hz</text>
 <wire x1="63.5" y1="-60.96" x2="63.5" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="+3V19" gate="G$1" pin="+3V3"/>
-<pinref part="ENCODER_SELECT" gate="P" pin="VCC"/>
-<wire x1="165.1" y1="93.98" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <wire x1="-20.32" y1="83.82" x2="-38.1" y2="83.82" width="0.1524" layer="91"/>
 <label x="-38.1" y="83.82" size="1.778" layer="95"/>
 <pinref part="EXT1" gate="A" pin="5"/>
@@ -21666,26 +21462,6 @@ fc = 400 Hz</text>
 <pinref part="U5" gate="A" pin="VCC"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 <wire x1="332.74" y1="-104.14" x2="332.74" y2="-99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="121.92" x2="111.76" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V14" gate="G$1" pin="+3V3"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="121.92" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="127" y1="121.92" x2="127" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V18" gate="G$1" pin="+3V3"/>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="121.92" x2="134.62" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOTOR1_WIND1" class="0">
@@ -22451,44 +22227,6 @@ fc = 400 Hz</text>
 <pinref part="U3" gate="A" pin="Y"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="-66.04" x2="101.6" y2="-66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="ENC_SEL_NEN" class="0">
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="1G"/>
-<pinref part="ENCODER_SELECT" gate="A" pin="2G"/>
-<wire x1="137.16" y1="73.66" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<junction x="137.16" y="71.12"/>
-<label x="111.76" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ENC_SEL_S0" class="0">
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="A"/>
-<wire x1="137.16" y1="78.74" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
-<label x="111.76" y="78.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ENC_SEL_S1" class="0">
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="B"/>
-<wire x1="137.16" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
-<label x="111.76" y="76.2" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ENC_NSS" class="0">
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="1Y"/>
-<wire x1="162.56" y1="104.14" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
-<label x="170.18" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ENC_STATUS" class="0">
-<segment>
-<pinref part="ENCODER_SELECT" gate="A" pin="2Y"/>
-<wire x1="162.56" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="170.18" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC_PWR" class="0">
