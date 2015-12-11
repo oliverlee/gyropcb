@@ -1127,14 +1127,6 @@
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VDD">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GNDA" prefix="GND">
@@ -1206,19 +1198,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+24V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VDD" prefix="VDD">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="VDD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -19192,6 +19171,12 @@ grid 5.08 mm</description>
 <pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
 <pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="+3V3A">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="L78L18CD13TR" prefix="IC">
@@ -19208,6 +19193,19 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <connect gate="G$1" pin="IN" pad="VIN"/>
 <connect gate="G$1" pin="OUT" pad="VOUT"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3A" prefix="+3V3A">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -19389,12 +19387,6 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <part name="GND20" library="supply1" deviceset="GNDA" device=""/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="2.7k/0.1%"/>
 <part name="GND35" library="supply1" deviceset="GNDA" device=""/>
-<part name="VDDA" library="supply1" deviceset="VDD" device="" value="VDDA"/>
-<part name="VDDA1" library="supply1" deviceset="VDD" device="" value="VDDA"/>
-<part name="VDDA2" library="supply1" deviceset="VDD" device="" value="VDDA"/>
-<part name="VDDA3" library="supply1" deviceset="VDD" device="" value="VDDA"/>
-<part name="VDDA4" library="supply1" deviceset="VDD" device="" value="VDDA"/>
-<part name="VDDA5" library="supply1" deviceset="VDD" device="" value="VDDA"/>
 <part name="GND36" library="supply1" deviceset="GNDI" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="R30" library="rcl" deviceset="R-EU_" device="R1218" value="0-ohm"/>
@@ -19436,7 +19428,6 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <part name="R50" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
 <part name="R51" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
 <part name="R52" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
-<part name="VDDA6" library="supply1" deviceset="VDD" device="" value="VDDA"/>
 <part name="SJ4" library="jumper" deviceset="SJ2W" device=""/>
 <part name="SJ5" library="jumper" deviceset="SJ2W" device=""/>
 <part name="X4" library="m12u8p" deviceset="M12U_8-P_REC_MALE" device=""/>
@@ -19464,19 +19455,16 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <part name="R59" library="rcl" deviceset="R-EU_" device="R0603" value="10k/0.1%"/>
 <part name="GND71" library="supply1" deviceset="GNDA" device=""/>
 <part name="R60" library="rcl" deviceset="R-EU_" device="R0603" value="2.7k/0.1%"/>
-<part name="VDDA7" library="supply1" deviceset="VDD" device="" value="VDDA"/>
 <part name="R61" library="rcl" deviceset="R-EU_" device="R0603" value="3.3k/0.1%"/>
 <part name="R62" library="rcl" deviceset="R-EU_" device="R0603" value="2.2k/0.1%"/>
 <part name="R63" library="rcl" deviceset="R-EU_" device="R0603" value="10k/0.1%"/>
 <part name="GND72" library="supply1" deviceset="GNDA" device=""/>
 <part name="R64" library="rcl" deviceset="R-EU_" device="R0603" value="2.7k/0.1%"/>
-<part name="VDDA8" library="supply1" deviceset="VDD" device="" value="VDDA"/>
 <part name="R65" library="rcl" deviceset="R-EU_" device="R0603" value="3.3k/0.1%"/>
 <part name="R66" library="rcl" deviceset="R-EU_" device="R0603" value="2.2k/0.1%"/>
 <part name="R67" library="rcl" deviceset="R-EU_" device="R0603" value="10k/0.1%"/>
 <part name="GND73" library="supply1" deviceset="GNDA" device=""/>
 <part name="R68" library="rcl" deviceset="R-EU_" device="R0603" value="2.7k/0.1%"/>
-<part name="VDDA9" library="supply1" deviceset="VDD" device="" value="VDDA"/>
 <part name="X5" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="X6" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="X7" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
@@ -19505,6 +19493,16 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <part name="T1" library="transistor" deviceset="BC848" device=""/>
 <part name="T2" library="transistor" deviceset="BC848" device=""/>
 <part name="T3" library="transistor" deviceset="BC848" device=""/>
+<part name="+3V3A1" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A2" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A3" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A4" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A5" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A6" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A7" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A8" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A9" library="components" deviceset="+3V3A" device=""/>
+<part name="+3V3A10" library="components" deviceset="+3V3A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19724,12 +19722,6 @@ fc = 400 Hz</text>
 <instance part="GND20" gate="1" x="434.34" y="-91.44"/>
 <instance part="R17" gate="G$1" x="434.34" y="-81.28" rot="R90"/>
 <instance part="GND35" gate="1" x="30.48" y="-10.16"/>
-<instance part="VDDA" gate="G$1" x="17.78" y="38.1"/>
-<instance part="VDDA1" gate="G$1" x="388.62" y="15.24"/>
-<instance part="VDDA2" gate="G$1" x="434.34" y="-40.64"/>
-<instance part="VDDA3" gate="G$1" x="523.24" y="-104.14"/>
-<instance part="VDDA4" gate="G$1" x="485.14" y="15.24"/>
-<instance part="VDDA5" gate="G$1" x="388.62" y="121.92"/>
 <instance part="GND36" gate="G$1" x="58.42" y="-35.56" rot="R270"/>
 <instance part="GND37" gate="1" x="83.82" y="-35.56" rot="R90"/>
 <instance part="R30" gate="G$1" x="71.12" y="-35.56"/>
@@ -19771,7 +19763,6 @@ fc = 400 Hz</text>
 <instance part="R50" gate="G$1" x="596.9" y="76.2"/>
 <instance part="R51" gate="G$1" x="581.66" y="109.22"/>
 <instance part="R52" gate="G$1" x="596.9" y="109.22"/>
-<instance part="VDDA6" gate="G$1" x="619.76" y="78.74"/>
 <instance part="SJ4" gate="G$1" x="464.82" y="127"/>
 <instance part="SJ5" gate="G$1" x="464.82" y="106.68"/>
 <instance part="X4" gate="G$1" x="383.54" y="-71.12" rot="R180"/>
@@ -19799,19 +19790,16 @@ fc = 400 Hz</text>
 <instance part="R59" gate="G$1" x="414.02" y="-101.6"/>
 <instance part="GND71" gate="1" x="424.18" y="-132.08"/>
 <instance part="R60" gate="G$1" x="424.18" y="-121.92" rot="R90"/>
-<instance part="VDDA7" gate="G$1" x="424.18" y="-81.28"/>
 <instance part="R61" gate="G$1" x="530.86" y="139.7" rot="R90"/>
 <instance part="R62" gate="G$1" x="530.86" y="124.46" rot="R90"/>
 <instance part="R63" gate="G$1" x="520.7" y="132.08"/>
 <instance part="GND72" gate="1" x="530.86" y="101.6"/>
 <instance part="R64" gate="G$1" x="530.86" y="111.76" rot="R90"/>
-<instance part="VDDA8" gate="G$1" x="530.86" y="152.4"/>
 <instance part="R65" gate="G$1" x="508" y="111.76" rot="R90"/>
 <instance part="R66" gate="G$1" x="508" y="96.52" rot="R90"/>
 <instance part="R67" gate="G$1" x="497.84" y="104.14"/>
 <instance part="GND73" gate="1" x="508" y="73.66"/>
 <instance part="R68" gate="G$1" x="508" y="83.82" rot="R90"/>
-<instance part="VDDA9" gate="G$1" x="508" y="124.46"/>
 <instance part="X5" gate="-2" x="398.78" y="-104.14"/>
 <instance part="X5" gate="-1" x="398.78" y="-101.6"/>
 <instance part="X6" gate="-2" x="485.14" y="129.54"/>
@@ -19857,6 +19845,16 @@ fc = 400 Hz</text>
 <instance part="T1" gate="G$1" x="106.68" y="-5.08"/>
 <instance part="T2" gate="G$1" x="119.38" y="-66.04"/>
 <instance part="T3" gate="G$1" x="340.36" y="-73.66"/>
+<instance part="+3V3A1" gate="G$1" x="20.32" y="33.02"/>
+<instance part="+3V3A2" gate="G$1" x="434.34" y="-40.64"/>
+<instance part="+3V3A3" gate="G$1" x="424.18" y="-81.28"/>
+<instance part="+3V3A4" gate="G$1" x="523.24" y="-104.14"/>
+<instance part="+3V3A5" gate="G$1" x="485.14" y="15.24"/>
+<instance part="+3V3A6" gate="G$1" x="388.62" y="15.24"/>
+<instance part="+3V3A7" gate="G$1" x="388.62" y="121.92"/>
+<instance part="+3V3A8" gate="G$1" x="508" y="124.46"/>
+<instance part="+3V3A9" gate="G$1" x="530.86" y="152.4"/>
+<instance part="+3V3A10" gate="G$1" x="619.76" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -21119,64 +21117,6 @@ fc = 400 Hz</text>
 <wire x1="134.62" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="106.68" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
 <junction x="134.62" y="96.52"/>
-</segment>
-</net>
-<net name="VDDA" class="0">
-<segment>
-<pinref part="STM32-H405-EXT2" gate="A" pin="1"/>
-<wire x1="38.1" y1="27.94" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
-<label x="20.32" y="27.94" size="1.778" layer="95"/>
-<pinref part="VDDA" gate="G$1" pin="VDD"/>
-<wire x1="17.78" y1="35.56" x2="17.78" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="-20.32" y1="27.94" x2="-38.1" y2="27.94" width="0.1524" layer="91"/>
-<label x="-38.1" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R43" gate="G$1" pin="2"/>
-<wire x1="388.62" y1="12.7" x2="388.62" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="VDDA1" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="-43.18" x2="434.34" y2="-48.26" width="0.1524" layer="91"/>
-<pinref part="VDDA2" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="VDD"/>
-<wire x1="523.24" y1="-106.68" x2="528.32" y2="-106.68" width="0.1524" layer="91"/>
-<pinref part="VDDA3" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="U2" gate="A" pin="VDD"/>
-<wire x1="485.14" y1="12.7" x2="490.22" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="VDDA4" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="388.62" y1="119.38" x2="388.62" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="VDDA5" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="U4" gate="A" pin="VDD"/>
-<wire x1="619.76" y1="76.2" x2="624.84" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="VDDA6" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="R57" gate="G$1" pin="2"/>
-<wire x1="424.18" y1="-83.82" x2="424.18" y2="-88.9" width="0.1524" layer="91"/>
-<pinref part="VDDA7" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="R61" gate="G$1" pin="2"/>
-<wire x1="530.86" y1="149.86" x2="530.86" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="VDDA8" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="R65" gate="G$1" pin="2"/>
-<wire x1="508" y1="121.92" x2="508" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="VDDA9" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -23014,6 +22954,64 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="R53" gate="G$1" pin="1"/>
 <pinref part="T3" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="+3V3A" class="0">
+<segment>
+<pinref part="EXT2" gate="A" pin="1"/>
+<wire x1="-20.32" y1="27.94" x2="-38.1" y2="27.94" width="0.1524" layer="91"/>
+<label x="-38.1" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="+3V3A1" gate="G$1" pin="+3V3A"/>
+<pinref part="STM32-H405-EXT2" gate="A" pin="1"/>
+<wire x1="20.32" y1="30.48" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="434.34" y1="-43.18" x2="434.34" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="+3V3A2" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R57" gate="G$1" pin="2"/>
+<wire x1="424.18" y1="-83.82" x2="424.18" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="+3V3A3" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="VDD"/>
+<wire x1="528.32" y1="-106.68" x2="523.24" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="+3V3A4" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="VDD"/>
+<wire x1="485.14" y1="12.7" x2="490.22" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="+3V3A5" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R43" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="12.7" x2="388.62" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="+3V3A6" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="119.38" x2="388.62" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="+3V3A7" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R65" gate="G$1" pin="2"/>
+<wire x1="508" y1="121.92" x2="508" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="+3V3A8" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="R61" gate="G$1" pin="2"/>
+<wire x1="530.86" y1="149.86" x2="530.86" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="+3V3A9" gate="G$1" pin="+3V3A"/>
+</segment>
+<segment>
+<pinref part="U4" gate="A" pin="VDD"/>
+<wire x1="619.76" y1="76.2" x2="624.84" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="+3V3A10" gate="G$1" pin="+3V3A"/>
 </segment>
 </net>
 </nets>
