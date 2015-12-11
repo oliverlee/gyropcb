@@ -19826,8 +19826,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="R50" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
 <part name="R51" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
 <part name="R52" library="rcl" deviceset="R-EU_" device="R0603" value="15k/0.1%"/>
-<part name="SJ4" library="jumper" deviceset="SJ2W" device=""/>
-<part name="SJ5" library="jumper" deviceset="SJ2W" device=""/>
 <part name="X4" library="m12u8p" deviceset="M12U_8-P_REC_MALE" device=""/>
 <part name="GND62" library="supply1" deviceset="GNDA" device=""/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
@@ -19917,7 +19915,6 @@ fc = 400 Hz</text>
 <text x="422.402" y="-39.116" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
 <text x="636.27" y="107.95" size="1.778" layer="94">4th order Butterworth
 fc = 400 Hz</text>
-<text x="431.8" y="137.16" size="1.778" layer="94">ANALOG INPUT SELECT JUMPERS</text>
 <text x="397.002" y="-79.756" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
 <text x="518.922" y="153.924" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
 <text x="496.062" y="125.984" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
@@ -20159,8 +20156,6 @@ fc = 400 Hz</text>
 <instance part="R50" gate="G$1" x="596.9" y="76.2"/>
 <instance part="R51" gate="G$1" x="581.66" y="109.22"/>
 <instance part="R52" gate="G$1" x="596.9" y="109.22"/>
-<instance part="SJ4" gate="G$1" x="464.82" y="127"/>
-<instance part="SJ5" gate="G$1" x="464.82" y="106.68"/>
 <instance part="X4" gate="G$1" x="383.54" y="-71.12" rot="R180"/>
 <instance part="GND62" gate="1" x="383.54" y="-86.36"/>
 <instance part="P+4" gate="1" x="314.96" y="-38.1"/>
@@ -21940,11 +21935,6 @@ fc = 400 Hz</text>
 <label x="363.22" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SJ4" gate="G$1" pin="1"/>
-<wire x1="464.82" y1="132.08" x2="436.88" y2="132.08" width="0.1524" layer="91"/>
-<label x="436.88" y="132.08" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="650.24" y1="-27.94" x2="614.68" y2="-27.94" width="0.1524" layer="91"/>
 <label x="614.68" y="-27.94" size="1.778" layer="95"/>
 <pinref part="IC2" gate="A" pin="3A"/>
@@ -21955,11 +21945,6 @@ fc = 400 Hz</text>
 <pinref part="BACKUP_ENC_RECV" gate="A" pin="4Y"/>
 <wire x1="358.14" y1="50.8" x2="375.92" y2="50.8" width="0.1524" layer="91"/>
 <label x="363.22" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SJ5" gate="G$1" pin="1"/>
-<wire x1="464.82" y1="111.76" x2="436.88" y2="111.76" width="0.1524" layer="91"/>
-<label x="436.88" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="650.24" y1="-33.02" x2="614.68" y2="-33.02" width="0.1524" layer="91"/>
@@ -23003,11 +22988,6 @@ fc = 400 Hz</text>
 <junction x="670.56" y="83.82"/>
 <label x="673.1" y="83.82" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="SJ5" gate="G$1" pin="3"/>
-<wire x1="464.82" y1="101.6" x2="436.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="436.88" y="101.6" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="FRONT_WHEEL_SPEED" class="0">
 <segment>
@@ -23024,25 +23004,6 @@ fc = 400 Hz</text>
 <wire x1="624.84" y1="93.98" x2="619.76" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="619.76" y1="93.98" x2="619.76" y2="116.84" width="0.1524" layer="91"/>
 <junction x="619.76" y="116.84"/>
-</segment>
-<segment>
-<pinref part="SJ4" gate="G$1" pin="3"/>
-<wire x1="464.82" y1="121.92" x2="436.88" y2="121.92" width="0.1524" layer="91"/>
-<label x="436.88" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="SJ5" gate="G$1" pin="2"/>
-<wire x1="459.74" y1="106.68" x2="436.88" y2="106.68" width="0.1524" layer="91"/>
-<label x="436.88" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="SJ4" gate="G$1" pin="2"/>
-<wire x1="459.74" y1="127" x2="436.88" y2="127" width="0.1524" layer="91"/>
-<label x="436.88" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TORQUE_SENSOR_RANGE" class="0">
