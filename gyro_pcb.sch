@@ -19528,7 +19528,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="62k"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="620k"/>
-<part name="Q2" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16"/>
+<part name="Q2" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16" value="BC808"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R1210" value="270"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R1210" value="2.7k"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="18k"/>
@@ -19704,7 +19704,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND62" library="supply1" deviceset="GNDA" device=""/>
 <part name="P+4" library="supply1" deviceset="+24V" device=""/>
 <part name="SJ6" library="jumper" deviceset="SJ2W" device=""/>
-<part name="Q4" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16"/>
+<part name="Q4" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16" value="BC808"/>
 <part name="R53" library="rcl" deviceset="R-EU_" device="R1210" value="120k"/>
 <part name="R54" library="rcl" deviceset="R-EU_" device="R1210" value="1.2M"/>
 <part name="R55" library="rcl" deviceset="R-EU_" device="R0603" value="200k"/>
@@ -19774,6 +19774,18 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="+3V3A9" library="components" deviceset="+3V3A" device=""/>
 <part name="+3V3A10" library="components" deviceset="+3V3A" device=""/>
 <part name="D1" library="diode" deviceset="SCHOTTKY-DIODE" device="SMC" value="SS34"/>
+<part name="X11" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="X12" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="GND34" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND83" library="supply1" deviceset="GNDA" device=""/>
+<part name="X13" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="X14" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="X15" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="X16" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="GND84" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND85" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND86" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND87" library="supply1" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19848,9 +19860,9 @@ fc = 400 Hz</text>
 <instance part="+3V7" gate="G$1" x="299.72" y="-22.86"/>
 <instance part="+3V8" gate="G$1" x="307.34" y="-22.86"/>
 <instance part="GIMBAL1_DRIVE_CTRL" gate="A" x="144.78" y="200.66"/>
-<instance part="GIMBAL1_DRIVE_IO" gate="A" x="358.14" y="182.88" rot="R180"/>
+<instance part="GIMBAL1_DRIVE_IO" gate="A" x="325.12" y="182.88" rot="R180"/>
 <instance part="GND24" gate="1" x="134.62" y="185.42"/>
-<instance part="GND25" gate="1" x="365.76" y="162.56"/>
+<instance part="GND25" gate="1" x="332.74" y="162.56"/>
 <instance part="GIMBAL1_CON" gate="-1" x="144.78" y="175.26"/>
 <instance part="GIMBAL1_CON" gate="-2" x="144.78" y="172.72"/>
 <instance part="GIMBAL1_CON" gate="-3" x="144.78" y="170.18"/>
@@ -19925,8 +19937,8 @@ fc = 400 Hz</text>
 <instance part="FLYWHEEL_RS-485" gate="A" x="647.7" y="121.92"/>
 <instance part="+3V12" gate="G$1" x="629.92" y="139.7"/>
 <instance part="GND44" gate="1" x="629.92" y="99.06"/>
-<instance part="GIMBAL2_DRIVE_IO" gate="A" x="358.14" y="127" rot="R180"/>
-<instance part="GND50" gate="1" x="365.76" y="106.68"/>
+<instance part="GIMBAL2_DRIVE_IO" gate="A" x="325.12" y="127" rot="R180"/>
+<instance part="GND50" gate="1" x="332.74" y="106.68"/>
 <instance part="R43" gate="G$1" x="403.86" y="139.7" rot="R90"/>
 <instance part="R44" gate="G$1" x="393.7" y="129.54"/>
 <instance part="R45" gate="G$1" x="403.86" y="121.92" rot="R90"/>
@@ -20109,6 +20121,24 @@ fc = 400 Hz</text>
 <instance part="+3V3A9" gate="G$1" x="414.02" y="-15.24"/>
 <instance part="+3V3A10" gate="G$1" x="502.92" y="-88.9"/>
 <instance part="D1" gate="G$1" x="30.48" y="-35.56" rot="R90"/>
+<instance part="X11" gate="-2" x="375.92" y="83.82"/>
+<instance part="X11" gate="-1" x="375.92" y="86.36"/>
+<instance part="X12" gate="-2" x="396.24" y="73.66"/>
+<instance part="X12" gate="-1" x="396.24" y="76.2"/>
+<instance part="GND34" gate="1" x="373.38" y="76.2"/>
+<instance part="GND83" gate="1" x="393.7" y="60.96"/>
+<instance part="X13" gate="-2" x="370.84" y="127"/>
+<instance part="X13" gate="-1" x="370.84" y="129.54"/>
+<instance part="X14" gate="-2" x="383.54" y="127"/>
+<instance part="X14" gate="-1" x="383.54" y="129.54"/>
+<instance part="X15" gate="-2" x="370.84" y="182.88"/>
+<instance part="X15" gate="-1" x="370.84" y="185.42"/>
+<instance part="X16" gate="-2" x="383.54" y="182.88"/>
+<instance part="X16" gate="-1" x="383.54" y="185.42"/>
+<instance part="GND84" gate="1" x="368.3" y="119.38"/>
+<instance part="GND85" gate="1" x="381" y="119.38"/>
+<instance part="GND86" gate="1" x="368.3" y="175.26"/>
+<instance part="GND87" gate="1" x="381" y="175.26"/>
 </instances>
 <busses>
 </busses>
@@ -20823,14 +20853,44 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="GND50" gate="1" pin="GNDA"/>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="5"/>
-<wire x1="365.76" y1="109.22" x2="365.76" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="124.46" x2="360.68" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="109.22" x2="332.74" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="124.46" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND25" gate="1" pin="GNDA"/>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="5"/>
-<wire x1="365.76" y1="165.1" x2="365.76" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="180.34" x2="360.68" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="165.1" x2="332.74" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="180.34" x2="327.66" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X12" gate="-2" pin="S"/>
+<pinref part="GND83" gate="1" pin="GNDA"/>
+<wire x1="393.7" y1="73.66" x2="393.7" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X11" gate="-2" pin="S"/>
+<pinref part="GND34" gate="1" pin="GNDA"/>
+<wire x1="373.38" y1="83.82" x2="373.38" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X16" gate="-2" pin="S"/>
+<pinref part="GND87" gate="1" pin="GNDA"/>
+<wire x1="381" y1="182.88" x2="381" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X15" gate="-2" pin="S"/>
+<pinref part="GND86" gate="1" pin="GNDA"/>
+<wire x1="368.3" y1="182.88" x2="368.3" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X13" gate="-2" pin="S"/>
+<pinref part="GND84" gate="1" pin="GNDA"/>
+<wire x1="368.3" y1="127" x2="368.3" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X14" gate="-2" pin="S"/>
+<pinref part="GND85" gate="1" pin="GNDA"/>
+<wire x1="381" y1="127" x2="381" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PA2/SPI1_PWR" class="0">
@@ -20885,8 +20945,8 @@ fc = 400 Hz</text>
 </segment>
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="3"/>
-<wire x1="360.68" y1="175.26" x2="375.92" y2="175.26" width="0.1524" layer="91"/>
-<label x="368.3" y="175.26" size="1.778" layer="95"/>
+<wire x1="327.66" y1="175.26" x2="342.9" y2="175.26" width="0.1524" layer="91"/>
+<label x="335.28" y="175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5VUSB" class="0">
@@ -20987,8 +21047,8 @@ fc = 400 Hz</text>
 </segment>
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="2"/>
-<wire x1="360.68" y1="172.72" x2="375.92" y2="172.72" width="0.1524" layer="91"/>
-<label x="368.3" y="172.72" size="1.778" layer="95"/>
+<wire x1="327.66" y1="172.72" x2="342.9" y2="172.72" width="0.1524" layer="91"/>
+<label x="335.28" y="172.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC6/TIM3_CH1/INCR_ENC2_CHA" class="0">
@@ -21528,15 +21588,15 @@ fc = 400 Hz</text>
 <net name="GIMBAL2_DIN4/DOUT4" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="1"/>
-<wire x1="360.68" y1="114.3" x2="375.92" y2="114.3" width="0.1524" layer="91"/>
-<label x="368.3" y="114.3" size="1.778" layer="95"/>
+<wire x1="327.66" y1="114.3" x2="342.9" y2="114.3" width="0.1524" layer="91"/>
+<label x="335.28" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB15/M2_RDY" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="2"/>
-<wire x1="360.68" y1="116.84" x2="375.92" y2="116.84" width="0.1524" layer="91"/>
-<label x="368.3" y="116.84" size="1.778" layer="95"/>
+<wire x1="327.66" y1="116.84" x2="342.9" y2="116.84" width="0.1524" layer="91"/>
+<label x="335.28" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="STM32-H405-EXT2" gate="A" pin="19"/>
@@ -21552,8 +21612,8 @@ fc = 400 Hz</text>
 <net name="PB13/M2_EN" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="3"/>
-<wire x1="360.68" y1="119.38" x2="375.92" y2="119.38" width="0.1524" layer="91"/>
-<label x="368.3" y="119.38" size="1.778" layer="95"/>
+<wire x1="327.66" y1="119.38" x2="342.9" y2="119.38" width="0.1524" layer="91"/>
+<label x="335.28" y="119.38" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="10.16" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
@@ -21569,36 +21629,36 @@ fc = 400 Hz</text>
 <net name="GIMBAL2_AOUT2" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="6"/>
-<wire x1="360.68" y1="127" x2="375.92" y2="127" width="0.1524" layer="91"/>
-<label x="365.76" y="127" size="1.778" layer="95"/>
+<wire x1="327.66" y1="127" x2="342.9" y2="127" width="0.1524" layer="91"/>
+<label x="332.74" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL2_AIN2-" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="8"/>
-<wire x1="360.68" y1="132.08" x2="375.92" y2="132.08" width="0.1524" layer="91"/>
-<label x="365.76" y="132.08" size="1.778" layer="95"/>
+<wire x1="327.66" y1="132.08" x2="342.9" y2="132.08" width="0.1524" layer="91"/>
+<label x="332.74" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL2_AIN2+" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="9"/>
-<wire x1="360.68" y1="134.62" x2="375.92" y2="134.62" width="0.1524" layer="91"/>
-<label x="365.76" y="134.62" size="1.778" layer="95"/>
+<wire x1="327.66" y1="134.62" x2="342.9" y2="134.62" width="0.1524" layer="91"/>
+<label x="332.74" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL2_AIN1-" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="10"/>
-<wire x1="360.68" y1="137.16" x2="375.92" y2="137.16" width="0.1524" layer="91"/>
-<label x="365.76" y="137.16" size="1.778" layer="95"/>
+<wire x1="327.66" y1="137.16" x2="342.9" y2="137.16" width="0.1524" layer="91"/>
+<label x="332.74" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL2_AIN1+" class="0">
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="11"/>
-<wire x1="360.68" y1="139.7" x2="375.92" y2="139.7" width="0.1524" layer="91"/>
-<label x="365.76" y="139.7" size="1.778" layer="95"/>
+<wire x1="327.66" y1="139.7" x2="342.9" y2="139.7" width="0.1524" layer="91"/>
+<label x="332.74" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA1/TIM5_CH2/INCR_ENC1_CHB" class="0">
@@ -21793,10 +21853,10 @@ fc = 400 Hz</text>
 </net>
 <net name="GIMBAL2_AOUT1" class="0">
 <segment>
-<pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="7"/>
-<wire x1="388.62" y1="129.54" x2="360.68" y2="129.54" width="0.1524" layer="91"/>
-<label x="365.76" y="129.54" size="1.778" layer="95"/>
+<wire x1="368.3" y1="129.54" x2="327.66" y2="129.54" width="0.1524" layer="91"/>
+<label x="332.74" y="129.54" size="1.778" layer="95"/>
+<pinref part="X13" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -21967,51 +22027,51 @@ fc = 400 Hz</text>
 <net name="GIMBAL1_AIN1+" class="0">
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="11"/>
-<wire x1="360.68" y1="195.58" x2="375.92" y2="195.58" width="0.1524" layer="91"/>
-<label x="365.76" y="195.58" size="1.778" layer="95"/>
+<wire x1="327.66" y1="195.58" x2="342.9" y2="195.58" width="0.1524" layer="91"/>
+<label x="332.74" y="195.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL1_AIN1-" class="0">
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="10"/>
-<wire x1="360.68" y1="193.04" x2="375.92" y2="193.04" width="0.1524" layer="91"/>
-<label x="365.76" y="193.04" size="1.778" layer="95"/>
+<wire x1="327.66" y1="193.04" x2="342.9" y2="193.04" width="0.1524" layer="91"/>
+<label x="332.74" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL1_AIN2+" class="0">
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="9"/>
-<wire x1="360.68" y1="190.5" x2="375.92" y2="190.5" width="0.1524" layer="91"/>
-<label x="365.76" y="190.5" size="1.778" layer="95"/>
+<wire x1="327.66" y1="190.5" x2="342.9" y2="190.5" width="0.1524" layer="91"/>
+<label x="332.74" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL1_AIN2-" class="0">
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="8"/>
-<wire x1="360.68" y1="187.96" x2="375.92" y2="187.96" width="0.1524" layer="91"/>
-<label x="365.76" y="187.96" size="1.778" layer="95"/>
+<wire x1="327.66" y1="187.96" x2="342.9" y2="187.96" width="0.1524" layer="91"/>
+<label x="332.74" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL1_AOUT1" class="0">
 <segment>
-<pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="7"/>
-<wire x1="388.62" y1="185.42" x2="360.68" y2="185.42" width="0.1524" layer="91"/>
-<label x="365.76" y="185.42" size="1.778" layer="95"/>
+<wire x1="368.3" y1="185.42" x2="327.66" y2="185.42" width="0.1524" layer="91"/>
+<label x="332.74" y="185.42" size="1.778" layer="95"/>
+<pinref part="X15" gate="-1" pin="S"/>
 </segment>
 </net>
 <net name="GIMBAL1_AOUT2" class="0">
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="6"/>
-<wire x1="360.68" y1="182.88" x2="375.92" y2="182.88" width="0.1524" layer="91"/>
-<label x="365.76" y="182.88" size="1.778" layer="95"/>
+<wire x1="327.66" y1="182.88" x2="342.9" y2="182.88" width="0.1524" layer="91"/>
+<label x="332.74" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GIMBAL1_DIN4/DOUT4" class="0">
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="1"/>
-<wire x1="360.68" y1="170.18" x2="375.92" y2="170.18" width="0.1524" layer="91"/>
-<label x="368.3" y="170.18" size="1.778" layer="95"/>
+<wire x1="327.66" y1="170.18" x2="342.9" y2="170.18" width="0.1524" layer="91"/>
+<label x="335.28" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$48" class="0">
@@ -22342,10 +22402,14 @@ fc = 400 Hz</text>
 </net>
 <net name="TORQUE_SENSOR_INPUT" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="398.78" y1="68.58" x2="363.22" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="68.58" x2="363.22" y2="68.58" width="0.1524" layer="91"/>
 <label x="365.76" y="68.58" size="1.778" layer="95"/>
 <pinref part="X4" gate="G$1" pin="P$5"/>
+<pinref part="X11" gate="-1" pin="S"/>
+<wire x1="373.38" y1="86.36" x2="368.3" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="86.36" x2="368.3" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="73.66" x2="386.08" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="386.08" y1="73.66" x2="386.08" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -22728,7 +22792,6 @@ fc = 400 Hz</text>
 <wire x1="642.62" y1="-86.36" x2="678.18" y2="-86.36" width="0.1524" layer="91"/>
 <label x="642.62" y="-86.36" size="1.778" layer="95"/>
 <pinref part="IC4" gate="A" pin="2B"/>
-<wire x1="678.18" y1="-86.36" x2="680.72" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="REAR_WHEEL_ENC_B" class="0">
@@ -23035,8 +23098,8 @@ fc = 400 Hz</text>
 </segment>
 <segment>
 <pinref part="GIMBAL2_DRIVE_IO" gate="A" pin="4"/>
-<wire x1="360.68" y1="121.92" x2="375.92" y2="121.92" width="0.1524" layer="91"/>
-<label x="368.3" y="121.92" size="1.778" layer="95"/>
+<wire x1="327.66" y1="121.92" x2="342.9" y2="121.92" width="0.1524" layer="91"/>
+<label x="335.28" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA8/TIM1_CH1/M1_PWM" class="0">
@@ -23052,8 +23115,8 @@ fc = 400 Hz</text>
 </segment>
 <segment>
 <pinref part="GIMBAL1_DRIVE_IO" gate="A" pin="4"/>
-<wire x1="360.68" y1="177.8" x2="375.92" y2="177.8" width="0.1524" layer="91"/>
-<label x="368.3" y="177.8" size="1.778" layer="95"/>
+<wire x1="327.66" y1="177.8" x2="342.9" y2="177.8" width="0.1524" layer="91"/>
+<label x="335.28" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC7/TIM3_CH2/INCR_ENC2_CHB" class="0">
@@ -23076,6 +23139,29 @@ fc = 400 Hz</text>
 <wire x1="678.18" y1="-48.26" x2="642.62" y2="-48.26" width="0.1524" layer="91"/>
 <label x="642.62" y="-48.26" size="1.778" layer="95"/>
 <pinref part="IC2" gate="A" pin="4A"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="X12" gate="-1" pin="S"/>
+<wire x1="393.7" y1="76.2" x2="393.7" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="393.7" y1="81.28" x2="398.78" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="81.28" x2="398.78" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="X14" gate="-1" pin="S"/>
+<pinref part="R44" gate="G$1" pin="1"/>
+<wire x1="381" y1="129.54" x2="388.62" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$53" class="0">
+<segment>
+<pinref part="X16" gate="-1" pin="S"/>
+<pinref part="R24" gate="G$1" pin="1"/>
+<wire x1="381" y1="185.42" x2="388.62" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
