@@ -12782,13 +12782,6 @@ fc = 400 Hz</text>
 <pinref part="EXT1" gate="A" pin="24"/>
 </segment>
 </net>
-<net name="VIN" class="0">
-<segment>
-<wire x1="63.5" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
-<label x="50.8" y="91.44" size="1.778" layer="95"/>
-<pinref part="EXT2" gate="A" pin="26"/>
-</segment>
-</net>
 <net name="GNDA" class="0">
 <segment>
 <pinref part="STM32-H405-EXT2" gate="A" pin="3"/>
@@ -13388,6 +13381,11 @@ fc = 400 Hz</text>
 <wire x1="58.42" y1="-7.62" x2="58.42" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-20.32" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-20.32" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="63.5" y1="91.44" x2="45.72" y2="91.44" width="0.1524" layer="91"/>
+<label x="50.8" y="91.44" size="1.778" layer="95"/>
+<pinref part="EXT2" gate="A" pin="26"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
