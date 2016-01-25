@@ -12116,6 +12116,14 @@ grid 5.08 mm</description>
 <part name="JP2" library="jumper" deviceset="JP2E" device=""/>
 <part name="JP3" library="jumper" deviceset="JP2E" device=""/>
 <part name="JP4" library="jumper" deviceset="JP2E" device=""/>
+<part name="C27" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C32" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C33" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C34" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12196,7 +12204,7 @@ fc = 400 Hz</text>
 <instance part="R25" gate="G$1" x="403.86" y="177.8" rot="R90"/>
 <instance part="GND33" gate="1" x="403.86" y="162.56"/>
 <instance part="U2" gate="A" x="525.78" y="144.78"/>
-<instance part="GND39" gate="1" x="505.46" y="119.38"/>
+<instance part="GND39" gate="1" x="505.46" y="116.84"/>
 <instance part="R34" gate="G$1" x="421.64" y="177.8"/>
 <instance part="R35" gate="G$1" x="436.88" y="177.8"/>
 <instance part="C14" gate="G$1" x="439.42" y="185.42" rot="R90"/>
@@ -12228,7 +12236,7 @@ fc = 400 Hz</text>
 <instance part="GND45" gate="1" x="86.36" y="-86.36"/>
 <instance part="+3V13" gate="G$1" x="86.36" y="-58.42"/>
 <instance part="U1" gate="A" x="528.32" y="35.56"/>
-<instance part="GND11" gate="1" x="508" y="10.16"/>
+<instance part="GND11" gate="1" x="508" y="7.62"/>
 <instance part="R7" gate="G$1" x="426.72" y="68.58"/>
 <instance part="R8" gate="G$1" x="441.96" y="68.58"/>
 <instance part="C6" gate="G$1" x="444.5" y="76.2" rot="R90"/>
@@ -12272,7 +12280,7 @@ fc = 400 Hz</text>
 <instance part="+3V9" gate="G$1" x="12.7" y="142.24"/>
 <instance part="GND49" gate="1" x="12.7" y="101.6"/>
 <instance part="U4" gate="A" x="528.32" y="-78.74"/>
-<instance part="GND52" gate="1" x="508" y="-104.14"/>
+<instance part="GND52" gate="1" x="508" y="-106.68"/>
 <instance part="R37" gate="G$1" x="426.72" y="-45.72"/>
 <instance part="R41" gate="G$1" x="441.96" y="-45.72"/>
 <instance part="C22" gate="G$1" x="444.5" y="-38.1" rot="R90"/>
@@ -12339,11 +12347,11 @@ fc = 400 Hz</text>
 <instance part="GND77" gate="1" x="294.64" y="60.96"/>
 <instance part="P+13" gate="1" x="251.46" y="124.46"/>
 <instance part="IC2" gate="P" x="238.76" y="111.76"/>
-<instance part="IC4" gate="P" x="233.68" y="111.76"/>
+<instance part="IC4" gate="P" x="223.52" y="111.76"/>
 <instance part="GND78" gate="1" x="238.76" y="99.06"/>
-<instance part="GND79" gate="1" x="233.68" y="99.06"/>
+<instance part="GND79" gate="1" x="223.52" y="99.06"/>
 <instance part="P+14" gate="1" x="238.76" y="124.46"/>
-<instance part="P+15" gate="1" x="233.68" y="124.46"/>
+<instance part="P+15" gate="1" x="223.52" y="124.46"/>
 <instance part="T1" gate="G$1" x="121.92" y="0"/>
 <instance part="T2" gate="G$1" x="142.24" y="-66.04"/>
 <instance part="+3V3A1" gate="G$1" x="-7.62" y="33.02"/>
@@ -12383,6 +12391,14 @@ fc = 400 Hz</text>
 <instance part="JP2" gate="1" x="-2.54" y="-40.64" rot="R90"/>
 <instance part="JP3" gate="1" x="-2.54" y="-50.8" rot="R90"/>
 <instance part="JP4" gate="1" x="-2.54" y="-60.96" rot="R90"/>
+<instance part="C27" gate="G$1" x="215.9" y="111.76"/>
+<instance part="C28" gate="G$1" x="233.68" y="111.76"/>
+<instance part="C32" gate="G$1" x="500.38" y="124.46"/>
+<instance part="C33" gate="G$1" x="502.92" y="15.24"/>
+<instance part="C34" gate="G$1" x="502.92" y="-99.06"/>
+<instance part="C35" gate="G$1" x="60.96" y="-71.12"/>
+<instance part="C36" gate="G$1" x="2.54" y="160.02"/>
+<instance part="C37" gate="G$1" x="5.08" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -12522,11 +12538,18 @@ fc = 400 Hz</text>
 <pinref part="FLYWHEEL_RS-485" gate="A" pin="GND"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="12.7" y1="160.02" x2="12.7" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="154.94" x2="12.7" y2="154.94" width="0.1524" layer="91"/>
+<junction x="12.7" y="154.94"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="GND"/>
 <pinref part="GND45" gate="1" pin="GND"/>
 <wire x1="86.36" y1="-78.74" x2="86.36" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="C35" gate="G$1" pin="2"/>
+<wire x1="60.96" y1="-76.2" x2="60.96" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-78.74" x2="86.36" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="86.36" y="-78.74"/>
 </segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="2"/>
@@ -12549,6 +12572,9 @@ fc = 400 Hz</text>
 <pinref part="XPC_RS-485" gate="A" pin="GND"/>
 <wire x1="12.7" y1="109.22" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND49" gate="1" pin="GND"/>
+<pinref part="C37" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
+<junction x="12.7" y="104.14"/>
 </segment>
 <segment>
 <pinref part="GND74" gate="1" pin="GND"/>
@@ -12583,11 +12609,19 @@ fc = 400 Hz</text>
 <pinref part="IC2" gate="P" pin="GND"/>
 <pinref part="GND78" gate="1" pin="GND"/>
 <wire x1="238.76" y1="104.14" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="233.68" y1="106.68" x2="233.68" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
+<junction x="238.76" y="104.14"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="GND"/>
 <pinref part="GND79" gate="1" pin="GND"/>
-<wire x1="233.68" y1="104.14" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="104.14" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="106.68" x2="215.9" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="104.14" x2="223.52" y2="104.14" width="0.1524" layer="91"/>
+<junction x="223.52" y="104.14"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -12799,7 +12833,10 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="U2" gate="A" pin="VSS"/>
 <pinref part="GND39" gate="1" pin="GNDA"/>
-<wire x1="505.46" y1="129.54" x2="505.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="129.54" x2="505.46" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="500.38" y1="119.38" x2="505.46" y2="119.38" width="0.1524" layer="91"/>
+<junction x="505.46" y="119.38"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -12829,7 +12866,10 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="U1" gate="A" pin="VSS"/>
 <pinref part="GND11" gate="1" pin="GNDA"/>
-<wire x1="508" y1="20.32" x2="508" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="508" y1="20.32" x2="508" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="2"/>
+<wire x1="502.92" y1="10.16" x2="508" y2="10.16" width="0.1524" layer="91"/>
+<junction x="508" y="10.16"/>
 </segment>
 <segment>
 <pinref part="GND46" gate="1" pin="GNDA"/>
@@ -12859,7 +12899,10 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="U4" gate="A" pin="VSS"/>
 <pinref part="GND52" gate="1" pin="GNDA"/>
-<wire x1="508" y1="-93.98" x2="508" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="508" y1="-93.98" x2="508" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="2"/>
+<wire x1="502.92" y1="-104.14" x2="508" y2="-104.14" width="0.1524" layer="91"/>
+<junction x="508" y="-104.14"/>
 </segment>
 <segment>
 <pinref part="GND68" gate="1" pin="GNDA"/>
@@ -13215,12 +13258,20 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="P+15" gate="1" pin="+5V"/>
 <pinref part="IC4" gate="P" pin="VCC"/>
-<wire x1="233.68" y1="121.92" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="121.92" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="114.3" x2="215.9" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="119.38" x2="223.52" y2="119.38" width="0.1524" layer="91"/>
+<junction x="223.52" y="119.38"/>
 </segment>
 <segment>
 <pinref part="P+14" gate="1" pin="+5V"/>
 <pinref part="IC2" gate="P" pin="VCC"/>
 <wire x1="238.76" y1="121.92" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="114.3" x2="233.68" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="119.38" x2="238.76" y2="119.38" width="0.1524" layer="91"/>
+<junction x="238.76" y="119.38"/>
 </segment>
 <segment>
 <wire x1="58.42" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
@@ -13284,16 +13335,28 @@ fc = 400 Hz</text>
 <pinref part="+3V12" gate="G$1" pin="+3V3"/>
 <pinref part="FLYWHEEL_RS-485" gate="A" pin="VCC"/>
 <wire x1="12.7" y1="190.5" x2="12.7" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="C36" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="185.42" x2="2.54" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="185.42" x2="2.54" y2="162.56" width="0.1524" layer="91"/>
+<junction x="12.7" y="185.42"/>
 </segment>
 <segment>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <pinref part="U3" gate="A" pin="VCC"/>
 <wire x1="86.36" y1="-60.96" x2="86.36" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="-68.58" x2="60.96" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-66.04" x2="86.36" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="86.36" y="-66.04"/>
 </segment>
 <segment>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <pinref part="XPC_RS-485" gate="A" pin="VCC"/>
 <wire x1="12.7" y1="139.7" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C37" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="134.62" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="134.62" x2="5.08" y2="111.76" width="0.1524" layer="91"/>
+<junction x="12.7" y="134.62"/>
 </segment>
 </net>
 <net name="ENC1_CHB-" class="0">
@@ -14157,11 +14220,17 @@ fc = 400 Hz</text>
 <pinref part="U1" gate="A" pin="VDD"/>
 <wire x1="508" y1="22.86" x2="502.92" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="+3V3A4" gate="G$1" pin="+3V3A"/>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="502.92" y1="17.78" x2="502.92" y2="22.86" width="0.1524" layer="91"/>
+<junction x="502.92" y="22.86"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VDD"/>
 <wire x1="500.38" y1="132.08" x2="505.46" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="+3V3A5" gate="G$1" pin="+3V3A"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="500.38" y1="127" x2="500.38" y2="132.08" width="0.1524" layer="91"/>
+<junction x="500.38" y="132.08"/>
 </segment>
 <segment>
 <pinref part="R43" gate="G$1" pin="2"/>
@@ -14187,6 +14256,9 @@ fc = 400 Hz</text>
 <pinref part="U4" gate="A" pin="VDD"/>
 <wire x1="502.92" y1="-91.44" x2="508" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="+3V3A10" gate="G$1" pin="+3V3A"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="502.92" y1="-96.52" x2="502.92" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="502.92" y="-91.44"/>
 </segment>
 </net>
 <net name="PB8/XPC_RS-485_DE" class="0">
