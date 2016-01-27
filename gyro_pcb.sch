@@ -11894,8 +11894,8 @@ grid 5.08 mm</description>
 </class>
 </classes>
 <parts>
-<part name="JP1" library="pinhead" deviceset="PINHD-2X13" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-2X13" device=""/>
+<part name="EXT1" library="pinhead" deviceset="PINHD-2X13" device=""/>
+<part name="EXT2" library="pinhead" deviceset="PINHD-2X13" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="IC3" library="invensense" deviceset="MPU-9250" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
@@ -12112,10 +12112,10 @@ grid 5.08 mm</description>
 <part name="X3" library="con-molex" deviceset="22-23-2081" device=""/>
 <part name="X7" library="con-molex" deviceset="5566-2" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
+<part name="JP1" library="jumper" deviceset="JP2E" device=""/>
+<part name="JP2" library="jumper" deviceset="JP2E" device=""/>
 <part name="JP3" library="jumper" deviceset="JP2E" device=""/>
 <part name="JP4" library="jumper" deviceset="JP2E" device=""/>
-<part name="JP5" library="jumper" deviceset="JP2E" device=""/>
-<part name="JP6" library="jumper" deviceset="JP2E" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -12144,8 +12144,8 @@ fc = 400 Hz</text>
 <text x="-2.54" y="-22.86" size="1.778" layer="94">ENC3,4/ADC switch jumpers</text>
 </plain>
 <instances>
-<instance part="JP1" gate="A" x="40.64" y="60.96"/>
-<instance part="JP2" gate="A" x="40.64" y="12.7"/>
+<instance part="EXT1" gate="A" x="40.64" y="60.96"/>
+<instance part="EXT2" gate="A" x="40.64" y="12.7"/>
 <instance part="GND24" gate="1" x="50.8" y="38.1"/>
 <instance part="IC3" gate="G$1" x="208.28" y="-86.36"/>
 <instance part="GND25" gate="1" x="193.04" y="-106.68"/>
@@ -12387,10 +12387,10 @@ fc = 400 Hz</text>
 <instance part="X7" gate="-1" x="63.5" y="-20.32"/>
 <instance part="X7" gate="-2" x="63.5" y="-25.4"/>
 <instance part="GND31" gate="1" x="58.42" y="-30.48"/>
-<instance part="JP3" gate="1" x="-2.54" y="-30.48" rot="R90"/>
-<instance part="JP4" gate="1" x="-2.54" y="-40.64" rot="R90"/>
-<instance part="JP5" gate="1" x="-2.54" y="-50.8" rot="R90"/>
-<instance part="JP6" gate="1" x="-2.54" y="-60.96" rot="R90"/>
+<instance part="JP1" gate="1" x="-2.54" y="-30.48" rot="R90"/>
+<instance part="JP2" gate="1" x="-2.54" y="-40.64" rot="R270"/>
+<instance part="JP3" gate="1" x="-2.54" y="-50.8" rot="R90"/>
+<instance part="JP4" gate="1" x="-2.54" y="-60.96" rot="R270"/>
 <instance part="C3" gate="G$1" x="243.84" y="139.7"/>
 <instance part="C4" gate="G$1" x="261.62" y="139.7"/>
 <instance part="C17" gate="G$1" x="535.94" y="88.9"/>
@@ -12405,21 +12405,21 @@ fc = 400 Hz</text>
 <nets>
 <net name="USBDM" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="EXT1" gate="A" pin="1"/>
 <wire x1="38.1" y1="76.2" x2="-7.62" y2="76.2" width="0.1524" layer="91"/>
 <label x="-7.62" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USBDP" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="EXT1" gate="A" pin="3"/>
 <wire x1="38.1" y1="73.66" x2="-7.62" y2="73.66" width="0.1524" layer="91"/>
 <label x="-7.62" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PD2/SD_CMD" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="11"/>
+<pinref part="EXT1" gate="A" pin="11"/>
 <wire x1="38.1" y1="63.5" x2="-7.62" y2="63.5" width="0.1524" layer="91"/>
 <label x="-7.62" y="63.5" size="1.778" layer="95"/>
 </segment>
@@ -12517,19 +12517,19 @@ fc = 400 Hz</text>
 <wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="EXT1" gate="A" pin="6"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="45.72" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="71.12" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="EXT2" gate="A" pin="6"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="45.72" y1="22.86" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="22.86" x2="50.8" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="25"/>
+<pinref part="EXT2" gate="A" pin="25"/>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="38.1" y1="-2.54" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-2.54" x2="33.02" y2="-7.62" width="0.1524" layer="91"/>
@@ -12660,7 +12660,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PB0/SPI1_ENC2_NSS" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="21"/>
+<pinref part="EXT1" gate="A" pin="21"/>
 <wire x1="38.1" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
 <label x="-7.62" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -12672,21 +12672,21 @@ fc = 400 Hz</text>
 </net>
 <net name="VBAT" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="23"/>
+<pinref part="EXT1" gate="A" pin="23"/>
 <wire x1="38.1" y1="48.26" x2="-7.62" y2="48.26" width="0.1524" layer="91"/>
 <label x="-7.62" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="25"/>
+<pinref part="EXT1" gate="A" pin="25"/>
 <wire x1="38.1" y1="45.72" x2="-7.62" y2="45.72" width="0.1524" layer="91"/>
 <label x="-7.62" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC10/SD_D2" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="8"/>
+<pinref part="EXT1" gate="A" pin="8"/>
 <wire x1="45.72" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
 <label x="50.8" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -12702,14 +12702,14 @@ fc = 400 Hz</text>
 </net>
 <net name="PB5" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="12"/>
+<pinref part="EXT1" gate="A" pin="12"/>
 <wire x1="45.72" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="50.8" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA6/SPI1_MISO" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="14"/>
+<pinref part="EXT1" gate="A" pin="14"/>
 <wire x1="45.72" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
 <label x="50.8" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -12741,7 +12741,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PA5/SPI1_SCK" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="18"/>
+<pinref part="EXT1" gate="A" pin="18"/>
 <wire x1="45.72" y1="55.88" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 <label x="50.8" y="55.88" size="1.778" layer="95"/>
 </segment>
@@ -12773,7 +12773,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PA7/SPI1_MOSI" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="22"/>
+<pinref part="EXT1" gate="A" pin="22"/>
 <wire x1="45.72" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.778" layer="95"/>
 </segment>
@@ -12785,14 +12785,14 @@ fc = 400 Hz</text>
 </net>
 <net name="PC13" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="24"/>
+<pinref part="EXT1" gate="A" pin="24"/>
 <wire x1="45.72" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <label x="50.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="EXT2" gate="A" pin="3"/>
 <wire x1="38.1" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
 <label x="-7.62" y="25.4" size="1.778" layer="95"/>
 <pinref part="GND28" gate="1" pin="GNDA"/>
@@ -12952,7 +12952,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PA2/SPI1_PWR" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="7"/>
+<pinref part="EXT2" gate="A" pin="7"/>
 <wire x1="38.1" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
 <label x="-7.62" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -12969,7 +12969,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PA4/SPI1_ENC1_NSS" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="11"/>
+<pinref part="EXT2" gate="A" pin="11"/>
 <wire x1="38.1" y1="15.24" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
 <label x="-7.62" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -12981,14 +12981,14 @@ fc = 400 Hz</text>
 </net>
 <net name="PB12/M1_EN" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="17"/>
+<pinref part="EXT2" gate="A" pin="17"/>
 <wire x1="38.1" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
 <label x="-7.62" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5VUSB" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="23"/>
+<pinref part="EXT2" gate="A" pin="23"/>
 <wire x1="38.1" y1="0" x2="-7.62" y2="0" width="0.1524" layer="91"/>
 <label x="-7.62" y="0" size="1.778" layer="95"/>
 </segment>
@@ -13000,14 +13000,14 @@ fc = 400 Hz</text>
 <label x="157.48" y="-7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="1" pin="1"/>
+<pinref part="JP1" gate="1" pin="1"/>
 <wire x1="0" y1="-33.02" x2="25.4" y2="-33.02" width="0.1524" layer="91"/>
 <label x="2.54" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA0/TIM5_CH1/ENC1_CHA" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="4"/>
+<pinref part="EXT2" gate="A" pin="4"/>
 <wire x1="45.72" y1="25.4" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
 <label x="50.8" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -13021,7 +13021,7 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="63.5" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 <label x="50.8" y="17.78" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="10"/>
+<pinref part="EXT2" gate="A" pin="10"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="!CS"/>
@@ -13036,7 +13036,7 @@ fc = 400 Hz</text>
 <label x="157.48" y="-35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="1" pin="1"/>
+<pinref part="JP3" gate="1" pin="1"/>
 <wire x1="0" y1="-53.34" x2="25.4" y2="-53.34" width="0.1524" layer="91"/>
 <label x="2.54" y="-53.34" size="1.778" layer="95"/>
 </segment>
@@ -13045,14 +13045,14 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="63.5" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 <label x="50.8" y="7.62" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="18"/>
+<pinref part="EXT2" gate="A" pin="18"/>
 </segment>
 </net>
 <net name="PC8/SD_D0" class="0">
 <segment>
 <wire x1="63.5" y1="2.54" x2="45.72" y2="2.54" width="0.1524" layer="91"/>
 <label x="50.8" y="2.54" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="22"/>
+<pinref part="EXT2" gate="A" pin="22"/>
 </segment>
 <segment>
 <pinref part="X14" gate="G$1" pin="7"/>
@@ -13068,7 +13068,7 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="63.5" y1="0" x2="45.72" y2="0" width="0.1524" layer="91"/>
 <label x="50.8" y="0" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="24"/>
+<pinref part="EXT2" gate="A" pin="24"/>
 </segment>
 <segment>
 <pinref part="X14" gate="G$1" pin="8"/>
@@ -13109,7 +13109,7 @@ fc = 400 Hz</text>
 <label x="215.9" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="7"/>
+<pinref part="EXT1" gate="A" pin="7"/>
 <wire x1="38.1" y1="68.58" x2="-7.62" y2="68.58" width="0.1524" layer="91"/>
 <label x="-7.62" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -13121,7 +13121,7 @@ fc = 400 Hz</text>
 <label x="215.9" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="26"/>
+<pinref part="EXT1" gate="A" pin="26"/>
 <wire x1="45.72" y1="45.72" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
 <label x="50.8" y="45.72" size="1.778" layer="95"/>
 </segment>
@@ -13158,7 +13158,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PC11/SD_D3" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="9"/>
+<pinref part="EXT1" gate="A" pin="9"/>
 <wire x1="38.1" y1="66.04" x2="-7.62" y2="66.04" width="0.1524" layer="91"/>
 <label x="-7.62" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -13174,7 +13174,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PC12/SD_CLK" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="10"/>
+<pinref part="EXT1" gate="A" pin="10"/>
 <wire x1="45.72" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <label x="50.8" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -13191,9 +13191,9 @@ fc = 400 Hz</text>
 <label x="215.9" y="-2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="1" pin="1"/>
-<wire x1="0" y1="-43.18" x2="25.4" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-43.18" x2="25.4" y2="-43.18" width="0.1524" layer="91"/>
 <label x="2.54" y="-43.18" size="1.778" layer="95"/>
+<pinref part="JP2" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="PC5/SPI1_ENC4_STA" class="0">
@@ -13203,9 +13203,9 @@ fc = 400 Hz</text>
 <label x="215.9" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="1" pin="1"/>
-<wire x1="0" y1="-63.5" x2="25.4" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-63.5" x2="25.4" y2="-63.5" width="0.1524" layer="91"/>
 <label x="2.54" y="-63.5" size="1.778" layer="95"/>
+<pinref part="JP4" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -13276,7 +13276,7 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="58.42" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
 <label x="50.8" y="-2.54" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="26"/>
+<pinref part="EXT2" gate="A" pin="26"/>
 <wire x1="58.42" y1="-10.16" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-1" pin="S"/>
 <wire x1="58.42" y1="-7.62" x2="58.42" y2="-2.54" width="0.1524" layer="91"/>
@@ -13295,13 +13295,13 @@ fc = 400 Hz</text>
 <pinref part="T3" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="EXT1" gate="A" pin="5"/>
 <wire x1="38.1" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
 <label x="-7.62" y="71.12" size="1.778" layer="95"/>
 <pinref part="+3V35" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="EXT2" gate="A" pin="5"/>
 <wire x1="38.1" y1="22.86" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
 <label x="-7.62" y="22.86" size="1.778" layer="95"/>
 <pinref part="+3V36" gate="G$1" pin="+3V3"/>
@@ -13389,7 +13389,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PB15/M2_RDY" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="19"/>
+<pinref part="EXT2" gate="A" pin="19"/>
 <wire x1="38.1" y1="5.08" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
 <label x="-7.62" y="5.08" size="1.778" layer="95"/>
 </segment>
@@ -13398,7 +13398,7 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="63.5" y1="10.16" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
 <label x="50.8" y="10.16" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="16"/>
+<pinref part="EXT2" gate="A" pin="16"/>
 </segment>
 </net>
 <net name="ENC2_CHA-" class="0">
@@ -13628,7 +13628,7 @@ fc = 400 Hz</text>
 <label x="-12.7" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="15"/>
+<pinref part="EXT2" gate="A" pin="15"/>
 <wire x1="38.1" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
 <label x="-7.62" y="10.16" size="1.778" layer="95"/>
 </segment>
@@ -13637,7 +13637,7 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="63.5" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 <label x="50.8" y="12.7" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="14"/>
+<pinref part="EXT2" gate="A" pin="14"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="D"/>
@@ -14202,7 +14202,7 @@ fc = 400 Hz</text>
 <net name="+3V3A" class="0">
 <segment>
 <pinref part="+3V3A1" gate="G$1" pin="+3V3A"/>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="EXT2" gate="A" pin="1"/>
 <wire x1="-7.62" y1="30.48" x2="-7.62" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 </segment>
@@ -14272,7 +14272,7 @@ fc = 400 Hz</text>
 <label x="-12.7" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="16"/>
+<pinref part="EXT1" gate="A" pin="16"/>
 <wire x1="45.72" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
 <label x="50.8" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -14290,14 +14290,14 @@ fc = 400 Hz</text>
 </net>
 <net name="PB9/FLYW_RS-485_DE" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="17"/>
+<pinref part="EXT1" gate="A" pin="17"/>
 <wire x1="38.1" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
 <label x="-7.62" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC0/ADC10/M1_CURRENT" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="19"/>
+<pinref part="EXT1" gate="A" pin="19"/>
 <wire x1="38.1" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="-7.62" y="53.34" size="1.778" layer="95"/>
 </segment>
@@ -14319,7 +14319,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PC1/ADC11/M2_CURRENT" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="20"/>
+<pinref part="EXT1" gate="A" pin="20"/>
 <wire x1="45.72" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
 <label x="50.8" y="53.34" size="1.778" layer="95"/>
 </segment>
@@ -14341,14 +14341,14 @@ fc = 400 Hz</text>
 </net>
 <net name="PA9/TIM1_CH2/M2_PWM" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="EXT1" gate="A" pin="4"/>
 <wire x1="45.72" y1="73.66" x2="60.96" y2="73.66" width="0.1524" layer="91"/>
 <label x="50.8" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA8/TIM1_CH1/M1_PWM" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="EXT1" gate="A" pin="2"/>
 <wire x1="45.72" y1="76.2" x2="60.96" y2="76.2" width="0.1524" layer="91"/>
 <label x="50.8" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -14390,7 +14390,7 @@ fc = 400 Hz</text>
 <label x="347.98" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="8"/>
+<pinref part="EXT2" gate="A" pin="8"/>
 <wire x1="45.72" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
 <label x="50.8" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -14404,7 +14404,7 @@ fc = 400 Hz</text>
 <segment>
 <wire x1="63.5" y1="5.08" x2="45.72" y2="5.08" width="0.1524" layer="91"/>
 <label x="50.8" y="5.08" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="20"/>
+<pinref part="EXT2" gate="A" pin="20"/>
 </segment>
 </net>
 <net name="PC7/TIM3_CH2/ENC2_CHB" class="0">
@@ -14414,7 +14414,7 @@ fc = 400 Hz</text>
 <label x="347.98" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="21"/>
+<pinref part="EXT2" gate="A" pin="21"/>
 <wire x1="38.1" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="91"/>
 <label x="-7.62" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -14426,7 +14426,7 @@ fc = 400 Hz</text>
 <label x="347.98" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="13"/>
+<pinref part="EXT1" gate="A" pin="13"/>
 <wire x1="38.1" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91"/>
 <label x="-7.62" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -14438,7 +14438,7 @@ fc = 400 Hz</text>
 <label x="347.98" y="116.84" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="15"/>
+<pinref part="EXT1" gate="A" pin="15"/>
 <wire x1="38.1" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
 <label x="-7.62" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -14493,7 +14493,7 @@ fc = 400 Hz</text>
 </net>
 <net name="PC2/ADC12/RIDER_TORQUE" class="0">
 <segment>
-<pinref part="JP3" gate="1" pin="3"/>
+<pinref part="JP1" gate="1" pin="3"/>
 <wire x1="0" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
 <label x="2.54" y="-27.94" size="1.778" layer="95"/>
 </segment>
@@ -14515,21 +14515,21 @@ fc = 400 Hz</text>
 </net>
 <net name="PC2/SPI1_ENC3_NSS/ADC12" class="0">
 <segment>
-<pinref part="JP3" gate="1" pin="2"/>
+<pinref part="JP1" gate="1" pin="2"/>
 <wire x1="0" y1="-30.48" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
 <label x="2.54" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="EXT2" gate="A" pin="2"/>
 <wire x1="45.72" y1="27.94" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
 <label x="50.8" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC3/ADC13/PEDAL_SPEED" class="0">
 <segment>
-<pinref part="JP4" gate="1" pin="3"/>
-<wire x1="0" y1="-38.1" x2="25.4" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-38.1" x2="25.4" y2="-38.1" width="0.1524" layer="91"/>
 <label x="2.54" y="-38.1" size="1.778" layer="95"/>
+<pinref part="JP2" gate="1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C23" gate="G$1" pin="2"/>
@@ -14549,19 +14549,19 @@ fc = 400 Hz</text>
 </net>
 <net name="PC3/SPI1_ENC3_STA/ADC13" class="0">
 <segment>
-<pinref part="JP4" gate="1" pin="2"/>
-<wire x1="0" y1="-40.64" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="1" pin="2"/>
+<wire x1="-5.08" y1="-40.64" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
 <label x="2.54" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="9"/>
+<pinref part="EXT2" gate="A" pin="9"/>
 <wire x1="38.1" y1="17.78" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
 <label x="-7.62" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC4/ADC14/FRONT_WHEEL_SPEED" class="0">
 <segment>
-<pinref part="JP5" gate="1" pin="3"/>
+<pinref part="JP3" gate="1" pin="3"/>
 <wire x1="0" y1="-48.26" x2="25.4" y2="-48.26" width="0.1524" layer="91"/>
 <label x="2.54" y="-48.26" size="1.778" layer="95"/>
 </segment>
@@ -14583,21 +14583,21 @@ fc = 400 Hz</text>
 </net>
 <net name="PC4/SPI1_ENC4_NSS/ADC14" class="0">
 <segment>
-<pinref part="JP5" gate="1" pin="2"/>
+<pinref part="JP3" gate="1" pin="2"/>
 <wire x1="0" y1="-50.8" x2="25.4" y2="-50.8" width="0.1524" layer="91"/>
 <label x="2.54" y="-50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
 <label x="50.8" y="15.24" size="1.778" layer="95"/>
-<pinref part="JP2" gate="A" pin="12"/>
+<pinref part="EXT2" gate="A" pin="12"/>
 </segment>
 </net>
 <net name="PC5/ADC15/REAR_WHEEL_SPEED" class="0">
 <segment>
-<pinref part="JP6" gate="1" pin="3"/>
-<wire x1="0" y1="-58.42" x2="25.4" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-58.42" x2="25.4" y2="-58.42" width="0.1524" layer="91"/>
 <label x="2.54" y="-58.42" size="1.778" layer="95"/>
+<pinref part="JP4" gate="1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C32" gate="G$1" pin="2"/>
@@ -14617,12 +14617,12 @@ fc = 400 Hz</text>
 </net>
 <net name="PC5/SPI1_ENC4_STA/ADC15" class="0">
 <segment>
-<pinref part="JP6" gate="1" pin="2"/>
-<wire x1="0" y1="-60.96" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="1" pin="2"/>
+<wire x1="-5.08" y1="-60.96" x2="25.4" y2="-60.96" width="0.1524" layer="91"/>
 <label x="2.54" y="-60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="13"/>
+<pinref part="EXT2" gate="A" pin="13"/>
 <wire x1="38.1" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
 <label x="-7.62" y="12.7" size="1.778" layer="95"/>
 </segment>
