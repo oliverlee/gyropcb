@@ -14277,7 +14277,12 @@ fc = 400 Hz</text>
 <label x="50.8" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB9/FLYWHEEL_RS-485_DE" class="0">
+<net name="PB9/FLYW_RS-485_DE" class="0">
+<segment>
+<pinref part="EXT1" gate="A" pin="17"/>
+<wire x1="38.1" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
+<label x="-7.62" y="55.88" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="U1" gate="A" pin="DE"/>
 <pinref part="U1" gate="A" pin="~RE"/>
@@ -14286,13 +14291,6 @@ fc = 400 Hz</text>
 <wire x1="17.78" y1="162.56" x2="-2.54" y2="162.56" width="0.1524" layer="91"/>
 <junction x="17.78" y="162.56"/>
 <label x="-12.7" y="162.56" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PB9/FLYW_RS-485_DE" class="0">
-<segment>
-<pinref part="EXT1" gate="A" pin="17"/>
-<wire x1="38.1" y1="55.88" x2="-7.62" y2="55.88" width="0.1524" layer="91"/>
-<label x="-7.62" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC0/ADC10/M1_CURRENT" class="0">
