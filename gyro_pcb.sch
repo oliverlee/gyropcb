@@ -12658,16 +12658,16 @@ fc = 400 Hz</text>
 <label x="287.02" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PB0/SPI1_ENC2_NSS" class="0">
+<net name="PB0/SPI1_IMU_NSS" class="0">
 <segment>
 <pinref part="EXT1" gate="A" pin="21"/>
 <wire x1="38.1" y1="50.8" x2="-7.62" y2="50.8" width="0.1524" layer="91"/>
 <label x="-7.62" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U5" gate="A" pin="5"/>
-<wire x1="177.8" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
-<label x="157.48" y="20.32" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="!CS"/>
+<wire x1="223.52" y1="-81.28" x2="238.76" y2="-81.28" width="0.1524" layer="91"/>
+<label x="226.06" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -13017,16 +13017,16 @@ fc = 400 Hz</text>
 <label x="347.98" y="167.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PA3/SPI1_IMU_NSS" class="0">
+<net name="PA3/SPI1_ENC2_NSS" class="0">
 <segment>
 <wire x1="63.5" y1="17.78" x2="45.72" y2="17.78" width="0.1524" layer="91"/>
 <label x="50.8" y="17.78" size="1.778" layer="95"/>
 <pinref part="EXT2" gate="A" pin="10"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="!CS"/>
-<wire x1="223.52" y1="-81.28" x2="238.76" y2="-81.28" width="0.1524" layer="91"/>
-<label x="226.06" y="-81.28" size="1.778" layer="95"/>
+<pinref part="U5" gate="A" pin="5"/>
+<wire x1="177.8" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+<label x="157.48" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC4/SPI1_ENC4_NSS" class="0">
