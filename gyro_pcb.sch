@@ -12950,21 +12950,16 @@ fc = 400 Hz</text>
 <wire x1="416.56" y1="91.44" x2="416.56" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PA2/SPI1_PWR" class="0">
+<net name="PA2/SPI1_ENC1_STA" class="0">
 <segment>
 <pinref part="EXT2" gate="A" pin="7"/>
 <wire x1="38.1" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
 <label x="-7.62" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="116.84" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="91"/>
-<label x="96.52" y="-2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U8" gate="A" pin="A"/>
-<wire x1="111.76" y1="-71.12" x2="99.06" y2="-71.12" width="0.1524" layer="91"/>
-<label x="93.98" y="-71.12" size="1.778" layer="95"/>
+<pinref part="U4" gate="A" pin="2"/>
+<wire x1="213.36" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
+<label x="215.9" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA4/SPI1_ENC1_NSS" class="0">
@@ -13102,16 +13097,21 @@ fc = 400 Hz</text>
 <junction x="170.18" y="-73.66"/>
 </segment>
 </net>
-<net name="PA10/SPI1_ENC1_STA" class="0">
-<segment>
-<pinref part="U4" gate="A" pin="2"/>
-<wire x1="213.36" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
-<label x="215.9" y="53.34" size="1.778" layer="95"/>
-</segment>
+<net name="PA10/SPI1_PWR" class="0">
 <segment>
 <pinref part="EXT1" gate="A" pin="7"/>
 <wire x1="38.1" y1="68.58" x2="-7.62" y2="68.58" width="0.1524" layer="91"/>
 <label x="-7.62" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="-2.54" x2="104.14" y2="-2.54" width="0.1524" layer="91"/>
+<label x="96.52" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U8" gate="A" pin="A"/>
+<wire x1="111.76" y1="-71.12" x2="99.06" y2="-71.12" width="0.1524" layer="91"/>
+<label x="93.98" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB1/SPI1_ENC2_STA" class="0">
