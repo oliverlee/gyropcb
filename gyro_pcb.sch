@@ -11928,7 +11928,6 @@ grid 5.08 mm</description>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="+3V33" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="+3V36" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V35" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
 <part name="R56" library="rcl" deviceset="R-EU_" device="R0603" value="33k"/>
@@ -12178,7 +12177,6 @@ fc = 400 Hz</text>
 <instance part="GND19" gate="1" x="213.36" y="-40.64"/>
 <instance part="+3V33" gate="G$1" x="170.18" y="-50.8"/>
 <instance part="P+7" gate="1" x="147.32" y="27.94"/>
-<instance part="+3V36" gate="G$1" x="-12.7" y="25.4"/>
 <instance part="+3V35" gate="G$1" x="-10.16" y="73.66"/>
 <instance part="GND59" gate="1" x="312.42" y="-73.66"/>
 <instance part="R56" gate="G$1" x="327.66" y="-27.94" rot="R90"/>
@@ -13299,12 +13297,6 @@ fc = 400 Hz</text>
 <wire x1="38.1" y1="71.12" x2="-10.16" y2="71.12" width="0.1524" layer="91"/>
 <label x="-7.62" y="71.12" size="1.778" layer="95"/>
 <pinref part="+3V35" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="EXT2" gate="A" pin="5"/>
-<wire x1="38.1" y1="22.86" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
-<label x="-7.62" y="22.86" size="1.778" layer="95"/>
-<pinref part="+3V36" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="+3V37" gate="G$1" pin="+3V3"/>
@@ -14623,6 +14615,13 @@ fc = 400 Hz</text>
 <pinref part="EXT2" gate="A" pin="13"/>
 <wire x1="38.1" y1="12.7" x2="-7.62" y2="12.7" width="0.1524" layer="91"/>
 <label x="-7.62" y="12.7" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+3V3(DISC)" class="0">
+<segment>
+<pinref part="EXT2" gate="A" pin="5"/>
+<wire x1="38.1" y1="22.86" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+<label x="-7.62" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
