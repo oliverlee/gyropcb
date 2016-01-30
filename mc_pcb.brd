@@ -196,26 +196,26 @@
 <text x="75.692" y="21.844" size="0.8128" layer="21" font="vector" ratio="16">X8 ADC10</text>
 <text x="84.074" y="21.844" size="0.8128" layer="21" font="vector" ratio="16">X10 ADC12</text>
 <text x="92.964" y="21.844" size="0.8128" layer="21" font="vector" ratio="16">X12 ADC14</text>
-<wire x1="68.58" y1="24.638" x2="68.58" y2="26.67" width="0.254" layer="21"/>
-<wire x1="68.58" y1="26.67" x2="69.088" y2="26.67" width="0.254" layer="21"/>
-<wire x1="69.088" y1="26.67" x2="69.088" y2="26.924" width="0.254" layer="21"/>
-<wire x1="69.088" y1="26.924" x2="70.866" y2="26.924" width="0.254" layer="21"/>
-<wire x1="68.58" y1="24.638" x2="69.088" y2="24.638" width="0.254" layer="21"/>
-<wire x1="69.088" y1="24.638" x2="69.088" y2="24.384" width="0.254" layer="21"/>
-<wire x1="69.088" y1="24.384" x2="70.866" y2="24.384" width="0.254" layer="21"/>
-<wire x1="70.866" y1="24.384" x2="70.866" y2="26.924" width="0.254" layer="21"/>
-<wire x1="69.596" y1="24.892" x2="69.596" y2="25.4" width="0.254" layer="21" curve="-180"/>
-<wire x1="70.104" y1="25.4" x2="70.104" y2="24.892" width="0.254" layer="21" curve="-180"/>
-<wire x1="69.596" y1="24.892" x2="70.104" y2="24.892" width="0.254" layer="21"/>
-<wire x1="69.596" y1="25.4" x2="70.104" y2="25.4" width="0.254" layer="21"/>
-<wire x1="69.596" y1="25.908" x2="69.596" y2="26.416" width="0.254" layer="21" curve="-180"/>
-<wire x1="70.104" y1="26.416" x2="70.104" y2="25.908" width="0.254" layer="21" curve="-180"/>
-<wire x1="69.596" y1="26.416" x2="70.104" y2="26.416" width="0.254" layer="21"/>
-<wire x1="69.596" y1="25.908" x2="70.104" y2="25.908" width="0.254" layer="21"/>
-<wire x1="69.85" y1="26.162" x2="71.374" y2="26.162" width="0.254" layer="21"/>
-<text x="71.882" y="25.908" size="0.8128" layer="21" font="vector" ratio="16">SIG</text>
-<text x="71.882" y="24.638" size="0.8128" layer="21" font="vector" ratio="16">GND</text>
-<wire x1="69.85" y1="25.146" x2="71.374" y2="25.146" width="0.254" layer="21"/>
+<wire x1="68.072" y1="25.654" x2="68.072" y2="27.686" width="0.254" layer="21"/>
+<wire x1="68.072" y1="27.686" x2="68.58" y2="27.686" width="0.254" layer="21"/>
+<wire x1="68.58" y1="27.686" x2="68.58" y2="27.94" width="0.254" layer="21"/>
+<wire x1="68.58" y1="27.94" x2="70.358" y2="27.94" width="0.254" layer="21"/>
+<wire x1="68.072" y1="25.654" x2="68.58" y2="25.654" width="0.254" layer="21"/>
+<wire x1="68.58" y1="25.654" x2="68.58" y2="25.4" width="0.254" layer="21"/>
+<wire x1="68.58" y1="25.4" x2="70.358" y2="25.4" width="0.254" layer="21"/>
+<wire x1="70.358" y1="25.4" x2="70.358" y2="27.94" width="0.254" layer="21"/>
+<wire x1="69.088" y1="25.908" x2="69.088" y2="26.416" width="0.254" layer="21" curve="-180"/>
+<wire x1="69.596" y1="26.416" x2="69.596" y2="25.908" width="0.254" layer="21" curve="-180"/>
+<wire x1="69.088" y1="25.908" x2="69.596" y2="25.908" width="0.254" layer="21"/>
+<wire x1="69.088" y1="26.416" x2="69.596" y2="26.416" width="0.254" layer="21"/>
+<wire x1="69.088" y1="26.924" x2="69.088" y2="27.432" width="0.254" layer="21" curve="-180"/>
+<wire x1="69.596" y1="27.432" x2="69.596" y2="26.924" width="0.254" layer="21" curve="-180"/>
+<wire x1="69.088" y1="27.432" x2="69.596" y2="27.432" width="0.254" layer="21"/>
+<wire x1="69.088" y1="26.924" x2="69.596" y2="26.924" width="0.254" layer="21"/>
+<wire x1="69.342" y1="27.178" x2="70.866" y2="27.178" width="0.254" layer="21"/>
+<text x="71.374" y="26.924" size="0.8128" layer="21" font="vector" ratio="16">SIG</text>
+<text x="71.374" y="25.654" size="0.8128" layer="21" font="vector" ratio="16">GND</text>
+<wire x1="69.342" y1="26.162" x2="70.866" y2="26.162" width="0.254" layer="21"/>
 <text x="75.438" y="18.542" size="0.8128" layer="21" font="vector" ratio="16">2B+</text>
 <text x="77.978" y="18.542" size="0.8128" layer="21" font="vector" ratio="16">2B-</text>
 <text x="80.518" y="18.542" size="0.8128" layer="21" font="vector" ratio="16">2A+</text>
@@ -348,6 +348,8 @@ MUST BE DISCONNECTED</text>
 <text x="58.42" y="52.07" size="0.8128" layer="21" font="vector" ratio="16">Y</text>
 <text x="59.436" y="53.34" size="0.8128" layer="21" font="vector" ratio="16">X</text>
 <text x="57.15" y="54.61" size="0.8128" layer="21" font="vector" ratio="16">COMPASS</text>
+<text x="67.056" y="23.368" size="0.8128" layer="21" font="vector" ratio="16">±4V:X8,X9</text>
+<text x="66.294" y="21.844" size="0.8128" layer="21" font="vector" ratio="16">±10V:X10-13</text>
 </plain>
 <libraries>
 <library name="rcl">
