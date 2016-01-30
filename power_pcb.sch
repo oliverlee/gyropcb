@@ -17590,16 +17590,16 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GIMBAL1_DRIVE_IO" library="pinhead" deviceset="PINHD-1X11" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GNDA" device=""/>
-<part name="GIMBAL1_CON" library="con-molex" deviceset="5566-8" device=""/>
+<part name="GIMBAL1_HALL" library="con-molex" deviceset="5566-8" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="GIMBAL1_ENC_CON" library="con-3m" deviceset="2510-" device=""/>
+<part name="GIMBAL1_ENC" library="con-3m" deviceset="2510-" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
 <part name="GIMBAL2_DRIVE_CTRL" library="pinhead" deviceset="PINHD-2X9" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="GIMBAL2_CON" library="con-molex" deviceset="5566-8" device=""/>
+<part name="GIMBAL2_HALL" library="con-molex" deviceset="5566-8" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
-<part name="GIMBAL2_ENC_CON" library="con-3m" deviceset="2510-" device=""/>
+<part name="GIMBAL2_ENC" library="con-3m" deviceset="2510-" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" deviceset="+24V" device=""/>
 <part name="GIMBAL2_DRIVE_IO" library="pinhead" deviceset="PINHD-1X11" device=""/>
@@ -17656,54 +17656,60 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <plain>
 <text x="121.92" y="144.78" size="1.778" layer="94">REFER TO PAGE 5-33 FOR
 OPTIONAL MOTOR CHOKE</text>
+<text x="203.2" y="25.4" size="1.778" layer="94">THIS IS MISSING FROM
+MC BOARD CONNECTIONS</text>
+<wire x1="187.96" y1="63.5" x2="266.7" y2="63.5" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="63.5" x2="266.7" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="266.7" y1="15.24" x2="187.96" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="187.96" y1="15.24" x2="187.96" y2="63.5" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="GIMBAL1_DRIVE_CTRL" gate="A" x="144.78" y="200.66"/>
 <instance part="GIMBAL1_DRIVE_IO" gate="A" x="269.24" y="175.26" rot="R180"/>
 <instance part="GND24" gate="1" x="134.62" y="185.42"/>
 <instance part="GND25" gate="1" x="276.86" y="154.94"/>
-<instance part="GIMBAL1_CON" gate="-1" x="144.78" y="175.26"/>
-<instance part="GIMBAL1_CON" gate="-2" x="144.78" y="172.72"/>
-<instance part="GIMBAL1_CON" gate="-3" x="144.78" y="170.18"/>
-<instance part="GIMBAL1_CON" gate="-4" x="144.78" y="167.64"/>
-<instance part="GIMBAL1_CON" gate="-5" x="144.78" y="165.1"/>
-<instance part="GIMBAL1_CON" gate="-6" x="144.78" y="162.56"/>
-<instance part="GIMBAL1_CON" gate="-7" x="144.78" y="160.02"/>
-<instance part="GIMBAL1_CON" gate="-8" x="144.78" y="157.48"/>
+<instance part="GIMBAL1_HALL" gate="-1" x="144.78" y="175.26"/>
+<instance part="GIMBAL1_HALL" gate="-2" x="144.78" y="172.72"/>
+<instance part="GIMBAL1_HALL" gate="-3" x="144.78" y="170.18"/>
+<instance part="GIMBAL1_HALL" gate="-4" x="144.78" y="167.64"/>
+<instance part="GIMBAL1_HALL" gate="-5" x="144.78" y="165.1"/>
+<instance part="GIMBAL1_HALL" gate="-6" x="144.78" y="162.56"/>
+<instance part="GIMBAL1_HALL" gate="-7" x="144.78" y="160.02"/>
+<instance part="GIMBAL1_HALL" gate="-8" x="144.78" y="157.48"/>
 <instance part="GND26" gate="1" x="137.16" y="152.4"/>
-<instance part="GIMBAL1_ENC_CON" gate="-1" x="195.58" y="177.8"/>
-<instance part="GIMBAL1_ENC_CON" gate="-2" x="195.58" y="175.26"/>
-<instance part="GIMBAL1_ENC_CON" gate="-3" x="195.58" y="172.72"/>
-<instance part="GIMBAL1_ENC_CON" gate="-4" x="195.58" y="170.18"/>
-<instance part="GIMBAL1_ENC_CON" gate="-5" x="195.58" y="167.64"/>
-<instance part="GIMBAL1_ENC_CON" gate="-6" x="195.58" y="165.1"/>
-<instance part="GIMBAL1_ENC_CON" gate="-7" x="195.58" y="162.56"/>
-<instance part="GIMBAL1_ENC_CON" gate="-8" x="195.58" y="160.02"/>
-<instance part="GIMBAL1_ENC_CON" gate="-9" x="195.58" y="157.48"/>
-<instance part="GIMBAL1_ENC_CON" gate="-10" x="195.58" y="154.94"/>
+<instance part="GIMBAL1_ENC" gate="-1" x="195.58" y="177.8"/>
+<instance part="GIMBAL1_ENC" gate="-2" x="195.58" y="175.26"/>
+<instance part="GIMBAL1_ENC" gate="-3" x="195.58" y="172.72"/>
+<instance part="GIMBAL1_ENC" gate="-4" x="195.58" y="170.18"/>
+<instance part="GIMBAL1_ENC" gate="-5" x="195.58" y="167.64"/>
+<instance part="GIMBAL1_ENC" gate="-6" x="195.58" y="165.1"/>
+<instance part="GIMBAL1_ENC" gate="-7" x="195.58" y="162.56"/>
+<instance part="GIMBAL1_ENC" gate="-8" x="195.58" y="160.02"/>
+<instance part="GIMBAL1_ENC" gate="-9" x="195.58" y="157.48"/>
+<instance part="GIMBAL1_ENC" gate="-10" x="195.58" y="154.94"/>
 <instance part="GND27" gate="1" x="203.2" y="152.4"/>
 <instance part="P+5" gate="1" x="116.84" y="223.52"/>
 <instance part="GIMBAL2_DRIVE_CTRL" gate="A" x="144.78" y="124.46"/>
 <instance part="GND30" gate="1" x="134.62" y="109.22"/>
-<instance part="GIMBAL2_CON" gate="-1" x="144.78" y="99.06"/>
-<instance part="GIMBAL2_CON" gate="-2" x="144.78" y="96.52"/>
-<instance part="GIMBAL2_CON" gate="-3" x="144.78" y="93.98"/>
-<instance part="GIMBAL2_CON" gate="-4" x="144.78" y="91.44"/>
-<instance part="GIMBAL2_CON" gate="-5" x="144.78" y="88.9"/>
-<instance part="GIMBAL2_CON" gate="-6" x="144.78" y="86.36"/>
-<instance part="GIMBAL2_CON" gate="-7" x="144.78" y="83.82"/>
-<instance part="GIMBAL2_CON" gate="-8" x="144.78" y="81.28"/>
+<instance part="GIMBAL2_HALL" gate="-1" x="144.78" y="99.06"/>
+<instance part="GIMBAL2_HALL" gate="-2" x="144.78" y="96.52"/>
+<instance part="GIMBAL2_HALL" gate="-3" x="144.78" y="93.98"/>
+<instance part="GIMBAL2_HALL" gate="-4" x="144.78" y="91.44"/>
+<instance part="GIMBAL2_HALL" gate="-5" x="144.78" y="88.9"/>
+<instance part="GIMBAL2_HALL" gate="-6" x="144.78" y="86.36"/>
+<instance part="GIMBAL2_HALL" gate="-7" x="144.78" y="83.82"/>
+<instance part="GIMBAL2_HALL" gate="-8" x="144.78" y="81.28"/>
 <instance part="GND31" gate="1" x="137.16" y="76.2"/>
-<instance part="GIMBAL2_ENC_CON" gate="-1" x="195.58" y="101.6"/>
-<instance part="GIMBAL2_ENC_CON" gate="-2" x="195.58" y="99.06"/>
-<instance part="GIMBAL2_ENC_CON" gate="-3" x="195.58" y="96.52"/>
-<instance part="GIMBAL2_ENC_CON" gate="-4" x="195.58" y="93.98"/>
-<instance part="GIMBAL2_ENC_CON" gate="-5" x="195.58" y="91.44"/>
-<instance part="GIMBAL2_ENC_CON" gate="-6" x="195.58" y="88.9"/>
-<instance part="GIMBAL2_ENC_CON" gate="-7" x="195.58" y="86.36"/>
-<instance part="GIMBAL2_ENC_CON" gate="-8" x="195.58" y="83.82"/>
-<instance part="GIMBAL2_ENC_CON" gate="-9" x="195.58" y="81.28"/>
-<instance part="GIMBAL2_ENC_CON" gate="-10" x="195.58" y="78.74"/>
+<instance part="GIMBAL2_ENC" gate="-1" x="195.58" y="101.6"/>
+<instance part="GIMBAL2_ENC" gate="-2" x="195.58" y="99.06"/>
+<instance part="GIMBAL2_ENC" gate="-3" x="195.58" y="96.52"/>
+<instance part="GIMBAL2_ENC" gate="-4" x="195.58" y="93.98"/>
+<instance part="GIMBAL2_ENC" gate="-5" x="195.58" y="91.44"/>
+<instance part="GIMBAL2_ENC" gate="-6" x="195.58" y="88.9"/>
+<instance part="GIMBAL2_ENC" gate="-7" x="195.58" y="86.36"/>
+<instance part="GIMBAL2_ENC" gate="-8" x="195.58" y="83.82"/>
+<instance part="GIMBAL2_ENC" gate="-9" x="195.58" y="81.28"/>
+<instance part="GIMBAL2_ENC" gate="-10" x="195.58" y="78.74"/>
 <instance part="GND32" gate="1" x="203.2" y="76.2"/>
 <instance part="P+7" gate="1" x="116.84" y="147.32"/>
 <instance part="GIMBAL2_DRIVE_IO" gate="A" x="269.24" y="132.08" rot="R180"/>
@@ -17782,14 +17788,14 @@ OPTIONAL MOTOR CHOKE</text>
 <junction x="142.24" y="200.66"/>
 </segment>
 <segment>
-<pinref part="GIMBAL1_CON" gate="-6" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-6" pin="S"/>
 <wire x1="142.24" y1="162.56" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="137.16" y1="154.94" x2="137.16" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
-<pinref part="GIMBAL1_ENC_CON" gate="-3" pin="KL"/>
+<pinref part="GIMBAL1_ENC" gate="-3" pin="KL"/>
 <wire x1="203.2" y1="154.94" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="172.72" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
 </segment>
@@ -17803,14 +17809,14 @@ OPTIONAL MOTOR CHOKE</text>
 <junction x="142.24" y="124.46"/>
 </segment>
 <segment>
-<pinref part="GIMBAL2_CON" gate="-6" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-6" pin="S"/>
 <wire x1="142.24" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="137.16" y1="78.74" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND32" gate="1" pin="GND"/>
-<pinref part="GIMBAL2_ENC_CON" gate="-3" pin="KL"/>
+<pinref part="GIMBAL2_ENC" gate="-3" pin="KL"/>
 <wire x1="203.2" y1="78.74" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
 </segment>
@@ -17937,7 +17943,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="2"/>
 <wire x1="149.86" y1="210.82" x2="142.24" y2="210.82" width="0.1524" layer="91"/>
 <junction x="142.24" y="210.82"/>
-<pinref part="GIMBAL1_CON" gate="-7" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-7" pin="S"/>
 <label x="114.3" y="160.02" size="1.778" layer="95"/>
 <wire x1="142.24" y1="160.02" x2="109.22" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="160.02" x2="109.22" y2="210.82" width="0.1524" layer="91"/>
@@ -17952,7 +17958,7 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="149.86" y1="208.28" x2="142.24" y2="208.28" width="0.1524" layer="91"/>
 <junction x="142.24" y="208.28"/>
 <wire x1="111.76" y1="208.28" x2="111.76" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="GIMBAL1_CON" gate="-8" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-8" pin="S"/>
 <label x="114.3" y="157.48" size="1.778" layer="95"/>
 <wire x1="111.76" y1="157.48" x2="142.24" y2="157.48" width="0.1524" layer="91"/>
 </segment>
@@ -17965,7 +17971,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="6"/>
 <wire x1="149.86" y1="205.74" x2="142.24" y2="205.74" width="0.1524" layer="91"/>
 <junction x="142.24" y="205.74"/>
-<pinref part="GIMBAL1_CON" gate="-4" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-4" pin="S"/>
 <wire x1="142.24" y1="167.64" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="167.64" x2="114.3" y2="205.74" width="0.1524" layer="91"/>
 <label x="114.3" y="167.64" size="1.778" layer="95"/>
@@ -17976,11 +17982,11 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="11"/>
 <wire x1="142.24" y1="198.12" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
 <label x="116.84" y="198.12" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_CON" gate="-3" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-3" pin="S"/>
 <wire x1="142.24" y1="170.18" x2="116.84" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="170.18" x2="116.84" y2="180.34" width="0.1524" layer="91"/>
 <label x="116.84" y="170.18" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_ENC_CON" gate="-2" pin="KL"/>
+<pinref part="GIMBAL1_ENC" gate="-2" pin="KL"/>
 <wire x1="116.84" y1="180.34" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="175.26" x2="213.36" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="175.26" x2="213.36" y2="180.34" width="0.1524" layer="91"/>
@@ -17994,7 +18000,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="13"/>
 <wire x1="142.24" y1="195.58" x2="119.38" y2="195.58" width="0.1524" layer="91"/>
 <label x="119.38" y="195.58" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_CON" gate="-1" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-1" pin="S"/>
 <label x="124.46" y="175.26" size="1.778" layer="95"/>
 <wire x1="142.24" y1="175.26" x2="119.38" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="175.26" x2="119.38" y2="195.58" width="0.1524" layer="91"/>
@@ -18005,7 +18011,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="15"/>
 <wire x1="142.24" y1="193.04" x2="121.92" y2="193.04" width="0.1524" layer="91"/>
 <label x="121.92" y="193.04" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_CON" gate="-2" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-2" pin="S"/>
 <wire x1="142.24" y1="172.72" x2="121.92" y2="172.72" width="0.1524" layer="91"/>
 <label x="124.46" y="172.72" size="1.778" layer="95"/>
 <wire x1="121.92" y1="172.72" x2="121.92" y2="193.04" width="0.1524" layer="91"/>
@@ -18017,7 +18023,7 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="142.24" y1="190.5" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
 <label x="124.46" y="190.5" size="1.778" layer="95"/>
 <wire x1="124.46" y1="165.1" x2="124.46" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="GIMBAL1_CON" gate="-5" pin="S"/>
+<pinref part="GIMBAL1_HALL" gate="-5" pin="S"/>
 <wire x1="142.24" y1="165.1" x2="124.46" y2="165.1" width="0.1524" layer="91"/>
 <label x="124.46" y="165.1" size="1.778" layer="95"/>
 </segment>
@@ -18027,7 +18033,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="18"/>
 <wire x1="149.86" y1="190.5" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
 <label x="154.94" y="190.5" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_ENC_CON" gate="-7" pin="KL"/>
+<pinref part="GIMBAL1_ENC" gate="-7" pin="KL"/>
 <wire x1="200.66" y1="162.56" x2="220.98" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="162.56" x2="220.98" y2="190.5" width="0.1524" layer="91"/>
 <label x="205.74" y="162.56" size="1.778" layer="95"/>
@@ -18042,7 +18048,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="16"/>
 <wire x1="149.86" y1="193.04" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
 <label x="154.94" y="193.04" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_ENC_CON" gate="-8" pin="KL"/>
+<pinref part="GIMBAL1_ENC" gate="-8" pin="KL"/>
 <wire x1="200.66" y1="160.02" x2="223.52" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="160.02" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
 <label x="205.74" y="160.02" size="1.778" layer="95"/>
@@ -18057,7 +18063,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL1_DRIVE_CTRL" gate="A" pin="14"/>
 <wire x1="149.86" y1="195.58" x2="215.9" y2="195.58" width="0.1524" layer="91"/>
 <label x="154.94" y="195.58" size="1.778" layer="95"/>
-<pinref part="GIMBAL1_ENC_CON" gate="-5" pin="KL"/>
+<pinref part="GIMBAL1_ENC" gate="-5" pin="KL"/>
 <wire x1="200.66" y1="167.64" x2="215.9" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="167.64" x2="215.9" y2="195.58" width="0.1524" layer="91"/>
 <label x="205.74" y="167.64" size="1.778" layer="95"/>
@@ -18073,7 +18079,7 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="149.86" y1="198.12" x2="218.44" y2="198.12" width="0.1524" layer="91"/>
 <label x="154.94" y="198.12" size="1.778" layer="95"/>
 <wire x1="218.44" y1="198.12" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="GIMBAL1_ENC_CON" gate="-6" pin="KL"/>
+<pinref part="GIMBAL1_ENC" gate="-6" pin="KL"/>
 <wire x1="218.44" y1="165.1" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
 <label x="205.74" y="165.1" size="1.778" layer="95"/>
 <wire x1="231.14" y1="137.16" x2="218.44" y2="137.16" width="0.1524" layer="91"/>
@@ -18143,11 +18149,11 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="11"/>
 <wire x1="142.24" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 <label x="116.84" y="121.92" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_CON" gate="-3" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-3" pin="S"/>
 <wire x1="142.24" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="93.98" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
 <label x="116.84" y="93.98" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_ENC_CON" gate="-2" pin="KL"/>
+<pinref part="GIMBAL2_ENC" gate="-2" pin="KL"/>
 <wire x1="116.84" y1="104.14" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="99.06" x2="203.2" y2="104.14" width="0.1524" layer="91"/>
@@ -18164,7 +18170,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="2"/>
 <wire x1="149.86" y1="134.62" x2="142.24" y2="134.62" width="0.1524" layer="91"/>
 <junction x="142.24" y="134.62"/>
-<pinref part="GIMBAL2_CON" gate="-7" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-7" pin="S"/>
 <label x="114.3" y="83.82" size="1.778" layer="95"/>
 <wire x1="142.24" y1="83.82" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="83.82" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
@@ -18179,7 +18185,7 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="149.86" y1="132.08" x2="142.24" y2="132.08" width="0.1524" layer="91"/>
 <junction x="142.24" y="132.08"/>
 <wire x1="111.76" y1="132.08" x2="111.76" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="GIMBAL2_CON" gate="-8" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-8" pin="S"/>
 <label x="114.3" y="81.28" size="1.778" layer="95"/>
 <wire x1="111.76" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -18192,7 +18198,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="6"/>
 <wire x1="149.86" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
 <junction x="142.24" y="129.54"/>
-<pinref part="GIMBAL2_CON" gate="-4" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-4" pin="S"/>
 <wire x1="142.24" y1="91.44" x2="114.3" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="91.44" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
 <label x="114.3" y="91.44" size="1.778" layer="95"/>
@@ -18203,7 +18209,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="13"/>
 <wire x1="142.24" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
 <label x="119.38" y="119.38" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_CON" gate="-1" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-1" pin="S"/>
 <label x="124.46" y="99.06" size="1.778" layer="95"/>
 <wire x1="142.24" y1="99.06" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="99.06" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
@@ -18214,7 +18220,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="15"/>
 <wire x1="142.24" y1="116.84" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
 <label x="121.92" y="116.84" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_CON" gate="-2" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-2" pin="S"/>
 <wire x1="142.24" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
 <label x="124.46" y="96.52" size="1.778" layer="95"/>
 <wire x1="121.92" y1="96.52" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
@@ -18226,7 +18232,7 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="142.24" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
 <label x="124.46" y="114.3" size="1.778" layer="95"/>
 <wire x1="124.46" y1="88.9" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="GIMBAL2_CON" gate="-5" pin="S"/>
+<pinref part="GIMBAL2_HALL" gate="-5" pin="S"/>
 <wire x1="142.24" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
 <label x="124.46" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -18236,7 +18242,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="14"/>
 <wire x1="149.86" y1="119.38" x2="213.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="154.94" y="119.38" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_ENC_CON" gate="-5" pin="KL"/>
+<pinref part="GIMBAL2_ENC" gate="-5" pin="KL"/>
 <wire x1="200.66" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="91.44" x2="213.36" y2="119.38" width="0.1524" layer="91"/>
 <label x="205.74" y="91.44" size="1.778" layer="95"/>
@@ -18252,7 +18258,7 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="149.86" y1="121.92" x2="215.9" y2="121.92" width="0.1524" layer="91"/>
 <label x="154.94" y="121.92" size="1.778" layer="95"/>
 <wire x1="215.9" y1="121.92" x2="215.9" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="GIMBAL2_ENC_CON" gate="-6" pin="KL"/>
+<pinref part="GIMBAL2_ENC" gate="-6" pin="KL"/>
 <wire x1="215.9" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <label x="205.74" y="88.9" size="1.778" layer="95"/>
 <wire x1="231.14" y1="127" x2="215.9" y2="127" width="0.1524" layer="91"/>
@@ -18266,7 +18272,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="18"/>
 <wire x1="149.86" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
 <label x="154.94" y="114.3" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_ENC_CON" gate="-7" pin="KL"/>
+<pinref part="GIMBAL2_ENC" gate="-7" pin="KL"/>
 <wire x1="200.66" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="86.36" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
 <label x="205.74" y="86.36" size="1.778" layer="95"/>
@@ -18281,7 +18287,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GIMBAL2_DRIVE_CTRL" gate="A" pin="16"/>
 <wire x1="149.86" y1="116.84" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
 <label x="154.94" y="116.84" size="1.778" layer="95"/>
-<pinref part="GIMBAL2_ENC_CON" gate="-8" pin="KL"/>
+<pinref part="GIMBAL2_ENC" gate="-8" pin="KL"/>
 <wire x1="200.66" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="83.82" x2="220.98" y2="116.84" width="0.1524" layer="91"/>
 <label x="205.74" y="83.82" size="1.778" layer="95"/>
