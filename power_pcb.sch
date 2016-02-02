@@ -14808,6 +14808,32 @@ Source: http://www.molex.com</description>
 <text x="-10.16" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-10.16" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="5566-2">
+<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
+<wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-3.3" x2="2.6" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
+<wire x1="-6.1" y1="3.2" x2="-3.3" y2="3.2" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="-6.1" y1="1.4" x2="-3.3" y2="1.4" width="0.254" layer="21" curve="114.529547"/>
+<wire x1="-6.1" y1="3.2" x2="-6.1" y2="1.4" width="0.254" layer="21"/>
+<wire x1="-3.4" y1="3.3" x2="-2.7" y2="3.3" width="0.254" layer="21"/>
+<wire x1="-3.4" y1="1.3" x2="-2.7" y2="1.3" width="0.254" layer="21"/>
+<wire x1="3.3" y1="1.4" x2="6.1" y2="1.4" width="0.254" layer="21" curve="114.529547"/>
+<wire x1="3.3" y1="3.2" x2="6.1" y2="3.2" width="0.254" layer="21" curve="-114.529547"/>
+<wire x1="6.1" y1="1.4" x2="6.1" y2="3.2" width="0.254" layer="21"/>
+<wire x1="3.4" y1="1.3" x2="2.7" y2="1.3" width="0.254" layer="21"/>
+<wire x1="3.4" y1="3.3" x2="2.7" y2="3.3" width="0.254" layer="21"/>
+<wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<pad name="1" x="0" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
+<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="4.7" y="2.29" drill="3"/>
+<hole x="-4.7" y="2.29" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -14941,6 +14967,30 @@ wire to board 2.54 mm (0.100") pitch header</description>
 <attribute name="MPN" value="22-23-2081" constant="no"/>
 <attribute name="OC_FARNELL" value="1756826" constant="no"/>
 <attribute name="OC_NEWARK" value="01C7592" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5566-2" prefix="X">
+<description>&lt;b&gt;Mini FIT connector 2 pol&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always"/>
+<gate name="-2" symbol="MV" x="0" y="-2.54" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="5566-2">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="1822072" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17650,6 +17700,12 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND19" library="supply1" deviceset="GNDA" device=""/>
 <part name="X7" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="X5" library="con-molex" deviceset="22-23-2081" device=""/>
+<part name="X10" library="con-molex" deviceset="5566-2" device=""/>
+<part name="X11" library="con-molex" deviceset="5566-2" device=""/>
+<part name="GND22" library="supply1" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="+24V" device=""/>
+<part name="P+7" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17773,6 +17829,14 @@ MC BOARD CONNECTIONS</text>
 <instance part="X5" gate="-6" x="233.68" y="127"/>
 <instance part="X5" gate="-7" x="233.68" y="124.46"/>
 <instance part="X5" gate="-8" x="233.68" y="121.92"/>
+<instance part="X10" gate="-1" x="116.84" y="53.34"/>
+<instance part="X10" gate="-2" x="116.84" y="48.26"/>
+<instance part="X11" gate="-1" x="213.36" y="55.88"/>
+<instance part="X11" gate="-2" x="213.36" y="50.8"/>
+<instance part="GND22" gate="1" x="114.3" y="40.64"/>
+<instance part="GND23" gate="1" x="210.82" y="43.18"/>
+<instance part="P+6" gate="1" x="114.3" y="60.96"/>
+<instance part="P+7" gate="1" x="210.82" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -17864,6 +17928,16 @@ MC BOARD CONNECTIONS</text>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="264.16" y1="86.36" x2="264.16" y2="83.82" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="X11" gate="-2" pin="S"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="210.82" y1="50.8" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X10" gate="-2" pin="S"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="114.3" y1="48.26" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GNDA" class="0">
 <segment>
@@ -17926,6 +18000,11 @@ MC BOARD CONNECTIONS</text>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="195.58" y1="60.96" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
 <junction x="195.58" y="55.88"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<pinref part="X11" gate="-1" pin="S"/>
+<wire x1="210.82" y1="60.96" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -18522,6 +18601,11 @@ MC BOARD CONNECTIONS</text>
 <wire x1="116.84" y1="220.98" x2="116.84" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="203.2" x2="142.24" y2="203.2" width="0.1524" layer="91"/>
 <junction x="142.24" y="203.2"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="1" pin="+24V"/>
+<pinref part="X10" gate="-1" pin="S"/>
+<wire x1="114.3" y1="58.42" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$51" class="0">
