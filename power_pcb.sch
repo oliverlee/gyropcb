@@ -14834,6 +14834,21 @@ Source: http://www.molex.com</description>
 <hole x="4.7" y="2.29" drill="3"/>
 <hole x="-4.7" y="2.29" drill="3"/>
 </package>
+<package name="22-23-2031">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-3.81" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -14991,6 +15006,31 @@ Source: http://www.molex.com</description>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="OC_FARNELL" value="1822072" constant="no"/>
 <attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2031" prefix="X">
+<description>.100" (2.54mm) Center Header - 3 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2031">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2031" constant="no"/>
+<attribute name="OC_FARNELL" value="1462950" constant="no"/>
+<attribute name="OC_NEWARK" value="30C0862" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17761,18 +17801,14 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="P+6" library="supply1" deviceset="+24V" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="JP5" library="jumper" deviceset="JP1E" device=""/>
+<part name="X12" library="con-molex" deviceset="22-23-2031" device=""/>
+<part name="GND24" library="supply1" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="121.92" y="144.78" size="1.778" layer="94">REFER TO PAGE 5-33 FOR
 OPTIONAL MOTOR CHOKE</text>
-<text x="203.2" y="25.4" size="1.778" layer="94">THIS IS MISSING FROM
-MC BOARD CONNECTIONS</text>
-<wire x1="187.96" y1="63.5" x2="266.7" y2="63.5" width="0.1524" layer="94"/>
-<wire x1="266.7" y1="63.5" x2="266.7" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="266.7" y1="15.24" x2="187.96" y2="15.24" width="0.1524" layer="94"/>
-<wire x1="187.96" y1="15.24" x2="187.96" y2="63.5" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="JP1" gate="A" x="144.78" y="200.66"/>
@@ -17893,6 +17929,10 @@ MC BOARD CONNECTIONS</text>
 <instance part="P+6" gate="1" x="114.3" y="60.96"/>
 <instance part="P+7" gate="1" x="210.82" y="63.5"/>
 <instance part="JP5" gate="A" x="241.3" y="101.6" rot="R90"/>
+<instance part="X12" gate="-1" x="231.14" y="30.48" rot="R180"/>
+<instance part="X12" gate="-2" x="231.14" y="33.02" rot="R180"/>
+<instance part="X12" gate="-3" x="231.14" y="35.56" rot="R180"/>
+<instance part="GND24" gate="1" x="233.68" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -18028,6 +18068,11 @@ MC BOARD CONNECTIONS</text>
 <wire x1="314.96" y1="170.18" x2="314.96" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-2" pin="S"/>
 </segment>
+<segment>
+<pinref part="X12" gate="-1" pin="S"/>
+<wire x1="233.68" y1="25.4" x2="233.68" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="GNDA"/>
+</segment>
 </net>
 <net name="PB12/M1_EN" class="0">
 <segment>
@@ -18068,6 +18113,10 @@ MC BOARD CONNECTIONS</text>
 <pinref part="U1" gate="A" pin="VCC"/>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
 <wire x1="261.62" y1="38.1" x2="261.62" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="X12" gate="-3" pin="S"/>
+<wire x1="261.62" y1="38.1" x2="233.68" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="38.1" x2="233.68" y2="35.56" width="0.1524" layer="91"/>
+<junction x="261.62" y="38.1"/>
 </segment>
 </net>
 <net name="MOTOR1_WIND1" class="0">
@@ -18576,8 +18625,11 @@ MC BOARD CONNECTIONS</text>
 <net name="TORQUE_SENSOR_EN" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="A"/>
-<wire x1="261.62" y1="33.02" x2="243.84" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="33.02" x2="246.38" y2="33.02" width="0.1524" layer="91"/>
 <label x="238.76" y="33.02" size="1.778" layer="95"/>
+<pinref part="X12" gate="-2" pin="S"/>
+<wire x1="246.38" y1="33.02" x2="243.84" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="33.02" x2="243.84" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
