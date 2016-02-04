@@ -144,29 +144,29 @@
 <wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
 <wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
-<dimension x1="82.55" y1="69.088" x2="92.71" y2="30.988" x3="107.95" y3="50.038" textsize="0.8128" layer="51" dtype="vertical" unit="mil"/>
-<dimension x1="82.55" y1="74.422" x2="61.722" y2="76.708" x3="72.136" y3="85.09" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
-<dimension x1="69.85" y1="70.358" x2="95.25" y2="70.104" x3="82.55" y3="88.138" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
-<dimension x1="61.722" y1="79.502" x2="40.894" y2="69.088" x3="51.308" y3="85.09" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
+<dimension x1="82.55" y1="69.088" x2="92.71" y2="30.988" x3="107.95" y3="50.038" textsize="0.8128" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="82.55" y1="74.422" x2="61.722" y2="76.708" x3="72.136" y3="85.09" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="69.85" y1="70.358" x2="95.25" y2="70.104" x3="82.55" y3="88.138" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="61.722" y1="79.502" x2="40.894" y2="69.088" x3="51.308" y3="85.09" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
 <wire x1="66.675" y1="28.448" x2="66.675" y2="71.628" width="0.254" layer="22"/>
 <wire x1="66.675" y1="71.628" x2="98.425" y2="71.628" width="0.254" layer="22"/>
 <wire x1="98.425" y1="71.628" x2="98.425" y2="28.448" width="0.254" layer="22"/>
 <wire x1="98.425" y1="28.448" x2="66.675" y2="28.448" width="0.254" layer="22"/>
 <wire x1="82.55" y1="50.546" x2="82.55" y2="49.53" width="0.254" layer="20"/>
 <wire x1="82.042" y1="50.038" x2="83.058" y2="50.038" width="0.254" layer="20"/>
-<dimension x1="83.058" y1="50.038" x2="95.25" y2="69.088" x3="102.108" y3="59.563" textsize="0.8128" layer="51" dtype="vertical" unit="mil"/>
-<dimension x1="83.058" y1="50.038" x2="89.662" y2="71.628" x3="104.394" y3="60.833" textsize="0.8128" layer="51" dtype="vertical" unit="mil"/>
-<dimension x1="98.298" y1="28.448" x2="89.154" y2="71.628" x3="109.982" y3="50.038" textsize="0.8128" layer="51" dtype="vertical" unit="mil"/>
-<dimension x1="82.55" y1="49.53" x2="98.425" y2="48.514" x3="90.4875" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
-<dimension x1="82.55" y1="49.53" x2="66.675" y2="50.546" x3="74.6125" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
+<dimension x1="83.058" y1="50.038" x2="95.25" y2="69.088" x3="102.108" y3="59.563" textsize="0.8128" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="83.058" y1="50.038" x2="89.662" y2="71.628" x3="104.394" y3="60.833" textsize="0.8128" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="98.298" y1="28.448" x2="89.154" y2="71.628" x3="109.982" y3="50.038" textsize="0.8128" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="82.55" y1="49.53" x2="98.425" y2="48.514" x3="90.4875" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="82.55" y1="49.53" x2="66.675" y2="50.546" x3="74.6125" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
 <wire x1="25.019" y1="28.448" x2="25.019" y2="71.628" width="0.254" layer="22"/>
 <wire x1="25.019" y1="71.628" x2="56.769" y2="71.628" width="0.254" layer="22"/>
 <wire x1="56.769" y1="71.628" x2="56.769" y2="28.448" width="0.254" layer="22"/>
 <wire x1="56.769" y1="28.448" x2="25.019" y2="28.448" width="0.254" layer="22"/>
 <wire x1="40.894" y1="50.546" x2="40.894" y2="49.53" width="0.254" layer="20"/>
 <wire x1="40.386" y1="50.038" x2="41.402" y2="50.038" width="0.254" layer="20"/>
-<dimension x1="40.894" y1="49.53" x2="56.769" y2="48.514" x3="48.8315" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
-<dimension x1="40.894" y1="49.53" x2="25.019" y2="53.848" x3="32.9565" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" unit="mil"/>
+<dimension x1="40.894" y1="49.53" x2="56.769" y2="48.514" x3="48.8315" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="40.894" y1="49.53" x2="25.019" y2="53.848" x3="32.9565" y3="83.058" textsize="0.8128" layer="51" dtype="horizontal" visible="yes"/>
 <wire x1="41.91" y1="50.038" x2="81.534" y2="50.038" width="0" layer="51"/>
 <wire x1="61.722" y1="74.93" x2="61.722" y2="46.482" width="0" layer="51"/>
 <wire x1="40.894" y1="67.31" x2="40.894" y2="51.054" width="0" layer="51"/>
@@ -270,6 +270,14 @@ MC CTRL</text>
 <text x="64.77" y="72.39" size="0.8128" layer="21" font="vector" ratio="16">1B-</text>
 <text x="67.31" y="72.39" size="0.8128" layer="21" font="vector" ratio="16">1A+</text>
 <text x="70.104" y="72.39" size="0.8128" layer="21" font="vector" ratio="16">1A-</text>
+<dimension x1="0" y1="0" x2="4.572" y2="4.572" x3="2.286" y3="-3.302" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="0" y1="0" x2="95.504" y2="4.572" x3="47.752" y3="-6.35" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="0" y1="0" x2="100.076" y2="13.462" x3="50.038" y3="-11.43" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
+<dimension x1="40.894" y1="75.438" x2="2.54" y2="0" x3="-6.35" y3="37.719" textsize="1.778" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="0" y1="0" x2="15.748" y2="80.01" x3="-11.176" y3="40.005" textsize="1.778" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="0" y1="0" x2="4.572" y2="4.572" x3="-2.286" y3="2.286" textsize="1.778" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="100" y1="0" x2="95.504" y2="4.572" x3="103.378" y3="2.286" textsize="1.778" layer="51" dtype="vertical" visible="yes"/>
+<dimension x1="0" y1="0" x2="40.894" y2="75.438" x3="20.447" y3="86.614" textsize="1.778" layer="51" dtype="horizontal" visible="yes"/>
 </plain>
 <libraries>
 <library name="rcl">
