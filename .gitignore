@@ -1,6 +1,10 @@
 # eagle backup schematic files
 *.[sbl]#[#0-9]
 
+# eagle autorouter job files
+*.pro
+*.job
+
 # eagle lock files
 *.sch.lck
 *.brd.lck
