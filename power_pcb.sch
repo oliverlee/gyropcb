@@ -703,12 +703,6 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="GNDA" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="GNDI">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="1.143" y="0.254" size="0.8128" layer="94">I</text>
-<pin name="GNDI" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
@@ -740,19 +734,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GNDA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GNDI" prefix="GNDI">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="GNDI" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -17927,20 +17908,17 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="P+2" library="supply1" deviceset="+24V" device=""/>
 <part name="JP4" library="pinhead" deviceset="PINHD-1X11" device=""/>
 <part name="GND15" library="supply1" deviceset="GNDA" device=""/>
-<part name="GNDI2" library="supply1" deviceset="GNDI" device=""/>
-<part name="GNDI6" library="supply1" deviceset="GNDI" device=""/>
-<part name="GNDI5" library="supply1" deviceset="GNDI" device=""/>
-<part name="GNDI4" library="supply1" deviceset="GNDI" device=""/>
+<part name="GNDI2" library="supply1" deviceset="GND" device=""/>
+<part name="GNDI6" library="supply1" deviceset="GND" device=""/>
+<part name="GNDI5" library="supply1" deviceset="GND" device=""/>
+<part name="GNDI4" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+24V" device=""/>
 <part name="IC1" library="v-reg-3" deviceset="LM2576" device="S"/>
 <part name="L1" library="rcl" deviceset="L-EU" device="TJ7-U1" value="100 μH, Pulse Eng. PE-92108"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="GNDI1" library="supply1" deviceset="GNDI" device=""/>
+<part name="GNDI1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="D" value="100 uF"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="G" value="1 nF"/>
-<part name="GNDI3" library="supply1" deviceset="GNDI" device=""/>
-<part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R1218" value="0-ohm"/>
 <part name="X6" library="m12u8p" deviceset="M12U_8-P_REC_MALE" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
@@ -18042,20 +18020,17 @@ OPTIONAL MOTOR CHOKE</text>
 <instance part="P+2" gate="1" x="116.84" y="147.32"/>
 <instance part="JP4" gate="A" x="269.24" y="132.08" rot="R180"/>
 <instance part="GND15" gate="1" x="276.86" y="111.76"/>
-<instance part="GNDI2" gate="G$1" x="149.86" y="35.56"/>
-<instance part="GNDI6" gate="G$1" x="195.58" y="35.56"/>
-<instance part="GNDI5" gate="G$1" x="180.34" y="35.56"/>
-<instance part="GNDI4" gate="G$1" x="172.72" y="35.56"/>
+<instance part="GNDI2" gate="1" x="149.86" y="35.56"/>
+<instance part="GNDI6" gate="1" x="195.58" y="35.56"/>
+<instance part="GNDI5" gate="1" x="180.34" y="35.56"/>
+<instance part="GNDI4" gate="1" x="172.72" y="35.56"/>
 <instance part="P+3" gate="1" x="137.16" y="63.5"/>
 <instance part="IC1" gate="A" x="160.02" y="50.8"/>
 <instance part="L1" gate="G$1" x="187.96" y="50.8" rot="R90"/>
 <instance part="P+4" gate="1" x="195.58" y="63.5"/>
-<instance part="GNDI1" gate="G$1" x="137.16" y="35.56"/>
+<instance part="GNDI1" gate="1" x="137.16" y="35.56"/>
 <instance part="C1" gate="G$1" x="137.16" y="48.26"/>
 <instance part="C2" gate="G$1" x="195.58" y="45.72"/>
-<instance part="GNDI3" gate="G$1" x="160.02" y="17.78" rot="R270"/>
-<instance part="GND5" gate="1" x="185.42" y="17.78" rot="R90"/>
-<instance part="R1" gate="G$1" x="172.72" y="17.78"/>
 <instance part="X6" gate="G$1" x="312.42" y="71.12" rot="R180"/>
 <instance part="GND18" gate="1" x="312.42" y="55.88"/>
 <instance part="P+5" gate="1" x="243.84" y="111.76"/>
@@ -18164,11 +18139,6 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="203.2" y1="96.52" x2="200.66" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="177.8" y1="17.78" x2="182.88" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
@@ -18253,6 +18223,31 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="X15" gate="-1" pin="S"/>
 <wire x1="233.68" y1="25.4" x2="233.68" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GNDI1" gate="1" pin="GND"/>
+<pinref part="C1" gate="G$1" pin="-"/>
+<wire x1="137.16" y1="38.1" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="A" pin="OFF"/>
+<pinref part="GNDI2" gate="1" pin="GND"/>
+<wire x1="149.86" y1="50.8" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="A" pin="GND"/>
+<pinref part="GNDI4" gate="1" pin="GND"/>
+<wire x1="172.72" y1="45.72" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GNDI5" gate="1" pin="GND"/>
+<wire x1="180.34" y1="43.18" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="GNDI6" gate="1" pin="GND"/>
+<wire x1="195.58" y1="40.64" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB12/M1_EN" class="0">
@@ -18729,38 +18724,6 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="180.34" y1="50.8" x2="182.88" y2="50.8" width="0.1524" layer="91"/>
 <junction x="180.34" y="50.8"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="GNDI" class="0">
-<segment>
-<pinref part="GNDI3" gate="G$1" pin="GNDI"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="162.56" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GNDI1" gate="G$1" pin="GNDI"/>
-<pinref part="C1" gate="G$1" pin="-"/>
-<wire x1="137.16" y1="38.1" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="A" pin="OFF"/>
-<pinref part="GNDI2" gate="G$1" pin="GNDI"/>
-<wire x1="149.86" y1="50.8" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="A" pin="GND"/>
-<pinref part="GNDI4" gate="G$1" pin="GNDI"/>
-<wire x1="172.72" y1="45.72" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GNDI5" gate="G$1" pin="GNDI"/>
-<wire x1="180.34" y1="43.18" x2="180.34" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="-"/>
-<pinref part="GNDI6" gate="G$1" pin="GNDI"/>
-<wire x1="195.58" y1="40.64" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TORQUE_SENSOR_RANGE" class="0">
