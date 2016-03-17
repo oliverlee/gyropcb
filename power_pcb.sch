@@ -15475,29 +15475,6 @@ at 30/07/2012 17:45:58</description>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
 </package>
-<package name="JP1">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-1.016" y1="0" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="0" x2="-1.27" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.27" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.254" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-2.54" x2="1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="2.286" x2="1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="2.286" x2="1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="2.54" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.286" x2="-1.016" y2="2.54" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="2.286" x2="-1.27" y2="0.254" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.254" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="-2.54" x2="-1.27" y2="-2.286" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="-2.54" x2="1.016" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="-1.27" drill="0.9144" shape="long"/>
-<pad name="2" x="0" y="1.27" drill="0.9144" shape="long"/>
-<text x="-1.651" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.921" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
-<rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="SJ_2">
@@ -15515,20 +15492,6 @@ at 30/07/2012 17:45:58</description>
 <pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-<symbol name="JP2E">
-<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0.635" x2="-0.635" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<text x="-1.27" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15553,23 +15516,6 @@ at 30/07/2012 17:45:58</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JP1E" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="JP2E" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="JP1">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17996,7 +17942,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1218" value="0-ohm"/>
 <part name="X6" library="m12u8p" deviceset="M12U_8-P_REC_MALE" device=""/>
-<part name="GND18" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
 <part name="SJ2" library="jumper" deviceset="SJ2W" device=""/>
 <part name="T2" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16"/>
@@ -18012,7 +17958,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ2W" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="GND21" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="X10" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="IC2" library="components" deviceset="L78L18CD13TR" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -18022,9 +17968,9 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="T1" library="transistor" deviceset="BC848" device=""/>
 <part name="D1" library="diode" deviceset="SCHOTTKY-DIODE" device="SMC" value="SS34"/>
-<part name="GND20" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="X9" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
-<part name="GND19" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="X8" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="X5" library="con-molex" deviceset="22-23-2081" device=""/>
 <part name="X11" library="con-molex" deviceset="5566-2" device=""/>
@@ -18033,9 +17979,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+24V" device=""/>
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
-<part name="JP5" library="jumper" deviceset="JP1E" device=""/>
 <part name="X15" library="con-molex" deviceset="22-23-2031" device=""/>
-<part name="GND24" library="supply1" deviceset="GNDA" device=""/>
+<part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
@@ -18164,7 +18109,6 @@ OPTIONAL MOTOR CHOKE</text>
 <instance part="GND23" gate="1" x="210.82" y="43.18"/>
 <instance part="P+6" gate="1" x="114.3" y="60.96"/>
 <instance part="P+7" gate="1" x="210.82" y="63.5"/>
-<instance part="JP5" gate="A" x="241.3" y="101.6" rot="R90"/>
 <instance part="X15" gate="-1" x="231.14" y="30.48" rot="R180"/>
 <instance part="X15" gate="-2" x="231.14" y="33.02" rot="R180"/>
 <instance part="X15" gate="-3" x="231.14" y="35.56" rot="R180"/>
@@ -18273,15 +18217,13 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GND22" gate="1" pin="GND"/>
 <wire x1="114.3" y1="48.26" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="GNDA" class="0">
 <segment>
 <pinref part="X6" gate="G$1" pin="P$1"/>
-<pinref part="GND18" gate="1" pin="GNDA"/>
+<pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="312.42" y1="71.12" x2="312.42" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND21" gate="1" pin="GNDA"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="340.36" y1="73.66" x2="340.36" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="X10" gate="-2" pin="S"/>
 </segment>
@@ -18298,19 +18240,19 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="276.86" y1="172.72" x2="271.78" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND20" gate="1" pin="GNDA"/>
+<pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="317.5" y1="127" x2="317.5" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="X9" gate="-2" pin="S"/>
 </segment>
 <segment>
-<pinref part="GND19" gate="1" pin="GNDA"/>
+<pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="314.96" y1="170.18" x2="314.96" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="X8" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="X15" gate="-1" pin="S"/>
 <wire x1="233.68" y1="25.4" x2="233.68" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="GND24" gate="1" pin="GNDA"/>
+<pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PB12/M1_EN" class="0">
@@ -18947,8 +18889,12 @@ OPTIONAL MOTOR CHOKE</text>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+24V"/>
-<pinref part="JP5" gate="A" pin="2"/>
-<wire x1="243.84" y1="109.22" x2="243.84" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="IN"/>
+<wire x1="243.84" y1="96.52" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="93.98" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="109.22" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
+<junction x="243.84" y="96.52"/>
 </segment>
 </net>
 <net name="N$51" class="0">
@@ -18976,17 +18922,6 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="X10" gate="-1" pin="S"/>
 <pinref part="X6" gate="G$1" pin="P$5"/>
 <wire x1="340.36" y1="81.28" x2="312.42" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IN"/>
-<wire x1="243.84" y1="96.52" x2="246.38" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="93.98" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="JP5" gate="A" pin="1"/>
-<wire x1="243.84" y1="101.6" x2="243.84" y2="96.52" width="0.1524" layer="91"/>
-<junction x="243.84" y="96.52"/>
 </segment>
 </net>
 </nets>
