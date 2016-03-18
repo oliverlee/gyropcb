@@ -18183,6 +18183,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
 <part name="H24V" library="holes" deviceset="MOUNT-PAD-ROUND" device="4.3"/>
 <part name="HGND" library="holes" deviceset="MOUNT-PAD-ROUND" device="4.3"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -18297,12 +18299,12 @@ OPTIONAL MOTOR CHOKE</text>
 <instance part="X5" gate="-6" x="233.68" y="127"/>
 <instance part="X5" gate="-7" x="233.68" y="124.46"/>
 <instance part="X5" gate="-8" x="233.68" y="121.92"/>
-<instance part="X12" gate="-1" x="213.36" y="55.88"/>
-<instance part="X12" gate="-2" x="213.36" y="50.8"/>
-<instance part="GND22" gate="1" x="114.3" y="40.64"/>
-<instance part="GND23" gate="1" x="210.82" y="43.18"/>
-<instance part="P+6" gate="1" x="114.3" y="60.96"/>
-<instance part="P+7" gate="1" x="210.82" y="63.5"/>
+<instance part="X12" gate="-1" x="223.52" y="55.88"/>
+<instance part="X12" gate="-2" x="223.52" y="50.8"/>
+<instance part="GND22" gate="1" x="127" y="10.16"/>
+<instance part="GND23" gate="1" x="220.98" y="43.18"/>
+<instance part="P+6" gate="1" x="127" y="30.48"/>
+<instance part="P+7" gate="1" x="220.98" y="63.5"/>
 <instance part="X15" gate="-1" x="231.14" y="30.48" rot="R180"/>
 <instance part="X15" gate="-2" x="231.14" y="33.02" rot="R180"/>
 <instance part="X15" gate="-3" x="231.14" y="35.56" rot="R180"/>
@@ -18310,8 +18312,10 @@ OPTIONAL MOTOR CHOKE</text>
 <instance part="H1" gate="G$1" x="241.3" y="195.58"/>
 <instance part="H2" gate="G$1" x="241.3" y="187.96"/>
 <instance part="H3" gate="G$1" x="241.3" y="180.34"/>
-<instance part="H24V" gate="G$1" x="104.14" y="53.34"/>
-<instance part="HGND" gate="G$1" x="104.14" y="45.72"/>
+<instance part="H24V" gate="G$1" x="116.84" y="22.86"/>
+<instance part="HGND" gate="G$1" x="116.84" y="15.24"/>
+<instance part="C5" gate="G$1" x="203.2" y="45.72"/>
+<instance part="C6" gate="G$1" x="129.54" y="48.26"/>
 </instances>
 <busses>
 </busses>
@@ -18401,12 +18405,12 @@ OPTIONAL MOTOR CHOKE</text>
 <segment>
 <pinref part="X12" gate="-2" pin="S"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="210.82" y1="50.8" x2="210.82" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="50.8" x2="220.98" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="114.3" y1="45.72" x2="114.3" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="15.24" x2="127" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="127" y1="15.24" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X6" gate="G$1" pin="P$1"/>
@@ -18449,6 +18453,10 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="GNDI1" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="137.16" y1="38.1" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="43.18" x2="129.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="38.1" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
+<junction x="137.16" y="38.1"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A" pin="OFF"/>
@@ -18469,6 +18477,10 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="C2" gate="G$1" pin="-"/>
 <pinref part="GNDI6" gate="1" pin="GND"/>
 <wire x1="195.58" y1="40.64" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="40.64" x2="203.2" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="38.1" x2="195.58" y2="38.1" width="0.1524" layer="91"/>
+<junction x="195.58" y="38.1"/>
 </segment>
 </net>
 <net name="PB12/M1_EN" class="0">
@@ -18498,11 +18510,14 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="195.58" y1="60.96" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
 <junction x="195.58" y="55.88"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="48.26" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="55.88" x2="195.58" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <pinref part="X12" gate="-1" pin="S"/>
-<wire x1="210.82" y1="60.96" x2="210.82" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="60.96" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -19047,6 +19062,9 @@ OPTIONAL MOTOR CHOKE</text>
 <wire x1="137.16" y1="55.88" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 <junction x="137.16" y="55.88"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="50.8" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="55.88" x2="137.16" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="7"/>
@@ -19068,8 +19086,8 @@ OPTIONAL MOTOR CHOKE</text>
 </segment>
 <segment>
 <pinref part="P+6" gate="1" pin="+24V"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="127" y1="27.94" x2="127" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+24V"/>

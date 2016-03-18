@@ -12161,6 +12161,7 @@ grid 5.08 mm</description>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="X15" library="con-molex" deviceset="22-23-2031" device=""/>
+<part name="C38" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -12435,6 +12436,7 @@ fc = 400 Hz</text>
 <instance part="X15" gate="-1" x="114.3" y="81.28"/>
 <instance part="X15" gate="-2" x="114.3" y="78.74"/>
 <instance part="X15" gate="-3" x="114.3" y="76.2"/>
+<instance part="C38" gate="G$1" x="157.48" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -12549,8 +12551,13 @@ fc = 400 Hz</text>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="U3" gate="A" pin="~G"/>
-<wire x1="195.58" y1="121.92" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="121.92" x2="195.58" y2="127" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="127" x2="195.58" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="157.48" x2="200.66" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="137.16" x2="157.48" y2="127" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
+<junction x="195.58" y="127"/>
 </segment>
 <segment>
 <pinref part="EXT1" gate="A" pin="6"/>
@@ -13259,6 +13266,9 @@ fc = 400 Hz</text>
 <pinref part="U3" gate="A" pin="G"/>
 <wire x1="200.66" y1="165.1" x2="200.66" y2="160.02" width="0.1524" layer="91"/>
 <junction x="200.66" y="165.1"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="144.78" x2="157.48" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="165.1" x2="200.66" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
