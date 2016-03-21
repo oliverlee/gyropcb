@@ -9826,40 +9826,6 @@ at 30/07/2012 17:45:58</description>
 <text x="-0.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.508" y1="-0.762" x2="0.508" y2="0.762" layer="51"/>
 </package>
-<package name="JP2">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.016" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="-1.27" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.016" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="3.556" y1="1.27" x2="3.81" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.016" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="1.27" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="1.27" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.016" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="1.27" x2="-1.27" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="1.016" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-1.27" x2="1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-1.27" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="0.9144" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
-<text x="-3.556" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-2.667" size="0.9906" layer="21" ratio="12">1</text>
-<text x="0" y="-2.667" size="0.9906" layer="21" ratio="12">2</text>
-<text x="2.54" y="-2.667" size="0.9906" layer="21" ratio="12">3</text>
-<text x="-3.556" y="-4.318" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51"/>
-<rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
-<rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
-</package>
 </packages>
 <symbols>
 <symbol name="SJ">
@@ -9887,23 +9853,6 @@ at 30/07/2012 17:45:58</description>
 <pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
-</symbol>
-<symbol name="JP3E">
-<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.4064" layer="94"/>
-<wire x1="-3.175" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="3.175" y1="0.635" x2="-3.175" y2="0.635" width="0.4064" layer="94"/>
-<wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.4064" layer="94"/>
-<text x="-3.81" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9954,24 +9903,6 @@ at 30/07/2012 17:45:58</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JP2E" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="JP3E" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JP2">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-<connect gate="1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12351,8 +12282,6 @@ Based on the following sources:
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="2.8"/>
 <part name="X7" library="con-molex" deviceset="5566-2" device=""/>
 <part name="GND50" library="supply1" deviceset="GND" device=""/>
-<part name="JP3" library="jumper" deviceset="JP2E" device=""/>
-<part name="JP4" library="jumper" deviceset="JP2E" device=""/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -12446,6 +12375,8 @@ Based on the following sources:
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="U10" library="Molex_By_element14_Batch_1" deviceset="52271-0869" device=""/>
 <part name="U11" library="Molex_By_element14_Batch_1" deviceset="52271-0869" device=""/>
+<part name="SJ7" library="jumper" deviceset="SJ2W" device=""/>
+<part name="SJ8" library="jumper" deviceset="SJ2W" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12460,7 +12391,7 @@ CTL +5V: fc = 194 Hz</text>
 <text x="414.782" y="29.464" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
 <text x="386.842" y="-1.016" size="1.778" layer="94">-10V - +10V -&gt; 0V - +3.3V</text>
 <text x="243.84" y="119.38" size="1.778" layer="94">+5V enables INCR ENC/XPC RS-485</text>
-<text x="-2.54" y="-22.86" size="1.778" layer="94">USART1 RS-485/ADC switch jumpers</text>
+<text x="2.54" y="-22.86" size="1.778" layer="94">USART1 RS-485/ADC switch jumpers</text>
 <text x="0" y="25.4" size="1.778" layer="94">(GNDA)</text>
 <text x="532.13" y="-8.89" size="1.778" layer="94">2-order RC low pass filter
 CTL 0: fc = 408 Hz
@@ -12620,8 +12551,6 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="X7" gate="-1" x="63.5" y="-20.32"/>
 <instance part="X7" gate="-2" x="63.5" y="-25.4"/>
 <instance part="GND50" gate="1" x="58.42" y="-30.48"/>
-<instance part="JP3" gate="1" x="-2.54" y="-30.48" rot="R90"/>
-<instance part="JP4" gate="1" x="-2.54" y="-40.64" rot="R270"/>
 <instance part="C7" gate="G$1" x="243.84" y="139.7"/>
 <instance part="C8" gate="G$1" x="261.62" y="139.7"/>
 <instance part="C23" gate="G$1" x="86.36" y="81.28"/>
@@ -12635,15 +12564,15 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="X15" gate="-2" x="294.64" y="60.96"/>
 <instance part="X15" gate="-1" x="294.64" y="63.5"/>
 <instance part="IC3" gate="A" x="535.94" y="106.68"/>
-<instance part="IC3" gate="P" x="513.08" y="45.72"/>
-<instance part="SJ6" gate="G$1" x="518.16" y="43.18" rot="R180"/>
+<instance part="IC3" gate="P" x="513.08" y="43.18"/>
+<instance part="SJ6" gate="G$1" x="518.16" y="40.64" rot="R180"/>
 <instance part="P+9" gate="1" x="502.92" y="53.34"/>
-<instance part="GND31" gate="1" x="502.92" y="35.56"/>
+<instance part="GND31" gate="1" x="502.92" y="33.02"/>
 <instance part="R20" gate="G$1" x="464.82" y="101.6"/>
 <instance part="R21" gate="G$1" x="480.06" y="101.6"/>
 <instance part="C14" gate="G$1" x="472.44" y="96.52"/>
 <instance part="C15" gate="G$1" x="487.68" y="96.52"/>
-<instance part="C22" gate="G$1" x="502.92" y="45.72"/>
+<instance part="C22" gate="G$1" x="502.92" y="43.18"/>
 <instance part="R25" gate="G$1" x="464.82" y="86.36"/>
 <instance part="R26" gate="G$1" x="480.06" y="86.36"/>
 <instance part="C16" gate="G$1" x="472.44" y="81.28"/>
@@ -12654,8 +12583,8 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="C19" gate="G$1" x="487.68" y="66.04"/>
 <instance part="R36" gate="G$1" x="464.82" y="55.88"/>
 <instance part="R37" gate="G$1" x="480.06" y="55.88"/>
-<instance part="C20" gate="G$1" x="472.44" y="50.8"/>
-<instance part="C21" gate="G$1" x="487.68" y="50.8"/>
+<instance part="C20" gate="G$1" x="472.44" y="48.26"/>
+<instance part="C21" gate="G$1" x="487.68" y="48.26"/>
 <instance part="R4" gate="G$1" x="464.82" y="162.56"/>
 <instance part="R5" gate="G$1" x="480.06" y="162.56"/>
 <instance part="C2" gate="G$1" x="472.44" y="157.48"/>
@@ -12718,6 +12647,8 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="C40" gate="G$1" x="254" y="-25.4"/>
 <instance part="U10" gate="A" x="167.64" y="144.78"/>
 <instance part="U11" gate="A" x="149.86" y="177.8"/>
+<instance part="SJ7" gate="G$1" x="45.72" y="-27.94"/>
+<instance part="SJ8" gate="G$1" x="45.72" y="-43.18"/>
 </instances>
 <busses>
 </busses>
@@ -13025,23 +12956,23 @@ CTL +5V: fc = 194 Hz</text>
 <segment>
 <pinref part="GND31" gate="1" pin="GND"/>
 <pinref part="IC3" gate="P" pin="GND"/>
-<wire x1="502.92" y1="38.1" x2="508" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="35.56" x2="508" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="P" pin="VEE"/>
-<wire x1="508" y1="38.1" x2="513.08" y2="38.1" width="0.1524" layer="91"/>
-<junction x="508" y="38.1"/>
+<wire x1="508" y1="35.56" x2="513.08" y2="35.56" width="0.1524" layer="91"/>
+<junction x="508" y="35.56"/>
 <pinref part="SJ6" gate="G$1" pin="1"/>
-<wire x1="518.16" y1="38.1" x2="513.08" y2="38.1" width="0.1524" layer="91"/>
-<junction x="513.08" y="38.1"/>
+<wire x1="518.16" y1="35.56" x2="513.08" y2="35.56" width="0.1524" layer="91"/>
+<junction x="513.08" y="35.56"/>
 <pinref part="C22" gate="G$1" pin="2"/>
-<wire x1="502.92" y1="40.64" x2="502.92" y2="38.1" width="0.1524" layer="91"/>
-<junction x="502.92" y="38.1"/>
+<wire x1="502.92" y1="38.1" x2="502.92" y2="35.56" width="0.1524" layer="91"/>
+<junction x="502.92" y="35.56"/>
 <pinref part="C20" gate="G$1" pin="2"/>
-<wire x1="502.92" y1="38.1" x2="487.68" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="38.1" x2="472.44" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="472.44" y1="38.1" x2="472.44" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="35.56" x2="487.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="487.68" y1="35.56" x2="472.44" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="35.56" x2="472.44" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="487.68" y1="45.72" x2="487.68" y2="38.1" width="0.1524" layer="91"/>
-<junction x="487.68" y="38.1"/>
+<wire x1="487.68" y1="43.18" x2="487.68" y2="35.56" width="0.1524" layer="91"/>
+<junction x="487.68" y="35.56"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
@@ -13646,18 +13577,6 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="86.36" y1="167.64" x2="86.36" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<pinref part="IC3" gate="P" pin="VCC"/>
-<wire x1="502.92" y1="50.8" x2="513.08" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="SJ6" gate="G$1" pin="3"/>
-<wire x1="513.08" y1="53.34" x2="518.16" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="518.16" y1="53.34" x2="518.16" y2="48.26" width="0.1524" layer="91"/>
-<junction x="513.08" y="53.34"/>
-<pinref part="C22" gate="G$1" pin="1"/>
-<wire x1="502.92" y1="50.8" x2="502.92" y2="48.26" width="0.1524" layer="91"/>
-<junction x="502.92" y="50.8"/>
-</segment>
-<segment>
 <pinref part="P+10" gate="1" pin="+5V"/>
 <pinref part="IC5" gate="P" pin="VCC"/>
 <wire x1="508" y1="-35.56" x2="518.16" y2="-35.56" width="0.1524" layer="91"/>
@@ -13688,6 +13607,18 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="238.76" y1="-17.78" x2="254" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="254" y1="-17.78" x2="254" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="238.76" y="-17.78"/>
+</segment>
+<segment>
+<pinref part="C22" gate="G$1" pin="1"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
+<wire x1="502.92" y1="45.72" x2="502.92" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="P" pin="VCC"/>
+<pinref part="SJ6" gate="G$1" pin="3"/>
+<wire x1="513.08" y1="50.8" x2="518.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="50.8" x2="518.16" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="502.92" y1="50.8" x2="513.08" y2="50.8" width="0.1524" layer="91"/>
+<junction x="502.92" y="50.8"/>
+<junction x="513.08" y="50.8"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -14519,9 +14450,11 @@ CTL +5V: fc = 194 Hz</text>
 </net>
 <net name="PC4/ADC14" class="0">
 <segment>
-<pinref part="JP3" gate="1" pin="3"/>
-<wire x1="0" y1="-27.94" x2="25.4" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-27.94" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
 <label x="2.54" y="-27.94" size="1.778" layer="95"/>
+<pinref part="SJ7" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-22.86" x2="35.56" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-22.86" x2="35.56" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="553.72" y1="-15.24" x2="579.12" y2="-15.24" width="0.1524" layer="91"/>
@@ -14531,9 +14464,9 @@ CTL +5V: fc = 194 Hz</text>
 </net>
 <net name="PC5/ADC15" class="0">
 <segment>
-<wire x1="-5.08" y1="-38.1" x2="25.4" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-38.1" x2="45.72" y2="-38.1" width="0.1524" layer="91"/>
 <label x="2.54" y="-38.1" size="1.778" layer="95"/>
-<pinref part="JP4" gate="1" pin="1"/>
+<pinref part="SJ8" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="553.72" y1="-20.32" x2="579.12" y2="-20.32" width="0.1524" layer="91"/>
@@ -14635,9 +14568,9 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="17.78" y1="127" x2="0" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="1" pin="1"/>
-<wire x1="0" y1="-33.02" x2="25.4" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-33.02" x2="45.72" y2="-33.02" width="0.1524" layer="91"/>
 <label x="2.54" y="-33.02" size="1.778" layer="95"/>
+<pinref part="SJ7" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="PC5/XPC_RS-485_NRE" class="0">
@@ -14649,9 +14582,11 @@ CTL +5V: fc = 194 Hz</text>
 <label x="-25.4" y="134.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-5.08" y1="-43.18" x2="25.4" y2="-43.18" width="0.1524" layer="91"/>
 <label x="2.54" y="-43.18" size="1.778" layer="95"/>
-<pinref part="JP4" gate="1" pin="3"/>
+<wire x1="35.56" y1="-43.18" x2="2.54" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="SJ8" gate="G$1" pin="3"/>
+<wire x1="45.72" y1="-48.26" x2="35.56" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-48.26" x2="35.56" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB8/FLYW_RS-485_DE" class="0">
@@ -14684,9 +14619,11 @@ CTL +5V: fc = 194 Hz</text>
 </net>
 <net name="PC4/XPC_RS-485_DE/ADC14" class="0">
 <segment>
-<pinref part="JP3" gate="1" pin="2"/>
-<wire x1="0" y1="-30.48" x2="25.4" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-30.48" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
 <label x="2.54" y="-30.48" size="1.778" layer="95"/>
+<pinref part="SJ7" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="-27.94" x2="38.1" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-27.94" x2="38.1" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="63.5" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
@@ -14696,9 +14633,11 @@ CTL +5V: fc = 194 Hz</text>
 </net>
 <net name="PC5/XPC_RS-485_NRE/ADC15" class="0">
 <segment>
-<pinref part="JP4" gate="1" pin="2"/>
-<wire x1="-5.08" y1="-40.64" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-40.64" x2="38.1" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-40.64" x2="38.1" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-43.18" x2="40.64" y2="-43.18" width="0.1524" layer="91"/>
 <label x="2.54" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SJ8" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="13"/>
@@ -14718,17 +14657,18 @@ CTL +5V: fc = 194 Hz</text>
 <label x="50.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$54" class="0">
+<net name="ADC_FC_SEL" class="0">
 <segment>
 <pinref part="SJ6" gate="G$1" pin="2"/>
 <pinref part="IC3" gate="A" pin="CTL"/>
-<wire x1="523.24" y1="43.18" x2="523.24" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="523.24" y1="43.18" x2="581.66" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="581.66" y1="43.18" x2="581.66" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="523.24" y="43.18"/>
+<wire x1="523.24" y1="40.64" x2="523.24" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="523.24" y1="40.64" x2="581.66" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="581.66" y1="40.64" x2="581.66" y2="-43.18" width="0.1524" layer="91"/>
+<junction x="523.24" y="40.64"/>
 <pinref part="IC5" gate="A" pin="CTL"/>
 <wire x1="581.66" y1="-43.18" x2="528.32" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="528.32" y1="-43.18" x2="528.32" y2="-38.1" width="0.1524" layer="91"/>
+<label x="528.32" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$56" class="0">
@@ -14810,7 +14750,7 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="469.9" y1="55.88" x2="472.44" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="472.44" y1="55.88" x2="474.98" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="472.44" y1="53.34" x2="472.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="472.44" y1="50.8" x2="472.44" y2="55.88" width="0.1524" layer="91"/>
 <junction x="472.44" y="55.88"/>
 </segment>
 </net>
@@ -14819,7 +14759,7 @@ CTL +5V: fc = 194 Hz</text>
 <pinref part="R37" gate="G$1" pin="2"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <wire x1="485.14" y1="55.88" x2="487.68" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="55.88" x2="487.68" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="487.68" y1="55.88" x2="487.68" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="Z1"/>
 <wire x1="523.24" y1="99.06" x2="520.7" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="520.7" y1="99.06" x2="520.7" y2="55.88" width="0.1524" layer="91"/>
@@ -15113,22 +15053,24 @@ CTL +5V: fc = 194 Hz</text>
 <label x="233.68" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="SSI_ENC1_CLK" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="1D"/>
 <wire x1="144.78" y1="-30.48" x2="172.72" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U9" gate="A" pin="1Y"/>
 <wire x1="142.24" y1="-12.7" x2="144.78" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-12.7" x2="144.78" y2="-30.48" width="0.1524" layer="91"/>
+<label x="149.86" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="SSI_ENC2_CLK" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="2D"/>
 <wire x1="172.72" y1="-33.02" x2="147.32" y2="-33.02" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="-33.02" x2="147.32" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U9" gate="A" pin="2Y"/>
 <wire x1="147.32" y1="-15.24" x2="142.24" y2="-15.24" width="0.1524" layer="91"/>
+<label x="149.86" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC1_DATA" class="0">
