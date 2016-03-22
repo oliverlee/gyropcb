@@ -12292,7 +12292,7 @@ Based on the following sources:
 <part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="120"/>
 <part name="JP4" library="jumper" deviceset="SJ" device=""/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="120"/>
-<part name="X6" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
+<part name="J16" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
 <part name="U11" library="45xx" deviceset="4551" device="D"/>
 <part name="S4" library="jumper" deviceset="SJ2W" device=""/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
@@ -12562,8 +12562,8 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="R2" gate="G$1" x="55.88" y="165.1" rot="R180"/>
 <instance part="JP4" gate="1" x="55.88" y="109.22"/>
 <instance part="R4" gate="G$1" x="55.88" y="104.14" rot="R180"/>
-<instance part="X6" gate="-2" x="294.64" y="60.96"/>
-<instance part="X6" gate="-1" x="294.64" y="63.5"/>
+<instance part="J16" gate="-2" x="294.64" y="60.96"/>
+<instance part="J16" gate="-1" x="294.64" y="63.5"/>
 <instance part="U11" gate="A" x="530.86" y="121.92"/>
 <instance part="U11" gate="P" x="508" y="58.42"/>
 <instance part="S4" gate="G$1" x="513.08" y="55.88" rot="R180"/>
@@ -12894,7 +12894,7 @@ CTL +5V: fc = 194 Hz</text>
 </segment>
 <segment>
 <label x="256.54" y="60.96" size="1.778" layer="95"/>
-<pinref part="X6" gate="-2" pin="S"/>
+<pinref part="J16" gate="-2" pin="S"/>
 <wire x1="292.1" y1="60.96" x2="256.54" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -14660,7 +14660,7 @@ CTL +5V: fc = 194 Hz</text>
 <net name="PC13/TORQUE_MEAS_NEN" class="0">
 <segment>
 <label x="256.54" y="63.5" size="1.778" layer="95"/>
-<pinref part="X6" gate="-1" pin="S"/>
+<pinref part="J16" gate="-1" pin="S"/>
 <wire x1="256.54" y1="63.5" x2="292.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
