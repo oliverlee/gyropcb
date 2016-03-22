@@ -16787,88 +16787,6 @@ grid 5.08 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="m12u8p">
-<packages>
-<package name="M12-8POLE">
-<description>M12U 8-P REC MALE BACK SHIELDED</description>
-<pad name="8" x="0" y="0" drill="0.8" shape="square" rot="R90"/>
-<pad name="5" x="0" y="2.5" drill="0.8" shape="square" rot="R90"/>
-<pad name="4" x="-1.886775" y="1.640146875" drill="0.8" shape="square" rot="R90"/>
-<pad name="3" x="-2.47566875" y="-0.34793125" drill="0.8" shape="square" rot="R90"/>
-<pad name="6" x="1.886775" y="1.640146875" drill="0.8" shape="square" rot="R90"/>
-<pad name="7" x="2.47566875" y="-0.34793125" drill="0.8" shape="square" rot="R90"/>
-<pad name="2" x="-1.361596875" y="-2.096675" drill="0.8" shape="square" rot="R90"/>
-<pad name="1" x="1.361596875" y="-2.096675" drill="0.8" shape="square" rot="R90"/>
-<wire x1="-0.25" y1="-3.25" x2="0.3" y2="-3.25" width="0.127" layer="21" curve="-180"/>
-<wire x1="-0.25" y1="-3.25" x2="-0.25" y2="-3.5" width="0.127" layer="21"/>
-<wire x1="0.3" y1="-3.25" x2="0.3" y2="-3.5" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="10.5" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="8" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="4" width="0.127" layer="51"/>
-<text x="-3" y="11" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-12.5" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="M">
-<pin name="P$1" x="0" y="0" length="point" direction="pas"/>
-<pin name="P$2" x="0" y="-2.54" length="point" direction="pas"/>
-<pin name="P$3" x="0" y="-5.08" length="point" direction="pas"/>
-<pin name="P$4" x="0" y="-7.62" length="point" direction="pas"/>
-<pin name="P$5" x="0" y="-10.16" length="point" direction="pas"/>
-<pin name="P$6" x="0" y="-12.7" length="point" direction="pas"/>
-<pin name="P$7" x="0" y="-15.24" length="point" direction="pas"/>
-<pin name="P$8" x="0" y="-17.78" length="point" direction="pas"/>
-<circle x="1.524" y="0" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-2.54" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-5.08" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-7.62" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-10.16" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-12.7" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-15.24" radius="1.016" width="0.127" layer="94"/>
-<circle x="1.524" y="-17.78" radius="1.016" width="0.127" layer="94"/>
-<wire x1="0" y1="0" x2="0.508" y2="0" width="0.127" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0.508" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0.508" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="0" y1="-7.62" x2="0.508" y2="-7.62" width="0.127" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0.508" y2="-10.16" width="0.127" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0.508" y2="-12.7" width="0.127" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0.508" y2="-15.24" width="0.127" layer="94"/>
-<wire x1="0" y1="-17.78" x2="0.508" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="-2.54" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="3.81" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-20.32" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-20.32" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<text x="-2.54" y="3.302" size="1.27" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-22.86" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="M12U_8-P_REC_MALE" prefix="X">
-<gates>
-<gate name="G$1" symbol="M" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="M12-8POLE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="components">
 <packages>
 <package name="SOT89-VREG">
@@ -16928,6 +16846,26 @@ grid 5.08 mm</description>
 <vertex x="0.25" y="-0.75"/>
 </polygon>
 </package>
+<package name="M12-8POLE">
+<description>M12U 8-P REC MALE BACK SHIELDED</description>
+<pad name="8" x="0" y="0" drill="0.8" rot="R90"/>
+<pad name="5" x="0" y="2.5" drill="0.8" rot="R90"/>
+<pad name="4" x="-1.886775" y="1.640146875" drill="0.8" rot="R90"/>
+<pad name="3" x="-2.47566875" y="-0.34793125" drill="0.8" rot="R90"/>
+<pad name="6" x="1.886775" y="1.640146875" drill="0.8" rot="R90"/>
+<pad name="7" x="2.47566875" y="-0.34793125" drill="0.8" rot="R90"/>
+<pad name="2" x="-1.361596875" y="-2.096675" drill="0.8" rot="R90"/>
+<pad name="1" x="1.361596875" y="-2.096675" drill="0.8" rot="R90"/>
+<wire x1="-0.25" y1="-3.25" x2="0.3" y2="-3.25" width="0.127" layer="21" curve="-180"/>
+<wire x1="-0.25" y1="-3.25" x2="-0.25" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="0.3" y1="-3.25" x2="0.3" y2="-3.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="10.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="8" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="4" width="0.127" layer="51"/>
+<text x="-3" y="11" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.5" y="-12.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX">
@@ -16944,6 +16882,38 @@ grid 5.08 mm</description>
 <pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
 <pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="M12U8P">
+<pin name="P$1" x="0" y="0" length="point" direction="pas"/>
+<pin name="P$2" x="0" y="-2.54" length="point" direction="pas"/>
+<pin name="P$3" x="0" y="-5.08" length="point" direction="pas"/>
+<pin name="P$4" x="0" y="-7.62" length="point" direction="pas"/>
+<pin name="P$5" x="0" y="-10.16" length="point" direction="pas"/>
+<pin name="P$6" x="0" y="-12.7" length="point" direction="pas"/>
+<pin name="P$7" x="0" y="-15.24" length="point" direction="pas"/>
+<pin name="P$8" x="0" y="-17.78" length="point" direction="pas"/>
+<circle x="1.524" y="0" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-2.54" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-5.08" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-7.62" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-10.16" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-12.7" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-15.24" radius="1.016" width="0.127" layer="94"/>
+<circle x="1.524" y="-17.78" radius="1.016" width="0.127" layer="94"/>
+<wire x1="0" y1="0" x2="0.508" y2="0" width="0.127" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.508" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0.508" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0.508" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0.508" y2="-10.16" width="0.127" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0.508" y2="-12.7" width="0.127" layer="94"/>
+<wire x1="0" y1="-15.24" x2="0.508" y2="-15.24" width="0.127" layer="94"/>
+<wire x1="0" y1="-17.78" x2="0.508" y2="-17.78" width="0.127" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-20.32" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-20.32" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="3.302" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-22.86" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="L78L18CD13TR" prefix="IC">
@@ -16959,6 +16929,29 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="IN" pad="VIN"/>
 <connect gate="G$1" pin="OUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M12U_8-P_REC_MALE" prefix="X">
+<description>MOLEX M12U 8-P REC MALE BACK SHIELDED</description>
+<gates>
+<gate name="G$1" symbol="M12U8P" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="M12-8POLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18013,7 +18006,7 @@ at 14/06/2012 11:09:42</description>
 <part name="GNDI1" library="supply1" deviceset="GND" device=""/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="D" value="100 uF"/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="G" value="1 nF"/>
-<part name="J5" library="m12u8p" deviceset="M12U_8-P_REC_MALE" device=""/>
+<part name="J5" library="components" deviceset="M12U_8-P_REC_MALE" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
 <part name="S2" library="jumper" deviceset="SJ2W" device=""/>
