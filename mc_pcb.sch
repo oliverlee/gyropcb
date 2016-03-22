@@ -12377,6 +12377,7 @@ Based on the following sources:
 <part name="U11" library="Molex_By_element14_Batch_1" deviceset="52271-0869" device=""/>
 <part name="SJ7" library="jumper" deviceset="SJ2W" device=""/>
 <part name="SJ8" library="jumper" deviceset="SJ2W" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12649,6 +12650,7 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="U11" gate="A" x="149.86" y="177.8"/>
 <instance part="SJ7" gate="G$1" x="45.72" y="-27.94"/>
 <instance part="SJ8" gate="G$1" x="45.72" y="-43.18"/>
+<instance part="GND11" gate="1" x="132.08" y="160.02"/>
 </instances>
 <busses>
 </busses>
@@ -13140,6 +13142,18 @@ CTL +5V: fc = 194 Hz</text>
 <pinref part="IC2" gate="A" pin="G"/>
 <wire x1="322.58" y1="96.52" x2="320.04" y2="96.52" width="0.1524" layer="91"/>
 <junction x="320.04" y="96.52"/>
+</segment>
+<segment>
+<pinref part="U11" gate="A" pin="7"/>
+<wire x1="132.08" y1="172.72" x2="127" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="172.72" x2="127" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="127" y1="162.56" x2="132.08" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U11" gate="A" pin="8"/>
+<wire x1="167.64" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="172.72" x2="172.72" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="162.56" x2="132.08" y2="162.56" width="0.1524" layer="91"/>
+<junction x="132.08" y="162.56"/>
 </segment>
 </net>
 <net name="PB6/USART1_TX/XPC_RS-485_D" class="0">
