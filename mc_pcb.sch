@@ -12408,7 +12408,7 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="J9" gate="A" x="213.36" y="15.24"/>
 <instance part="GND15" gate="1" x="254" y="45.72" rot="R90"/>
 <instance part="GND17" gate="1" x="254" y="17.78" rot="R90"/>
-<instance part="GND14" gate="1" x="228.6" y="60.96" rot="MR0"/>
+<instance part="GND14" gate="1" x="231.14" y="60.96" rot="MR0"/>
 <instance part="C6" gate="G$1" x="190.5" y="81.28"/>
 <instance part="C3" gate="G$1" x="175.26" y="86.36"/>
 <instance part="C4" gate="G$1" x="182.88" y="86.36"/>
@@ -12644,7 +12644,7 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="P+7" gate="1" x="238.76" y="-12.7"/>
 <instance part="GND25" gate="1" x="238.76" y="-43.18"/>
 <instance part="C7" gate="G$1" x="121.92" y="-20.32"/>
-<instance part="C8" gate="G$1" x="190.5" y="-22.86"/>
+<instance part="C8" gate="G$1" x="187.96" y="-22.86"/>
 <instance part="C9" gate="G$1" x="254" y="-25.4"/>
 <instance part="J6" gate="A" x="139.7" y="175.26"/>
 <instance part="J7" gate="A" x="121.92" y="208.28"/>
@@ -12689,14 +12689,6 @@ CTL +5V: fc = 194 Hz</text>
 <pinref part="U10" gate="G$1" pin="GND@1"/>
 <wire x1="198.12" y1="68.58" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
 <junction x="198.12" y="68.58"/>
-</segment>
-<segment>
-<pinref part="GND14" gate="1" pin="GND"/>
-<pinref part="U10" gate="G$1" pin="INT"/>
-<wire x1="228.6" y1="63.5" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U10" gate="G$1" pin="FSYNC"/>
-<wire x1="228.6" y1="68.58" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
-<junction x="228.6" y="68.58"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -13102,8 +13094,8 @@ CTL +5V: fc = 194 Hz</text>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="172.72" y1="-45.72" x2="172.72" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="-45.72" x2="190.5" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="-45.72" x2="190.5" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-45.72" x2="187.96" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-45.72" x2="187.96" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="172.72" y="-45.72"/>
 </segment>
 <segment>
@@ -13154,6 +13146,12 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="144.78" y1="203.2" x2="144.78" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="193.04" x2="104.14" y2="193.04" width="0.1524" layer="91"/>
 <junction x="104.14" y="193.04"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="U10" gate="G$1" pin="FSYNC"/>
+<wire x1="231.14" y1="63.5" x2="231.14" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="71.12" x2="228.6" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PB6/USART1_TX/XPC_RS-485_D" class="0">
@@ -13226,11 +13224,17 @@ CTL +5V: fc = 194 Hz</text>
 <junction x="353.06" y="5.08"/>
 </segment>
 </net>
-<net name="PB5" class="0">
+<net name="PB5/IMU_INT" class="0">
 <segment>
 <pinref part="EXT1" gate="A" pin="12"/>
 <wire x1="45.72" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
 <label x="50.8" y="63.5" size="1.778" layer="95"/>
+<wire x1="45.72" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U10" gate="G$1" pin="INT"/>
+<wire x1="228.6" y1="68.58" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
+<label x="233.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA6/SPI1_MISO" class="0">
@@ -13609,8 +13613,8 @@ CTL +5V: fc = 194 Hz</text>
 <junction x="172.72" y="-10.16"/>
 <junction x="172.72" y="-15.24"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="-17.78" x2="190.5" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="-17.78" x2="190.5" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="-17.78" x2="187.96" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-17.78" x2="187.96" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="172.72" y="-17.78"/>
 </segment>
 <segment>
