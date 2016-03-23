@@ -16789,6 +16789,35 @@ grid 5.08 mm</description>
 </library>
 <library name="components">
 <packages>
+<package name="SO8-VREG">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.127" layer="21" curve="-180"/>
+</package>
 <package name="SOT89-VREG">
 <description>SOT89</description>
 <wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
@@ -16924,11 +16953,21 @@ http://www.mouser.com/ds/2/389/CD00000446-355303.pdf</description>
 <gate name="G$1" symbol="78XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT89-VREG">
+<device name="SOT89" package="SOT89-VREG">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="IN" pad="VIN"/>
 <connect gate="G$1" pin="OUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SO8" package="SO8-VREG">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 3 6 7"/>
+<connect gate="G$1" pin="IN" pad="8"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18004,13 +18043,13 @@ at 14/06/2012 11:09:42</description>
 <part name="L1" library="rcl" deviceset="L-EU" device="TJ7-U1" value="100 μH, Pulse Eng. PE-92108"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="GNDI1" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="D" value="100 uF"/>
-<part name="C3" library="rcl" deviceset="CPOL-EU" device="G" value="1 nF"/>
+<part name="C2" library="rcl" deviceset="CPOL-EU" device="D" value="100 uF, 75V, Aluminum Electrolytic"/>
+<part name="C3" library="rcl" deviceset="CPOL-EU" device="G" value="1000 uF, 25V, Aluminum Electrolytic"/>
 <part name="J5" library="components" deviceset="M12U_8-P_REC_MALE" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+24V" device=""/>
 <part name="S2" library="jumper" deviceset="SJ2W" device=""/>
-<part name="Q2" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16"/>
+<part name="Q2" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC808-16" value="BC808"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R1210" value="120k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R1210" value="1.2M"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="200k"/>
@@ -18022,7 +18061,7 @@ at 14/06/2012 11:09:42</description>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="J12" library="con-molex" deviceset="C-GRID-02" device="-70543"/>
-<part name="U2" library="components" deviceset="L78L18CD13TR" device=""/>
+<part name="U2" library="components" deviceset="L78L18CD13TR" device="SO8"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.33uF"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>

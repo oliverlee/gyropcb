@@ -12157,9 +12157,9 @@ Based on the following sources:
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="Ceramic, X7R, 0.1μF ±10%, 2V"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="Ceramic, X7R, 0.1μF ±10%, 4V"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="Ceramic, X7R, 10nF ±10%, 4V"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -12187,7 +12187,7 @@ Based on the following sources:
 <part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="22uF"/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
-<part name="L1" library="rcl" deviceset="L-EU" device="L2825P" value="CL460nH/2012/1.7R/250mA"/>
+<part name="L1" library="rcl" deviceset="L-EU" device="L2012C" value="CL470nH/0805/1.7R/250mA"/>
 <part name="+3V37" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V38" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V39" library="supply1" deviceset="+3V3" device=""/>
@@ -13959,7 +13959,7 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="441.96" y1="93.98" x2="439.42" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="SD_VDD" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="4"/>
 <pinref part="C11" gate="G$1" pin="1"/>
@@ -13973,6 +13973,7 @@ CTL +5V: fc = 194 Hz</text>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="320.04" y1="30.48" x2="320.04" y2="17.78" width="0.1524" layer="91"/>
 <junction x="320.04" y="17.78"/>
+<label x="322.58" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
