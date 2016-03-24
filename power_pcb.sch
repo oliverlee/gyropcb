@@ -11510,7 +11510,7 @@ OPTIONAL MOTOR CHOKE</text>
 <pinref part="Q1" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="MOC" class="0">
+<net name="PA9/TIM1_CH2/M2_PWM" class="0">
 <segment>
 <pinref part="EXT4" gate="A" pin="4"/>
 <label x="279.4" y="127" size="1.778" layer="95"/>
