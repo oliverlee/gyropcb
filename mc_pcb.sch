@@ -11535,34 +11535,35 @@ grid 5.08 mm</description>
 <library name="components">
 <packages>
 <package name="-68-6">
-<wire x1="0" y1="0" x2="0" y2="15.5" width="0.127" layer="51"/>
-<wire x1="0" y1="15.5" x2="4.75" y2="15.5" width="0.127" layer="51"/>
-<wire x1="4.75" y1="15.5" x2="4.75" y2="13.8" width="0.127" layer="51"/>
-<wire x1="4.75" y1="13.8" x2="12.9" y2="13.8" width="0.127" layer="51"/>
-<wire x1="12.9" y1="13.8" x2="12.9" y2="14.5" width="0.127" layer="51"/>
-<wire x1="12.9" y1="14.5" x2="14.55" y2="14.5" width="0.127" layer="51"/>
-<wire x1="14.55" y1="14.5" x2="14.55" y2="0" width="0.127" layer="51"/>
-<wire x1="14.55" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<smd name="GND1" x="0.7" y="14.55" dx="1.4" dy="1.9" layer="1"/>
-<smd name="GND2" x="13.725" y="13.55" dx="1.65" dy="1.9" layer="1"/>
-<smd name="GND3" x="6.55" y="0.4" dx="1.8" dy="1.4" layer="1"/>
-<smd name="DATA2" x="5.36" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CD" x="12.25" y="0.4" dx="1.8" dy="1.4" layer="1"/>
-<smd name="CD/DATA3" x="6.46" y="10.3" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CMD" x="7.56" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="VDD" x="8.66" y="10.9" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CLK" x="9.76" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="VSS" x="10.86" y="10.9" dx="0.8" dy="1.5" layer="1"/>
-<smd name="DATA1" x="13.06" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="DATA0" x="11.96" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<wire x1="0" y1="13" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
-<wire x1="8" y1="0" x2="11" y2="0" width="0.127" layer="21"/>
-<wire x1="13.5" y1="0" x2="14.55" y2="0" width="0.127" layer="21"/>
-<wire x1="14.55" y1="0" x2="14.55" y2="12" width="0.127" layer="21"/>
-<wire x1="2" y1="15.5" x2="4.75" y2="15.5" width="0.127" layer="21"/>
-<wire x1="4.75" y1="15.5" x2="4.75" y2="13.8" width="0.127" layer="21"/>
-<wire x1="4.75" y1="13.8" x2="12.5" y2="13.8" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="-7.88" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="-7.88" y1="-7.62" x2="-7.88" y2="-2.87" width="0.127" layer="51"/>
+<wire x1="-7.88" y1="-2.87" x2="-6.18" y2="-2.87" width="0.127" layer="51"/>
+<wire x1="-6.18" y1="-2.87" x2="-6.18" y2="5.28" width="0.127" layer="51"/>
+<wire x1="-6.18" y1="5.28" x2="-6.88" y2="5.28" width="0.127" layer="51"/>
+<wire x1="-6.88" y1="5.28" x2="-6.88" y2="6.93" width="0.127" layer="51"/>
+<wire x1="-6.88" y1="6.93" x2="7.62" y2="6.93" width="0.127" layer="51"/>
+<wire x1="7.62" y1="6.93" x2="7.62" y2="-7.62" width="0.127" layer="51"/>
+<smd name="GND1" x="-6.93" y="-6.92" dx="1.4" dy="1.9" layer="1" rot="R90"/>
+<smd name="GND2" x="-5.93" y="6.105" dx="1.65" dy="1.9" layer="1" rot="R90"/>
+<smd name="GND3" x="7.22" y="-1.07" dx="1.8" dy="1.4" layer="1" rot="R90"/>
+<smd name="DATA2" x="-3.08" y="-2.26" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="CD" x="7.22" y="4.63" dx="1.8" dy="1.4" layer="1" rot="R90"/>
+<smd name="CD/DATA3" x="-2.68" y="-1.16" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="CMD" x="-3.08" y="-0.06" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="VDD" x="-3.28" y="1.04" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="CLK" x="-3.08" y="2.14" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="VSS" x="-3.28" y="3.24" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="DATA1" x="-3.08" y="5.44" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="DATA0" x="-3.08" y="4.34" dx="0.8" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-5.38" y1="-7.62" x2="7.62" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-2.62" width="0.127" layer="21"/>
+<wire x1="7.62" y1="0.38" x2="7.62" y2="3.38" width="0.127" layer="21"/>
+<wire x1="7.62" y1="5.88" x2="7.62" y2="6.93" width="0.127" layer="21"/>
+<wire x1="7.62" y1="6.93" x2="-4.38" y2="6.93" width="0.127" layer="21"/>
+<wire x1="-7.88" y1="-5.62" x2="-7.88" y2="-2.87" width="0.127" layer="21"/>
+<wire x1="-7.88" y1="-2.87" x2="-6.18" y2="-2.87" width="0.127" layer="21"/>
+<wire x1="-6.18" y1="-2.87" x2="-6.18" y2="4.88" width="0.127" layer="21"/>
+<text x="-2.54" y="7.62" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
