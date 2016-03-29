@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2607,41 +2607,40 @@ Based on the following sources:
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default *">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+<designrules name="Eagle_WEdirekt_125_check">
+<description language="de">
+
+
+
+
+
+
+
+WE &gt;/= 125µm Strukturen
+&lt;b&gt;EAGLE Design-Regeln&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-The default Design Rules have been set to cover
-a wide range of applications. Your particular design
-may have different requirements, so please make the
-necessary adjustments and save your customized
-design rules under a new name.</description>
-<param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.0356mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0356mm"/>
-<param name="mtIsolate" value="1.5011mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="7mil"/>
-<param name="mdWirePad" value="5mil"/>
-<param name="mdWireVia" value="5mil"/>
-<param name="mdPadPad" value="5mil"/>
-<param name="mdPadVia" value="5mil"/>
-<param name="mdViaVia" value="5mil"/>
-<param name="mdSmdPad" value="5mil"/>
-<param name="mdSmdVia" value="5mil"/>
-<param name="mdSmdSmd" value="5mil"/>
+Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
+</description>
+<param name="layerSetup" value="(1*2+3*4+5*6+7*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="0.125mm"/>
+<param name="mdWirePad" value="0.125mm"/>
+<param name="mdWireVia" value="0.125mm"/>
+<param name="mdPadPad" value="0.175mm"/>
+<param name="mdPadVia" value="0.175mm"/>
+<param name="mdViaVia" value="0.125mm"/>
+<param name="mdSmdPad" value="0.175mm"/>
+<param name="mdSmdVia" value="0.125mm"/>
+<param name="mdSmdSmd" value="0.175mm"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="15mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="0.3mm"/>
+<param name="mdDrill" value="0.6mm"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="13mil"/>
-<param name="msMicroVia" value="13mil"/>
+<param name="msWidth" value="0.125mm"/>
+<param name="msDrill" value="0.2mm"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -2650,20 +2649,20 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="7mil"/>
-<param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="7mil"/>
-<param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="7mil"/>
-<param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
-<param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="7mil"/>
-<param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="4mil"/>
-<param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="4mil"/>
-<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="rlMinPadTop" value="0.225mm"/>
+<param name="rlMaxPadTop" value="0.5mm"/>
+<param name="rlMinPadInner" value="0.225mm"/>
+<param name="rlMaxPadInner" value="0.5mm"/>
+<param name="rlMinPadBottom" value="0.225mm"/>
+<param name="rlMaxPadBottom" value="0.5mm"/>
+<param name="rlMinViaOuter" value="0.175mm"/>
+<param name="rlMaxViaOuter" value="0.3mm"/>
+<param name="rlMinViaInner" value="0.175mm"/>
+<param name="rlMaxViaInner" value="0.3mm"/>
+<param name="rlMinMicroViaOuter" value="0.15mm"/>
+<param name="rlMaxMicroViaOuter" value="0.2mm"/>
+<param name="rlMinMicroViaInner" value="0.15mm"/>
+<param name="rlMaxMicroViaInner" value="0.2mm"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
@@ -2671,24 +2670,24 @@ design rules under a new name.</description>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="3mil"/>
+<param name="mlMinStopFrame" value="0.05mm"/>
+<param name="mlMaxStopFrame" value="0.1mm"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="0.3mm"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="1"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="useDiameter" value="13"/>
-<param name="maxErrors" value="50"/>
+<param name="useDiameter" value="31"/>
+<param name="maxErrors" value="999999"/>
 </designrules>
 <autorouter>
 <pass name="Default">
@@ -3670,14 +3669,12 @@ design rules under a new name.</description>
 <contactref element="U13" pad="11"/>
 <wire x1="12.978" y1="44.866" x2="11.592" y2="44.866" width="0.254" layer="1"/>
 <wire x1="11.592" y1="44.866" x2="11.176" y2="44.45" width="0.254" layer="1"/>
-<wire x1="55.534" y1="42.072" x2="55.372" y2="41.91" width="0.254" layer="1"/>
-<wire x1="55.372" y1="41.91" x2="55.372" y2="41.138" width="0.254" layer="1"/>
-<wire x1="55.372" y1="41.138" x2="55.356" y2="41.122" width="0.254" layer="1"/>
+<wire x1="55.534" y1="42.072" x2="55.356" y2="41.894" width="0.254" layer="1"/>
 <wire x1="15.978" y1="44.866" x2="15.656" y2="44.866" width="0.254" layer="1"/>
-<wire x1="15.656" y1="44.866" x2="15.494" y2="44.704" width="0.254" layer="1"/>
-<wire x1="15.494" y1="44.704" x2="15.494" y2="43.932" width="0.254" layer="1"/>
-<wire x1="15.494" y1="43.932" x2="15.478" y2="43.916" width="0.254" layer="1"/>
+<wire x1="15.656" y1="44.866" x2="15.478" y2="44.688" width="0.254" layer="1"/>
 <via x="54.61" y="38.862" extent="1-16" drill="0.7"/>
+<wire x1="55.356" y1="41.122" x2="55.356" y2="41.894" width="0.254" layer="1"/>
+<wire x1="15.478" y1="43.916" x2="15.478" y2="44.688" width="0.254" layer="1"/>
 </signal>
 <signal name="PB6/USART1_TX/XPC_RS-485_D">
 <contactref element="U5" pad="2"/>
@@ -5580,11 +5577,10 @@ design rules under a new name.</description>
 <wire x1="25.781" y1="65.8876" x2="25.0444" y2="65.8876" width="0.254" layer="1"/>
 <wire x1="25.0444" y1="65.8876" x2="24.892" y2="66.04" width="0.254" layer="1"/>
 <wire x1="24.892" y1="66.04" x2="24.13" y2="66.04" width="0.254" layer="1"/>
-<wire x1="23.622" y1="65.532" x2="23.622" y2="60.452" width="0.254" layer="16"/>
-<wire x1="23.622" y1="60.452" x2="25.4" y2="58.674" width="0.254" layer="16"/>
-<wire x1="26.5176" y1="58.42" x2="25.654" y2="58.42" width="0.254" layer="1"/>
-<wire x1="25.654" y1="58.42" x2="25.4" y2="58.674" width="0.254" layer="1"/>
-<via x="25.4" y="58.674" extent="1-16" drill="0.5"/>
+<wire x1="23.622" y1="65.532" x2="23.622" y2="60.198" width="0.254" layer="16"/>
+<wire x1="23.622" y1="60.198" x2="25.4" y2="58.42" width="0.254" layer="16"/>
+<wire x1="26.5176" y1="58.42" x2="25.4" y2="58.42" width="0.254" layer="1"/>
+<via x="25.4" y="58.42" extent="1-16" drill="0.5"/>
 <via x="24.13" y="66.04" extent="1-16" drill="0.5"/>
 <wire x1="23.622" y1="65.532" x2="24.13" y2="66.04" width="0.254" layer="16"/>
 </signal>
@@ -5647,9 +5643,6 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="2"/>
 <contactref element="C3" pad="1"/>
 <wire x1="52.856" y1="43.272" x2="54.956" y2="43.272" width="0.254" layer="1"/>
-<wire x1="54.956" y1="43.272" x2="55.372" y2="43.688" width="0.254" layer="1"/>
-<wire x1="55.372" y1="43.688" x2="55.372" y2="44.206" width="0.254" layer="1"/>
-<wire x1="55.372" y1="44.206" x2="55.356" y2="44.222" width="0.254" layer="1"/>
 <wire x1="50.546" y1="46.062" x2="48.006" y2="46.062" width="0.254" layer="1"/>
 <wire x1="53.356" y1="41.122" x2="53.356" y2="41.672" width="0.254" layer="1"/>
 <wire x1="53.356" y1="41.672" x2="54.956" y2="43.272" width="0.254" layer="1"/>
@@ -5659,6 +5652,8 @@ design rules under a new name.</description>
 <wire x1="51.816" y1="44.792" x2="50.546" y2="46.062" width="0.254" layer="1"/>
 <wire x1="48.006" y1="46.062" x2="41.64" y2="46.062" width="0.254" layer="1"/>
 <wire x1="41.64" y1="46.062" x2="41.486" y2="45.908" width="0.254" layer="1"/>
+<wire x1="55.356" y1="44.222" x2="55.356" y2="43.672" width="0.254" layer="1"/>
+<wire x1="55.356" y1="43.672" x2="54.956" y2="43.272" width="0.254" layer="1"/>
 </signal>
 <signal name="IMU2/SPI1_MOSI">
 <contactref element="U13" pad="24"/>
