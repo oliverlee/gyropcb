@@ -3474,9 +3474,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="10.478" y="48.466" size="1.27" layer="27" rot="R270"/>
 <attribute name="NAME" x="13.51" y="42.378" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="C41" library="rcl" package="C0603" value="Ceramic, X7R, 0.1μF ±10%, 2V" x="10.16" y="45.212" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.017" y="46.101" size="0.8128" layer="25" font="vector" ratio="16"/>
-<attribute name="VALUE" x="10.795" y="47.117" size="1.27" layer="27" rot="R180"/>
+<element name="C41" library="rcl" package="C0603" value="Ceramic, X7R, 0.1μF ±10%, 2V" x="9.398" y="45.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.509" y="47.371" size="0.8128" layer="25" font="vector" ratio="16"/>
+<attribute name="VALUE" x="7.493" y="46.355" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C42" library="rcl" package="C0603" value="Ceramic, X7R, 0.1μF ±10%, 4V" x="12.446" y="51.054" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.541" y="51.435" size="0.8128" layer="25" font="vector" ratio="16" rot="R180"/>
@@ -3538,7 +3538,7 @@ design rules under a new name.</description>
 <contactref element="C14" pad="2"/>
 <contactref element="C13" pad="2"/>
 <contactref element="C5" pad="2"/>
-<wire x1="55.856" y1="42.072" x2="55.594" y2="42.072" width="0.254" layer="1"/>
+<wire x1="55.856" y1="42.072" x2="55.534" y2="42.072" width="0.254" layer="1"/>
 <via x="44.958" y="44.45" extent="1-16" drill="0.7"/>
 <wire x1="50.634" y1="40.132" x2="50.292" y2="39.79" width="0.254" layer="1"/>
 <contactref element="EXT2" pad="3"/>
@@ -3668,10 +3668,16 @@ design rules under a new name.</description>
 <contactref element="C42" pad="2"/>
 <contactref element="C43" pad="2"/>
 <contactref element="U13" pad="11"/>
-<wire x1="55.356" y1="41.122" x2="55.594" y2="42.072" width="0" layer="19" extent="1-1"/>
-<wire x1="50.546" y1="44.362" x2="52.232" y2="42.072" width="0" layer="19" extent="1-1"/>
-<wire x1="15.978" y1="44.866" x2="15.478" y2="43.916" width="0" layer="19" extent="1-1"/>
-<wire x1="12.978" y1="44.866" x2="15.478" y2="43.916" width="0" layer="19" extent="1-1"/>
+<wire x1="12.978" y1="44.866" x2="11.592" y2="44.866" width="0.254" layer="1"/>
+<wire x1="11.592" y1="44.866" x2="11.176" y2="44.45" width="0.254" layer="1"/>
+<wire x1="55.534" y1="42.072" x2="55.372" y2="41.91" width="0.254" layer="1"/>
+<wire x1="55.372" y1="41.91" x2="55.372" y2="41.138" width="0.254" layer="1"/>
+<wire x1="55.372" y1="41.138" x2="55.356" y2="41.122" width="0.254" layer="1"/>
+<wire x1="15.978" y1="44.866" x2="15.656" y2="44.866" width="0.254" layer="1"/>
+<wire x1="15.656" y1="44.866" x2="15.494" y2="44.704" width="0.254" layer="1"/>
+<wire x1="15.494" y1="44.704" x2="15.494" y2="43.932" width="0.254" layer="1"/>
+<wire x1="15.494" y1="43.932" x2="15.478" y2="43.916" width="0.254" layer="1"/>
+<via x="54.61" y="38.862" extent="1-16" drill="0.7"/>
 </signal>
 <signal name="PB6/USART1_TX/XPC_RS-485_D">
 <contactref element="U5" pad="2"/>
@@ -5631,7 +5637,7 @@ design rules under a new name.</description>
 <contactref element="U13" pad="10"/>
 <contactref element="C41" pad="1"/>
 <wire x1="12.978" y1="45.266" x2="11.064" y2="45.266" width="0.254" layer="1"/>
-<wire x1="11.064" y1="45.266" x2="11.01" y2="45.212" width="0.254" layer="1"/>
+<wire x1="11.064" y1="45.266" x2="9.398" y2="46.57" width="0.254" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U10" pad="8"/>
