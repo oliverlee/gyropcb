@@ -770,116 +770,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="invensense">
-<description>&lt;b&gt;InvenSense Devices&lt;/b&gt;
-&lt;p&gt;
-&lt;author&gt;Created by yuhki50@gmail.com&lt;/author&gt;
-&lt;/p&gt;</description>
-<packages>
-<package name="QFN24-SMALL">
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1016" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1016" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1016" layer="51"/>
-<wire x1="-1.5" y1="1.3" x2="-1.5" y2="1.5" width="0.1016" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="-1.3" y2="1.5" width="0.1016" layer="21"/>
-<wire x1="1.3" y1="1.5" x2="1.5" y2="1.5" width="0.1016" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="1.3" width="0.1016" layer="21"/>
-<wire x1="1.5" y1="-1.3" x2="1.5" y2="-1.5" width="0.1016" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1.3" y2="-1.5" width="0.1016" layer="21"/>
-<wire x1="-1.3" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-1.3" width="0.1016" layer="21"/>
-<circle x="-2" y="2" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-1.55" y="1" dx="0.6" dy="0.25" layer="1" roundness="30"/>
-<smd name="2" x="-1.5" y="0.6" dx="0.7" dy="0.25" layer="1" roundness="30"/>
-<smd name="3" x="-1.5" y="0.2" dx="0.7" dy="0.25" layer="1" roundness="30"/>
-<smd name="4" x="-1.5" y="-0.2" dx="0.7" dy="0.25" layer="1" roundness="30"/>
-<smd name="5" x="-1.5" y="-0.6" dx="0.7" dy="0.25" layer="1" roundness="30"/>
-<smd name="6" x="-1.55" y="-1" dx="0.6" dy="0.25" layer="1" roundness="30"/>
-<smd name="7" x="-1" y="-1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R90"/>
-<smd name="8" x="-0.6" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90"/>
-<smd name="9" x="-0.2" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90"/>
-<smd name="10" x="0.2" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90"/>
-<smd name="11" x="0.6" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90"/>
-<smd name="12" x="1" y="-1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R90"/>
-<smd name="13" x="1.55" y="-1" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R180"/>
-<smd name="14" x="1.5" y="-0.6" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180"/>
-<smd name="15" x="1.5" y="-0.2" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180"/>
-<smd name="16" x="1.5" y="0.2" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180"/>
-<smd name="17" x="1.5" y="0.6" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180"/>
-<smd name="18" x="1.55" y="1" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R180"/>
-<smd name="19" x="1" y="1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R270"/>
-<smd name="20" x="0.6" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270"/>
-<smd name="21" x="0.2" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270"/>
-<smd name="22" x="-0.2" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270"/>
-<smd name="23" x="-0.6" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270"/>
-<smd name="24" x="-1" y="1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R270"/>
-<text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-3" y="2.5" size="1.27" layer="25">&gt;NAME</text>
-</package>
-</packages>
-<symbols>
-<symbol name="MPU-9250">
-<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<text x="-12.7" y="16.51" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SCL/SCLK" x="15.24" y="7.62" length="short" rot="R180"/>
-<pin name="GND@1" x="-15.24" y="-10.16" length="short" direction="pwr"/>
-<pin name="GND@2" x="-15.24" y="-12.7" length="short" direction="pwr"/>
-<pin name="SDA/SDI" x="15.24" y="12.7" length="short" direction="out" rot="R180"/>
-<pin name="VCCIO" x="-15.24" y="7.62" length="short" direction="pwr"/>
-<pin name="AD0/SDO" x="15.24" y="10.16" length="short" direction="in" rot="R180"/>
-<pin name="REGOUT" x="-15.24" y="2.54" length="short" direction="in"/>
-<pin name="FSYNC" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
-<pin name="INT" x="15.24" y="-12.7" length="short" direction="out" rot="R180"/>
-<pin name="VCC@1" x="-15.24" y="12.7" length="short" direction="pwr"/>
-<pin name="VCC@2" x="-15.24" y="10.16" length="short" direction="pwr"/>
-<pin name="AUX_CL" x="15.24" y="-2.54" length="short" direction="out" rot="R180"/>
-<pin name="AUX_DA" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="!CS" x="15.24" y="5.08" length="short" direction="in" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MPU-9250" prefix="IC">
-<description>&lt;b&gt;9-axis MotionTracking device communicate with I2C/SPI&lt;/b&gt;
-&lt;p&gt;
-Source:
-&lt;ul&gt;
-&lt;li&gt;http://www.invensense.com/mems/gyro/documents/PS-MPU-9250A-01.pdf&lt;/li&gt;
-&lt;ul&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="MPU-9250" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="QFN24-SMALL">
-<connects>
-<connect gate="G$1" pin="!CS" pad="22"/>
-<connect gate="G$1" pin="AD0/SDO" pad="9"/>
-<connect gate="G$1" pin="AUX_CL" pad="7"/>
-<connect gate="G$1" pin="AUX_DA" pad="21"/>
-<connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND@1" pad="18"/>
-<connect gate="G$1" pin="GND@2" pad="20"/>
-<connect gate="G$1" pin="INT" pad="12"/>
-<connect gate="G$1" pin="REGOUT" pad="10"/>
-<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
-<connect gate="G$1" pin="SDA/SDI" pad="24"/>
-<connect gate="G$1" pin="VCC@1" pad="1"/>
-<connect gate="G$1" pin="VCC@2" pad="13"/>
-<connect gate="G$1" pin="VCCIO" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Molex_By_element14_Batch_1">
 <description>Developed by element14 :&lt;br&gt;
 element14 CAD Library consolidation.ulp
@@ -12199,6 +12089,113 @@ Based on the following sources:
 </deviceset>
 </devicesets>
 </library>
+<library name="MPU-9250">
+<description>
+</description>
+<packages>
+<package name="QFN24-SMALL">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1016" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1016" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1016" layer="51"/>
+<wire x1="-1.5" y1="1.3" x2="-1.5" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.3" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="1.3" y1="1.5" x2="1.5" y2="1.5" width="0.1016" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="1.3" width="0.1016" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="1.5" y2="-1.5" width="0.1016" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.3" y2="-1.5" width="0.1016" layer="21"/>
+<wire x1="-1.3" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-1.3" width="0.1016" layer="21"/>
+<circle x="-2" y="2" radius="0.15" width="0" layer="21"/>
+<smd name="1" x="-1.55" y="1" dx="0.6" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="2" x="-1.5" y="0.6" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="3" x="-1.5" y="0.2" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="4" x="-1.5" y="-0.2" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="5" x="-1.5" y="-0.6" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="6" x="-1.55" y="-1" dx="0.6" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="7" x="-1" y="-1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="8" x="-0.6" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="9" x="-0.2" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="10" x="0.2" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="11" x="0.6" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="12" x="1" y="-1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="13" x="1.55" y="-1" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="14" x="1.5" y="-0.6" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="15" x="1.5" y="-0.2" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="16" x="1.5" y="0.2" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="17" x="1.5" y="0.6" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="18" x="1.55" y="1" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="19" x="1" y="1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="20" x="0.6" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="21" x="0.2" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="22" x="-0.2" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="23" x="-0.6" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="24" x="-1" y="1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<text x="-3" y="-4" size="1.27" layer="21">
+</text>
+<text x="-3" y="2.5" size="1.27" layer="25">
+</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MPU-9250">
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7" y="16.51" size="1.778" layer="95">
+</text>
+<text x="-12.7" y="-17.78" size="1.778" layer="96">
+</text>
+<pin name="SCL/SCLK" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="GND@1" x="-15.24" y="-10.16" length="short" direction="pwr"/>
+<pin name="GND@2" x="-15.24" y="-12.7" length="short" direction="pwr"/>
+<pin name="SDA/SDI" x="15.24" y="12.7" length="short" direction="out" rot="R180"/>
+<pin name="VCCIO" x="-15.24" y="7.62" length="short" direction="pwr"/>
+<pin name="AD0/SDO" x="15.24" y="10.16" length="short" direction="in" rot="R180"/>
+<pin name="REGOUT" x="-15.24" y="2.54" length="short" direction="in"/>
+<pin name="FSYNC" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="INT" x="15.24" y="-12.7" length="short" direction="out" rot="R180"/>
+<pin name="VCC@1" x="-15.24" y="12.7" length="short" direction="pwr"/>
+<pin name="VCC@2" x="-15.24" y="10.16" length="short" direction="pwr"/>
+<pin name="AUX_CL" x="15.24" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="AUX_DA" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="!CS" x="15.24" y="5.08" length="short" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPU-9250" prefix="IC">
+<description>
+</description>
+<gates>
+<gate name="G$1" symbol="MPU-9250" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN24-SMALL">
+<connects>
+<connect gate="G$1" pin="!CS" pad="22"/>
+<connect gate="G$1" pin="AD0/SDO" pad="9"/>
+<connect gate="G$1" pin="AUX_CL" pad="7"/>
+<connect gate="G$1" pin="AUX_DA" pad="21"/>
+<connect gate="G$1" pin="FSYNC" pad="11"/>
+<connect gate="G$1" pin="GND@1" pad="18"/>
+<connect gate="G$1" pin="GND@2" pad="20"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="23"/>
+<connect gate="G$1" pin="SDA/SDI" pad="24"/>
+<connect gate="G$1" pin="VCC@1" pad="1"/>
+<connect gate="G$1" pin="VCC@2" pad="13"/>
+<connect gate="G$1" pin="VCCIO" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12212,7 +12209,7 @@ Based on the following sources:
 <part name="EXT1" library="pinhead" deviceset="PINHD-2X13" device=""/>
 <part name="EXT2" library="pinhead" deviceset="PINHD-2X13" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="U10" library="invensense" deviceset="MPU-9250" device=""/>
+<part name="U10" library="MPU-9250" deviceset="MPU-9250" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="J8" library="Molex_By_element14_Batch_1" deviceset="52271-0869" device=""/>
 <part name="J9" library="Molex_By_element14_Batch_1" deviceset="52271-0869" device=""/>
@@ -12439,7 +12436,7 @@ Based on the following sources:
 <part name="S2" library="jumper" deviceset="SJ2W" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="components" deviceset="10100660" device=""/>
-<part name="U13" library="invensense" deviceset="MPU-9250" device=""/>
+<part name="U13" library="MPU-9250" deviceset="MPU-9250" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND55" library="supply1" deviceset="GND" device=""/>
 <part name="C41" library="rcl" deviceset="C-EU" device="C0603" value="Ceramic, X7R, 0.1μF ±10%, 2V"/>
