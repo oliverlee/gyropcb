@@ -425,6 +425,12 @@ MUST BE DISCONNECTED</text>
 <wire x1="63.754" y1="44.958" x2="63.754" y2="44.704" width="0.254" layer="22"/>
 <wire x1="63.754" y1="44.704" x2="63.246" y2="44.704" width="0.254" layer="22"/>
 <wire x1="63.246" y1="44.704" x2="63.246" y2="44.958" width="0.254" layer="22"/>
+<text x="3.81" y="53.848" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">VCC</text>
+<text x="3.81" y="51.308" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">MOSI</text>
+<text x="3.81" y="48.768" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">MISO</text>
+<text x="3.81" y="46.228" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">SCK</text>
+<text x="3.81" y="43.688" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">NSS</text>
+<text x="3.81" y="41.148" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">INT</text>
 </plain>
 <libraries>
 <library name="rcl">
