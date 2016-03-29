@@ -2567,31 +2567,31 @@ Based on the following sources:
 <wire x1="-1.3" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="21"/>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-1.3" width="0.1016" layer="21"/>
 <circle x="-2" y="2" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-1.55" y="1" dx="0.6" dy="0.25" layer="1" roundness="30" stop="no" cream="no"/>
-<smd name="2" x="-1.5" y="0.6" dx="0.7" dy="0.25" layer="1" roundness="30" stop="no" cream="no"/>
-<smd name="3" x="-1.5" y="0.2" dx="0.7" dy="0.25" layer="1" roundness="30" stop="no" cream="no"/>
-<smd name="4" x="-1.5" y="-0.2" dx="0.7" dy="0.25" layer="1" roundness="30" stop="no" cream="no"/>
-<smd name="5" x="-1.5" y="-0.6" dx="0.7" dy="0.25" layer="1" roundness="30" stop="no" cream="no"/>
-<smd name="6" x="-1.55" y="-1" dx="0.6" dy="0.25" layer="1" roundness="30" stop="no" cream="no"/>
-<smd name="7" x="-1" y="-1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
-<smd name="8" x="-0.6" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
-<smd name="9" x="-0.2" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
-<smd name="10" x="0.2" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
-<smd name="11" x="0.6" y="-1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
-<smd name="12" x="1" y="-1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
-<smd name="13" x="1.55" y="-1" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
-<smd name="14" x="1.5" y="-0.6" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
-<smd name="15" x="1.5" y="-0.2" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
-<smd name="16" x="1.5" y="0.2" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
-<smd name="17" x="1.5" y="0.6" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
-<smd name="18" x="1.55" y="1" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
-<smd name="19" x="1" y="1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
-<smd name="20" x="0.6" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
-<smd name="21" x="0.2" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
-<smd name="22" x="-0.2" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
-<smd name="23" x="-0.6" y="1.5" dx="0.7" dy="0.25" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
-<smd name="24" x="-1" y="1.55" dx="0.6" dy="0.25" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
-<text x="-3" y="-4" size="1.27" layer="27">
+<smd name="1" x="-1.55" y="1" dx="0.6" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="2" x="-1.5" y="0.6" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="3" x="-1.5" y="0.2" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="4" x="-1.5" y="-0.2" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="5" x="-1.5" y="-0.6" dx="0.7" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="6" x="-1.55" y="-1" dx="0.6" dy="0.23" layer="1" roundness="30" stop="no" cream="no"/>
+<smd name="7" x="-1" y="-1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="8" x="-0.6" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="9" x="-0.2" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="10" x="0.2" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="11" x="0.6" y="-1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="12" x="1" y="-1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<smd name="13" x="1.55" y="-1" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="14" x="1.5" y="-0.6" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="15" x="1.5" y="-0.2" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="16" x="1.5" y="0.2" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="17" x="1.5" y="0.6" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="18" x="1.55" y="1" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R180" stop="no" cream="no"/>
+<smd name="19" x="1" y="1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="20" x="0.6" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="21" x="0.2" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="22" x="-0.2" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="23" x="-0.6" y="1.5" dx="0.7" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<smd name="24" x="-1" y="1.55" dx="0.6" dy="0.23" layer="1" roundness="30" rot="R270" stop="no" cream="no"/>
+<text x="-3" y="-4" size="1.27" layer="21">
 </text>
 <text x="-3" y="2.5" size="1.27" layer="25">
 </text>
@@ -2607,7 +2607,7 @@ Based on the following sources:
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="Eagle_WEdirekt_125_check">
+<designrules name="Eagle_WEdirekt_125_check *">
 <description language="de">
 
 
@@ -2627,12 +2627,12 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <param name="mdWireWire" value="0.125mm"/>
 <param name="mdWirePad" value="0.125mm"/>
 <param name="mdWireVia" value="0.125mm"/>
-<param name="mdPadPad" value="0.175mm"/>
-<param name="mdPadVia" value="0.175mm"/>
+<param name="mdPadPad" value="0.17mm"/>
+<param name="mdPadVia" value="0.17mm"/>
 <param name="mdViaVia" value="0.125mm"/>
-<param name="mdSmdPad" value="0.175mm"/>
+<param name="mdSmdPad" value="0.17mm"/>
 <param name="mdSmdVia" value="0.125mm"/>
-<param name="mdSmdSmd" value="0.175mm"/>
+<param name="mdSmdSmd" value="0.17mm"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="0.3mm"/>
@@ -2683,7 +2683,7 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="0"/>
+<param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="31"/>
@@ -3981,8 +3981,9 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <wire x1="27.178" y1="33.528" x2="23.622" y2="37.084" width="0.4064" layer="16"/>
 <via x="23.622" y="37.084" extent="1-16" drill="0.7"/>
 <wire x1="23.622" y1="37.084" x2="17.438" y2="37.084" width="0.4064" layer="1"/>
-<wire x1="17.438" y1="37.084" x2="15.856" y2="35.364" width="0.4064" layer="1"/>
 <wire x1="61.468" y1="28.448" x2="29.972" y2="28.448" width="0.4064" layer="16"/>
+<wire x1="15.856" y1="35.364" x2="15.856" y2="35.502" width="0.4064" layer="1"/>
+<wire x1="15.856" y1="35.502" x2="17.438" y2="37.084" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R6" pad="2"/>
@@ -5634,8 +5635,8 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <signal name="N$12">
 <contactref element="U13" pad="10"/>
 <contactref element="C41" pad="1"/>
-<wire x1="12.978" y1="45.266" x2="11.064" y2="45.266" width="0.254" layer="1"/>
-<wire x1="11.064" y1="45.266" x2="9.398" y2="46.57" width="0.254" layer="1"/>
+<wire x1="12.978" y1="45.266" x2="10.702" y2="45.266" width="0.254" layer="1"/>
+<wire x1="10.702" y1="45.266" x2="9.398" y2="46.57" width="0.254" layer="1"/>
 </signal>
 <signal name="N$14">
 <contactref element="U10" pad="8"/>
