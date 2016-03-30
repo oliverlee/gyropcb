@@ -12459,6 +12459,10 @@ at 30/07/2012 17:45:58</description>
 <part name="EXT3" library="pinhead" deviceset="PINHD-1X6" device=""/>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" deviceset="+5V" device=""/>
+<part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C45" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="GND59" library="supply1" deviceset="GND" device=""/>
+<part name="GND60" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12743,6 +12747,10 @@ CTL +5V: fc = 194 Hz</text>
 <instance part="EXT3" gate="A" x="375.92" y="213.36"/>
 <instance part="P+13" gate="1" x="38.1" y="200.66"/>
 <instance part="P+14" gate="1" x="38.1" y="139.7"/>
+<instance part="C44" gate="G$1" x="38.1" y="190.5"/>
+<instance part="C45" gate="G$1" x="38.1" y="129.54"/>
+<instance part="GND59" gate="1" x="38.1" y="182.88"/>
+<instance part="GND60" gate="1" x="38.1" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -13273,6 +13281,14 @@ CTL +5V: fc = 194 Hz</text>
 <wire x1="340.36" y1="187.96" x2="340.36" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="195.58" x2="337.82" y2="195.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="GND59" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C45" gate="G$1" pin="2"/>
+<pinref part="GND60" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="PB6/USART1_TX/XPC_RS-485_D" class="0">
 <segment>
@@ -13770,12 +13786,16 @@ CTL +5V: fc = 194 Hz</text>
 <pinref part="P+13" gate="1" pin="+5V"/>
 <wire x1="17.78" y1="193.04" x2="38.1" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="193.04" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="C44" gate="G$1" pin="1"/>
+<junction x="38.1" y="193.04"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VCC2"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
 <wire x1="17.78" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="132.08" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="C45" gate="G$1" pin="1"/>
+<junction x="38.1" y="132.08"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
