@@ -14208,7 +14208,7 @@ CTL +5V: fc = 194 Hz</text>
 <junction x="454.66" y="139.7"/>
 </segment>
 </net>
-<net name="PB11/USART3_TX/FLYW_RS-485_R" class="0">
+<net name="PB11/USART3_RX/FLYW_RS-485_R" class="0">
 <segment>
 <label x="-27.94" y="205.74" size="1.778" layer="95"/>
 <wire x1="-27.94" y1="205.74" x2="58.42" y2="205.74" width="0.1524" layer="91"/>
