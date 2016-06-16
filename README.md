@@ -9,4 +9,5 @@ It may be out of date so take a look at it carefully.
 ## Errata
 ### v0.1
 ### mc pcb
-- Description for solder jumper switch S3 is reversed.
+- Description for solder jumper switch S3 on silkscreen layer is reversed.
+- Description for solder jumper switch S4 on silkscreen layer is reversed.
