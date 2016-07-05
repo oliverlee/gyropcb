@@ -11,3 +11,7 @@ It may be out of date so take a look at it carefully.
 ### mc pcb
 - Description for solder jumper switch S3 on silkscreen layer is reversed.
 - Description for solder jumper switch S4 on silkscreen layer is reversed.
+
+### power pcb
+- +24V mount pad not connected to +24V rail.
+- GND mount pad not connected to ground planes.
