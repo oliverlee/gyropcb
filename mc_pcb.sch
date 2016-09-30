@@ -14978,7 +14978,7 @@ CTL +5V: fc = 194 Hz</text>
 <label x="-7.62" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PC13/TORQUE_MEAS_NEN" class="0">
+<net name="PC13/TORQUE_MEAS_EN" class="0">
 <segment>
 <label x="256.54" y="63.5" size="1.778" layer="95"/>
 <pinref part="J16" gate="-1" pin="S"/>

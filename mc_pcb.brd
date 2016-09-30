@@ -5380,7 +5380,7 @@ Bitte nur von autorisierten erfahrenen Nutzern anwenden!!!
 <wire x1="84.836" y1="53.848" x2="86.614" y2="52.07" width="0.254" layer="1"/>
 <wire x1="86.614" y1="52.07" x2="86.614" y2="50.292" width="0.254" layer="1"/>
 </signal>
-<signal name="PC13/TORQUE_MEAS_NEN">
+<signal name="PC13/TORQUE_MEAS_EN">
 <contactref element="J16" pad="1"/>
 <contactref element="EXT1" pad="24"/>
 <wire x1="63.5" y1="33.02" x2="63.5" y2="27.94" width="0.254" layer="16"/>
