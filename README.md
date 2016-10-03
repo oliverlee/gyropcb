@@ -15,3 +15,6 @@ It may be out of date so take a look at it carefully.
 ### power pcb
 - +24V mount pad not connected to +24V rail.
 - GND mount pad not connected to ground planes.
+- The measure line of the Kistler torque sensor cannot be pulled to ground. A
+  fix requires the removal of transistor Q2 and the measure line to be connected
+  to the collector end of transistor Q1. This bypasses and disables switch S1.
