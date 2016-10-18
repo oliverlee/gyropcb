@@ -18,4 +18,5 @@ It may be out of date so take a look at it carefully.
 - The measure line of the Kistler torque sensor cannot be pulled to ground. A
   fix requires the removal of transistor Q2 and the measure line to be connected
   to the collector end of transistor Q1. This bypasses and disables switch S1.
+- Description for solder jumper switch S2 on silkscreen layer is reversed.
 - Silkscreen on J1, J3 incorrect: WIND1 and WIND2 reversed.
