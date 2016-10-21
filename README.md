@@ -11,6 +11,9 @@ It may be out of date so take a look at it carefully.
 ### mc pcb
 - Description for solder jumper switch S3 on silkscreen layer is reversed.
 - Description for solder jumper switch S4 on silkscreen layer is reversed.
+- SDIO CMD line missing pullup resistor. A 33k resistor can be added at EXT1
+  connecting pins 5 and 11. The leads must be kept as short as possible to
+  minimize overshoot and ringing.
 
 ### power pcb
 - +24V mount pad not connected to +24V rail.
