@@ -20,3 +20,4 @@ It may be out of date so take a look at it carefully.
   to the collector end of transistor Q1. This bypasses and disables switch S1.
 - Description for solder jumper switch S2 on silkscreen layer is reversed.
 - Silkscreen on J1, J3 incorrect: WIND1 and WIND2 reversed.
+- Trace for HALL2_S2 between Ext3 and J3 is completely missing.
