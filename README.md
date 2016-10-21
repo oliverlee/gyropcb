@@ -1,10 +1,18 @@
 This set of PCBs are designed to use with various projects in the
-[phobos](https://github.com/oliverlee/phobos) repository.
+[phobos](https://github.com/oliverlee/phobos) repository. The PCBs are designed
+to be used with the following items:
+- [OLIMEX STM32-H405](https://www.olimex.com/Products/ARM/ST/STM32-H405/)
+- [Maxon ESCON Module 50//5](http://www.maxonmotor.com/maxon/view/product/control/4-Q-Servokontroller/438725)
 
 ## Bill of Materials
 The bill of materials is maintained [here](https://docs.google.com/spreadsheets/d/1CJe4dBAEXy64Y3e8YSP1X_Nll6x3aowWz7-QJbUk4VQ/edit?usp=sharing)
 
 It may be out of date so take a look at it carefully.
+
+## Notes
+- In order to use the SDIO peripheral, R27 on the OLIMEX STM32-H405 must be
+  disconnected from from the SDIO_CMD line (EXT1-11). This can be done by
+  cutting the trace connecting EXT1-11 and R27.
 
 ## Errata
 ### v0.1
