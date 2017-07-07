@@ -34,3 +34,11 @@ It may be out of date so take a look at it carefully.
 - Trace for HALL2_S2 between Ext3 and J3 is completely missing.
 - J1, J3 molex pins can not withstand motor windings 1,2,3 current. Motor windings cable must be connected directly to motor dive. Check drawing for new molex types used to rearrange the new connection.
 - J1, J2 male molex vertical headers must be changed with right hand angle headers to allow motor drive fit to Ext2 & Ext1. Check drawing file for new headers used to make the rearrangement.
+
+For the steer by wire bicycle project the following changes were made:
+### power pcb
+18 Voltage regulator switched from LM2576S TO LM2576HV to withstand higher voltage since power supply voltage was switched from 24v to 36v.
+### mc_pcb
+Multiplexers 74AC157D were removed since Giel mentioned that there was an issue with the supply voltage. 
+The inputs and outputs pins of the multiplexers were connected with cables. U4 now gives an output of ENC1_CHA+CHB and ENC2_CHA+CHB. 
+Rear wheel encoder must be connected directly to microcontroller. U5 gives the output of PEDAL_ENC_A +ENC_B.
